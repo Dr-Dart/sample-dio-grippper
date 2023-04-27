@@ -9,6 +9,18 @@
 ## *Overview*
 This sample is a modified Digital I/O module provided from the Device Module UI templates in Dr.Dart-IDE.
 
+|File|Description|
+|---|---|
+|Index.tsx |Main screen shows logo and title text, tool select box and DigitalIO component.|
+|DigitalIO.tsx |Show the TCP, ToolWeight, and Write/Read Signal components|
+|ShowTCP.tsx |Show the TCP screen and make the Add TCP button work (actual Dart-API Function is in the DigitalIO class)|
+|ShowToolWeight.tsx |Show the Tool Weight screen and make the Add ToolWeight button work (the actual function is in the DigitalIO class)|
+|utils/DatabaseManager.ts |Includes functions to read and write data using DB functions in Dart-API|
+|userCommandPIPScreen/PIPScreen.tsx |PIP Screen shows User Command Property screen in Task Editor Module|
+|userCommandService/UserCommandService.ts |	Includes interfaces that must be implemented in User Commands|
+|userCommandService/constDRL.ts|DRL text file. (Currently, the 2nd version of EAP has a problem with not being able to find and read DRL files, so DRL must be saved in the form of a const string))|
+
+
 ## *Changes*
 
 #### 1. `TCP(Tool Center Point)` & `Tool Weight` Robot Parameters are added.
