@@ -11,14 +11,15 @@ This sample is a modified Digital I/O module provided from the Device Module UI 
 
 |File|Description|
 |---|---|
+|Manifest.json<br>(In sample-dio-grippper/<br>com.sample.diogripper)|To use 1 basic module screen and 2 User Commands, 3 screens and 3 services are declared.<br> (*Note. However, in the case of the service, it will be changed so that User Command can operate even if there is only the User Command Service service in the released version.)</br>|
 |Index.tsx |Main screen shows logo and title text, tool select box and DigitalIO component.|
-|DigitalIO.tsx |Show the TCP, ToolWeight, and Write/Read Signal components|
-|ShowTCP.tsx |Show the TCP screen and make the Add TCP button work (actual Dart-API Function is in the DigitalIO class)|
-|ShowToolWeight.tsx |Show the Tool Weight screen and make the Add ToolWeight button work (the actual function is in the DigitalIO class)|
+|DigitalIO.tsx |Show the TCP, Tool Weight, and Write/Read Signal components|
+|ShowTCP.tsx |Show the TCP screen and make the Add TCP button work<br>(Actual Dart-API Function is in the DigitalIO class)|
+|ShowToolWeight.tsx |Show the Tool Weight screen and make the Add Tool Weight button work<br>(The actual function is in the DigitalIO class)|
 |utils/DatabaseManager.ts |Includes functions to read and write data using DB functions in Dart-API|
 |userCommandPIPScreen/PIPScreen.tsx |PIP Screen shows User Command Property screen in Task Editor Module|
 |userCommandService/UserCommandService.ts |	Includes interfaces that must be implemented in User Commands|
-|userCommandService/constDRL.ts|DRL text file. (Currently, the 2nd version of EAP has a problem with not being able to find and read DRL files, so DRL must be saved in the form of a const string))|
+|userCommandService/constDRL.ts|DRL text file.<br>(*Note. Currently the 2nd version of EAP has a problem with not being able to find and read DRL files, so DRL must be saved in the form of a const string))|
 
 
 ## *Changes*
