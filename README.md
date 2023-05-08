@@ -19,7 +19,7 @@ This sample is a modified Digital I/O module provided from the Device Module UI 
 |utils/DatabaseManager.ts |Includes functions to read and write data using DB functions in Dart-API|
 |userCommandPIPScreen/PIPScreen.tsx |PIP Screen shows User Command Property screen in Task Editor Module|
 |userCommandService/UserCommandService.ts |	Includes interfaces that must be implemented in User Commands|
-|userCommandService/constDRL.ts|DRL text file.<br>(*Note. Currently the 2nd version of EAP has a problem with not being able to find and read DRL files, so DRL must be saved in the form of a const string))|
+|userCommandService/constDRL.ts|DRL text file.<br>(*Note. Currently the 2nd version of EAP has a problem with not being able to find and read DRL files, so DRL must be saved in the form of a const string)|
 
 
 ## *Changes*
@@ -42,3 +42,9 @@ This sample is a modified Digital I/O module provided from the Device Module UI 
 * You can add this command block to your task list and select the preset gripper setting.
 
 * When the task is executed, the gripper's `Grasp` and `Release` motion will operate in robot.
+
+## *Limitations*
+#### The current sample of EAP version has the following limitations however We will update the Task Editor soon and redistribute it to the Dart-Store.
+1. **[DRL Generator in Dart-IDE]** You cannot use drl files created by DRL Generator. Currently, it should be used as a string like `userCommandService/constDRL.ts`. It will be improved in the release version.
+2. **[Task Editor in Dart-Platform]** When changing the value in the User Command Property window, the change is not reflected in the Task Editor. Actually, the User Command changes the value and sends a message to the Task Editor. However, this is due to a bug in Task Editor, and we will upload it to the Store as soon as we fix it. However, the first preset will properly reflect the port number you changed in module settings.
+3. **[Task Editor in Dart-Platform]** There is a problem that intermittently does not work properly when playing in Task Editor. We are aware of the problem and are fixing it.
