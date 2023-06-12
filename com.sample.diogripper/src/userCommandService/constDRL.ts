@@ -4,7 +4,7 @@
 */
 //Sub Program DRL
 
-export const DRL_Sub_grasp =
+export const DRL_Sub =
 `def grasp(io_type, io_port1, io_port2, io_signal1, io_signal2):
   #wait_time[sec]
   wait_time = 0.15
@@ -26,11 +26,9 @@ export const DRL_Sub_grasp =
     wait(wait_time)
     set_tool_digital_output(io_port2, io_signal2)
 
-  wait(wait_time)`
+  wait(wait_time)
 
-
-export const DRL_Sub_release =
-`def release(io_type, io_port1, io_port2, io_signal1, io_signal2):
+def release(io_type, io_port1, io_port2, io_signal1, io_signal2):
   #wait_time[sec]
   wait_time = 0.15
 

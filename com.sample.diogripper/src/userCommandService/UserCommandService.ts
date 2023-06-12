@@ -12,7 +12,7 @@ import {
 } from 'dart-api';
 
 //DRL Code.
-import {DRL_Sub_grasp, DRL_Sub_release} from './constDRL'
+import {DRL_Sub} from './constDRL'
 
 //Sub program class
 export class ServiceForTaskEditor extends ModuleService {
@@ -36,12 +36,7 @@ export class ServiceForTaskEditor extends ModuleService {
 
             // 1-1. Define Sub Program function
             let program = `from DRCF import * \r\n`
-            if(componentId == "pip_grasp") {
-              program = program + DRL_Sub_grasp
-            }
-            else if(componentId == "pip_release") {
-              program = program + DRL_Sub_release
-            }
+            program = program + DRL_Sub
 
             console.log(`Sub_DRL : ${program}`);
     

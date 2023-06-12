@@ -29,7 +29,7 @@ import { ModuleScreen, IModuleChannel, Message, ModuleScreenProps, IToast, Toast
 import DatabaseManager from '../utils/DatabaseManager';
 
 //Import for Update Value
-import { GripperInfo, SignalWrite } from '../types';
+import { SignalWrite } from '../types';
 import { USER_COMMAND_GRASP, USER_COMMAND_RELEASE } from '../constants';
 
 /**
