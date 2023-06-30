@@ -23,7 +23,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import styles from '../assets/styles/styles.scss';
 
 //Dart-api
-import { ModuleScreen, IModuleChannel, Message, ModuleScreenProps, IToast, Toast } from 'dart-api';
+import { ModuleScreen, IModuleChannel, Message, ModuleScreenProps, IToast, Toast, logger } from 'dart-api';
 
 //Database manager
 import DatabaseManager from '../utils/DatabaseManager';
@@ -69,12 +69,12 @@ export default class PipScreenForTaskEditor extends ModuleScreen {
             isDatabaseInitialized : false
         };
         this.handleChange = this.handleChange.bind(this);
-        console.log(`Constructor Complete`);
+        logger.debug(`Constructor Complete`);
     } // constructor
 
     //ComponentDidMount. Preload DB Data.
     async componentDidMount() {
-        console.log(`componentDidMount: ${this.moduleContext.componentId}`);
+        logger.debug(`componentDidMount: ${this.moduleContext.componentId}`);
 
         //get database from Digital IO module
         await this.UpdatePreloadData(() => {
@@ -85,10 +85,11 @@ export default class PipScreenForTaskEditor extends ModuleScreen {
                 const version = this.message.data['savedVersion'];
                 const data = this.message.data['savedData'];
                 if (data != null) {
-                    console.log(`saved data detected : ${JSON.stringify(data)}`);
+                    logger.debug(`saved data detected : ${JSON.stringify(data)}`);
 
                     this.setState({
                         userCommandInfos : data.userCommandInfos,
+                        indexSelected : data.indexSelected,
                     });
                 }
             }
@@ -98,7 +99,7 @@ export default class PipScreenForTaskEditor extends ModuleScreen {
     // OnBind. When Task Editor save Task, Send saved data.
     onBind(message: Message, channel: IModuleChannel): boolean {
         this.channel = channel;
-        console.log(`PIP Screen onBind: ${this.moduleContext.componentId}`);
+        logger.debug(`PIP Screen onBind: ${this.moduleContext.componentId}`);
 
         //message.data?.hasOwnProperty('savedData')
 
@@ -108,24 +109,26 @@ export default class PipScreenForTaskEditor extends ModuleScreen {
             const version = message.data['savedVersion'];
             const data = message.data['savedData'];
             if (data != null) {
-                console.log(`saved data detected : ${JSON.stringify(data)}`);
+                logger.debug(`saved data detected : ${JSON.stringify(data)}`);
 
                 this.setState({
                     userCommandInfos : data.userCommandInfos,
+                    indexSelected : data.indexSelected,
                 });
             }
         } //if message && savedData
 
         // 2. Make event "get_current_data"
         channel.receive('get_current_data', () => {
-            console.log(`channel receive : get_current_data`);
+            logger.debug(`channel receive : get_current_data`);
             const data: Record<string, any> = {};
 
             // 3. Update data in PiPScreen
             data['userCommandInfos'] = this.state.userCommandInfos;
+            data['indexSelected'] = this.state.indexSelected;
 
             // 4. Send data to Task Editor
-            console.log(`Send current data : ${JSON.stringify(data)}`);
+            logger.debug(`Send current data : ${JSON.stringify(data)}`);
             channel.send('get_current_data', data);
         });
         return true;
@@ -139,7 +142,7 @@ export default class PipScreenForTaskEditor extends ModuleScreen {
          * You can comment it when you don't want to use it.
          **************/
         if (JSON.stringify(this.state.userCommandInfos) !== JSON.stringify(prevState.userCommandInfos)) {
-            console.log('componentDidUpdate. state update detected');
+            logger.debug('componentDidUpdate. state update detected');
             this.dataChange();
         }
     } //ComponentDidUpdate
@@ -152,7 +155,7 @@ export default class PipScreenForTaskEditor extends ModuleScreen {
         await DatabaseManager.getDataAll((dataList) => {
             this.gripperUserCommandInfos = dataList.map(data => {
                 let signals = data.writeSignals as SignalWrite[]
-                console.log("getData data:", signals)
+                logger.debug("getData data:", signals)
                 if (signals === null || undefined)
                     return;
                 
@@ -185,20 +188,23 @@ export default class PipScreenForTaskEditor extends ModuleScreen {
         }, () =>{
             Toast.show(IToast.TYPE_SUCCESS, 'Success', 'Data Load Success', false);
         });
+        
+        this.dataChange()
     }; //handlechange
 
     //Send changed data to Task Editor. Use in ComponentDidUpdate
     //This function is OPTINAL !!!
     dataChange = () => {
         if (this.channel.send !== undefined) {
-            console.log('data_changed');
+            logger.debug('data_changed');
             const data: Record<string, any> = {};
 
             // 3. Update data in PiPScreen
             data['userCommandInfos'] = this.state.userCommandInfos;
+            data['indexSelected'] = this.state.indexSelected;
 
             // 4. Send data to Task Editor
-            console.log(`Send current data : ${JSON.stringify(data)}`);
+            logger.debug(`Send current data : ${JSON.stringify(data)}`);
             this.channel.send('data_changed', data);
         }
     };

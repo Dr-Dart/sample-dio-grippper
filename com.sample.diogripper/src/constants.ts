@@ -36,7 +36,7 @@ export const SIGNAL_READ_TYPE = [
 ];
 
 export const INIT_TOOL_VALUE: ToolType = {
-  toolName:"gripper",
+  toolName:"Gripper",
   toolWeightParam:{
     tool: {
       weight: 0,

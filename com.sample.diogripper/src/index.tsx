@@ -7,7 +7,6 @@ import React from 'react';
 import { ThemeProvider } from '@mui/material/styles';
 import DigitalIO from './DigitalIO';
 import DatabaseManager from './utils/DatabaseManager';
-import IconImg from './assets/images/image-20230327-014420.png';
 import styles from './assets/styles/styles.scss';
 import { Container, CircularProgress, Box, FormControl, Select, MenuItem, Chip } from '@mui/material';
 
@@ -99,25 +98,17 @@ class MainScreen extends ModuleScreen {
                                 justifyContent: 'space-between',
                             }}
                         >
-                            <img
-                                alt={'alternative'}
-                                id="img_bdb5"
-                                src={IconImg}
-                                style={{
-                                    'width': '45%',
-                                }}
-                            />
-                            <div
+                            <Box
                                 style={{
                                     display: 'flex',
-                                    fontSize: '4rem',
+                                    fontSize: '2rem',
                                     height: '100%',
                                     paddingLeft: '10px',
                                     textAlign: 'center',
                                 }}
                             >
-                                COMPANY NAME
-                            </div>
+                                DIO Gripper Settings
+                            </Box>
                         </Box>
                         <Chip
                             label="Select Tool"
@@ -125,7 +116,7 @@ class MainScreen extends ModuleScreen {
                                 marginTop: 3,
                             }}
                         />
-                        <FormControl 
+                        <FormControl
                             fullWidth
                             sx={{
                                 marginTop: 1,
@@ -137,12 +128,15 @@ class MainScreen extends ModuleScreen {
                                 value={this.state.indexSelected}
                                 onChange={this.handleChange}
                             >
-                                <MenuItem value={0}>Gripper1</MenuItem>
-                                <MenuItem value={1}>Gripper2</MenuItem>
-                                <MenuItem value={2}>Gripper3</MenuItem>
+                                <MenuItem value={0}>Gripper_A</MenuItem>
+                                <MenuItem value={1}>Gripper_B</MenuItem>
+                                <MenuItem value={2}>Gripper_C</MenuItem>
                             </Select>
                         </FormControl>
-                        <DigitalIO moduleContext={this.moduleContext} indexSelected={this.state.indexSelected}></DigitalIO>
+                        <DigitalIO
+                            moduleContext={this.moduleContext}
+                            indexSelected={this.state.indexSelected}
+                        ></DigitalIO>
                     </Container>
                 </ThemeProvider>
             );
