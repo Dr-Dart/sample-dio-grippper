@@ -103,22 +103,22 @@ export default class PipScreenForTaskEditor extends ModuleScreen {
 
         //message.data?.hasOwnProperty('savedData')
 
-        // AS-IS. Currently, savedData is sent on onBind.
-        // 1. If savedData detected in message, Update PiP Screen value.
-        if (message.data?.hasOwnProperty('savedData')) {
-            const version = message.data['savedVersion'];
-            const data = message.data['savedData'];
-            if (data != null) {
-                logger.debug(`saved data detected : ${JSON.stringify(data)}`);
+        // // AS-IS. Currently, savedData is sent on onBind.
+        // // 1. If savedData detected in message, Update PiP Screen value.
+        // if (message.data?.hasOwnProperty('savedData')) {
+        //     const version = message.data['savedVersion'];
+        //     const data = message.data['savedData'];
+        //     if (data != null) {
+        //         logger.debug(`saved data detected : ${JSON.stringify(data)}`);
 
-                this.setState({
-                    userCommandInfos : data.userCommandInfos,
-                    indexSelected : data.indexSelected,
-                });
-            }
-        } //if message && savedData
+        //         this.setState({
+        //             userCommandInfos : data.userCommandInfos,
+        //             indexSelected : data.indexSelected,
+        //         });
+        //     }
+        // } //if message && savedData
 
-        // 2. Make event "get_current_data"
+        // Make event "get_current_data"
         channel.receive('get_current_data', () => {
             logger.debug(`channel receive : get_current_data`);
             const data: Record<string, any> = {};
@@ -155,7 +155,7 @@ export default class PipScreenForTaskEditor extends ModuleScreen {
         await DatabaseManager.getDataAll((dataList) => {
             this.gripperUserCommandInfos = dataList.map(data => {
                 let signals = data.writeSignals as SignalWrite[]
-                logger.debug("getData data:", signals)
+                logger.debug(`getData data: ${signals}`)
                 if (signals === null || undefined)
                     return;
                 
@@ -172,12 +172,23 @@ export default class PipScreenForTaskEditor extends ModuleScreen {
         .then(() => {
             this.setState({
                 gripperNames : names,
-                userCommandInfos : this.gripperUserCommandInfos[this.state.indexSelected],
-                isDatabaseInitialized : true,
-            }) 
+                userCommandInfos: this.gripperUserCommandInfos[this.state.indexSelected],
+                isDatabaseInitialized: true,
+            })
             onComplete();
         });
     };
+
+    /**
+    * A function use to get Gripper value
+    **/
+    getGripperInfo = (writeSignals: SignalWrite | undefined) => {
+        return {
+            signalType: writeSignals?.signalType,
+            port: writeSignals?.writeSignalsChild.map(v => v.portNo),
+            signal: writeSignals?.writeSignalsChild.map(v => v.test),
+        } as GripperUserCommandInfo;
+    }
 
     //Select Tool setting list event. Use in render(select.onchange)
     handleChange = (e: any) => {
@@ -189,7 +200,7 @@ export default class PipScreenForTaskEditor extends ModuleScreen {
             Toast.show(IToast.TYPE_SUCCESS, 'Success', 'Data Load Success', false);
         });
         
-        this.dataChange()
+        //this.dataChange()
     }; //handlechange
 
     //Send changed data to Task Editor. Use in ComponentDidUpdate
@@ -208,17 +219,6 @@ export default class PipScreenForTaskEditor extends ModuleScreen {
             this.channel.send('data_changed', data);
         }
     };
-
-     /**
-     * A function use to get Gripper value
-     **/
-    getGripperInfo = (writeSignals: SignalWrite) => {
-        return {
-            signalType: writeSignals.signalType,
-            port: writeSignals.writeSignalsChild.map(v => v.portNo),
-            signal: writeSignals.writeSignalsChild.map(v => v.test),
-        } as GripperUserCommandInfo;
-    }
 
     /*****
      * Render Screen UI
@@ -281,7 +281,7 @@ export default class PipScreenForTaskEditor extends ModuleScreen {
                                 }}
                             >
                                 {gripperNames.map((name: string, index: number) => (
-                                    <MenuItem name={name} value={index}>
+                                    <MenuItem key={name} value={index}>
                                         {name}
                                     </MenuItem>
                                 ))}

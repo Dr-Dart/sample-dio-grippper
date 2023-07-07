@@ -1,7 +1,7 @@
 {
     "name": "DIOGripper",
     "packageName": "com.sample.diogripper",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "sdkVersion": "1",
     "icon": "assets/images/icon.png",
     "drscModulePackageFile": "drsc_com.sample.diogripper.dm",
