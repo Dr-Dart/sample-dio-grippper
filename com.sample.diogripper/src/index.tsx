@@ -52,15 +52,19 @@ class MainScreen extends ModuleScreen {
         super(props);
         this.state = {
             indexSelected: 0,
-            isDatabaseInitialized: false,
+            showProgress: false,
         };
         this.handleChange = this.handleChange.bind(this);
     }
-    async componentDidMount() {
+
+    async componentWillMount() {
         try {
+            this.setState({
+                showProgress: true,
+            });
             await DatabaseManager.initDatabase(this.moduleContext);
             this.setState({
-                isDatabaseInitialized: true,
+                showProgress: false,
             });
         } catch (error) {
             console.error(error);
@@ -74,7 +78,7 @@ class MainScreen extends ModuleScreen {
         });
     }
     render() {
-        if (!this.state.isDatabaseInitialized) {
+        if (this.state.showProgress) {
             return (
                 <div
                     style={{

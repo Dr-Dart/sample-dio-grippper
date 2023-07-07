@@ -41,12 +41,11 @@ interface GripperUserCommandInfo {
     signal: boolean[];
 }
 
-
 //PIP Screen class
 export default class PipScreenForTaskEditor extends ModuleScreen {
     //Use for data change
     private channel = {} as IModuleChannel;
-    private gripperUserCommandInfos = [] as GripperUserCommandInfo[]
+    private gripperUserCommandInfos = [] as GripperUserCommandInfo[];
     /*****
      * Main Life Cycle
      *
@@ -63,14 +62,20 @@ export default class PipScreenForTaskEditor extends ModuleScreen {
         super(props);
         this.state = {
             //Use for signal setting of DRL
-            indexSelected : 0,
-            gripperNames : [] as String[],
-            userCommandInfos : {} as GripperUserCommandInfo,
-            isDatabaseInitialized : false
+            indexSelected: 0,
+            gripperNames: [] as String[],
+            userCommandInfos: {} as GripperUserCommandInfo,
+            showProgress: false,
         };
         this.handleChange = this.handleChange.bind(this);
         logger.debug(`Constructor Complete`);
     } // constructor
+
+    componentWillMount() {
+        this.setState({
+            showProgress: true,
+        });
+    }
 
     //ComponentDidMount. Preload DB Data.
     async componentDidMount() {
@@ -88,35 +93,18 @@ export default class PipScreenForTaskEditor extends ModuleScreen {
                     logger.debug(`saved data detected : ${JSON.stringify(data)}`);
 
                     this.setState({
-                        userCommandInfos : data.userCommandInfos,
-                        indexSelected : data.indexSelected,
+                        userCommandInfos: data.userCommandInfos,
+                        indexSelected: data.indexSelected,
                     });
                 }
             }
         });
-    } //componentDidMount
+    } //componentDidMountEditor
 
     // OnBind. When Task Editor save Task, Send saved data.
     onBind(message: Message, channel: IModuleChannel): boolean {
         this.channel = channel;
         logger.debug(`PIP Screen onBind: ${this.moduleContext.componentId}`);
-
-        //message.data?.hasOwnProperty('savedData')
-
-        // // AS-IS. Currently, savedData is sent on onBind.
-        // // 1. If savedData detected in message, Update PiP Screen value.
-        // if (message.data?.hasOwnProperty('savedData')) {
-        //     const version = message.data['savedVersion'];
-        //     const data = message.data['savedData'];
-        //     if (data != null) {
-        //         logger.debug(`saved data detected : ${JSON.stringify(data)}`);
-
-        //         this.setState({
-        //             userCommandInfos : data.userCommandInfos,
-        //             indexSelected : data.indexSelected,
-        //         });
-        //     }
-        // } //if message && savedData
 
         // Make event "get_current_data"
         channel.receive('get_current_data', () => {
@@ -134,73 +122,60 @@ export default class PipScreenForTaskEditor extends ModuleScreen {
         return true;
     } //OnBind
 
-    // ComponentDidUpdate. Occured when state updated.
-    componentDidUpdate(prevProps: any, prevState: any) {
-        /**************
-         * !!!Optional part!!!
-         * If SignalData changed, send it to Task Editor
-         * You can comment it when you don't want to use it.
-         **************/
-        if (JSON.stringify(this.state.userCommandInfos) !== JSON.stringify(prevState.userCommandInfos)) {
-            logger.debug('componentDidUpdate. state update detected');
-            this.dataChange();
-        }
-    } //ComponentDidUpdate
-
     //Get State from Database. Use in ComponentDidMount
     UpdatePreloadData = async (onComplete: () => void) => {
         //get database from main screen module
         let infos = [] as GripperUserCommandInfo[];
         let names = [] as String[];
         await DatabaseManager.getDataAll((dataList) => {
-            this.gripperUserCommandInfos = dataList.map(data => {
-                let signals = data.writeSignals as SignalWrite[]
-                logger.debug(`getData data: ${signals}`)
-                if (signals === null || undefined)
-                    return;
-                
+            this.gripperUserCommandInfos = dataList.map((data) => {
+                let signals = data.writeSignals as SignalWrite[];
+                logger.debug(`getData data: ${signals}`);
+                if (signals === null || undefined) return;
+
                 //Get Value from Database
                 if (this.moduleContext.componentId == 'pip_grasp') {
-                    return this.getGripperInfo(signals.find((v: SignalWrite) => v.name === USER_COMMAND_GRASP))
+                    return this.getGripperInfo(signals.find((v: SignalWrite) => v.name === USER_COMMAND_GRASP));
                 } else if (this.moduleContext.componentId == 'pip_release') {
                     return this.getGripperInfo(signals.find((v: SignalWrite) => v.name === USER_COMMAND_RELEASE));
                 }
             }) as GripperUserCommandInfo[];
 
-            names = dataList.map(v => v.selectedTool.toolName)
-        })
-        .then(() => {
+            names = dataList.map((v) => v.selectedTool.toolName);
+        }).then(() => {
             this.setState({
-                gripperNames : names,
+                gripperNames: names,
                 userCommandInfos: this.gripperUserCommandInfos[this.state.indexSelected],
-                isDatabaseInitialized: true,
-            })
+                showProgress: false,
+            });
             onComplete();
         });
     };
 
     /**
-    * A function use to get Gripper value
-    **/
+     * A function use to get Gripper value
+     **/
     getGripperInfo = (writeSignals: SignalWrite | undefined) => {
         return {
             signalType: writeSignals?.signalType,
-            port: writeSignals?.writeSignalsChild.map(v => v.portNo),
-            signal: writeSignals?.writeSignalsChild.map(v => v.test),
+            port: writeSignals?.writeSignalsChild.map((v) => v.portNo),
+            signal: writeSignals?.writeSignalsChild.map((v) => v.test),
         } as GripperUserCommandInfo;
-    }
+    };
 
     //Select Tool setting list event. Use in render(select.onchange)
     handleChange = (e: any) => {
         let index = e.target.value;
-        this.setState({
-            indexSelected : index,
-            userCommandInfos : this.gripperUserCommandInfos[index],
-        }, () =>{
-            Toast.show(IToast.TYPE_SUCCESS, 'Success', 'Data Load Success', false);
-        });
-        
-        //this.dataChange()
+        this.setState(
+            {
+                indexSelected: index,
+                userCommandInfos: this.gripperUserCommandInfos[index],
+            },
+            () => {
+                this.dataChange()
+                Toast.show(IToast.TYPE_SUCCESS, 'Success', 'Data Load Success', false);
+            }
+        );
     }; //handlechange
 
     //Send changed data to Task Editor. Use in ComponentDidUpdate
@@ -225,8 +200,8 @@ export default class PipScreenForTaskEditor extends ModuleScreen {
      * Please make PiP Screen interface in the ThemeProvider. It'll make default design of PiP Screen.
      *****/
     render() {
-        const { indexSelected , gripperNames, userCommandInfos } = this.state;
-        if (!this.state.isDatabaseInitialized) {
+        const { indexSelected, gripperNames, userCommandInfos } = this.state;
+        if (this.state.showProgress) {
             return (
                 <div
                     style={{
@@ -387,12 +362,14 @@ export default class PipScreenForTaskEditor extends ModuleScreen {
                                     </TableRow>
                                 </TableHead>
                                 <TableBody>
-                                    {userCommandInfos?.port.map((port : string, index : number) =>(
+                                    {userCommandInfos?.port.map((port: string, index: number) => (
                                         <TableRow>
                                             <TableCell width="25%">{port}</TableCell>
-                                            <TableCell width="25%">{JSON.stringify(userCommandInfos.signal[index])}</TableCell>
+                                            <TableCell width="25%">
+                                                {JSON.stringify(userCommandInfos.signal[index])}
+                                            </TableCell>
                                         </TableRow>
-                                    ))}                                  
+                                    ))}
                                 </TableBody>
                             </Table>
                         </TableContainer>
