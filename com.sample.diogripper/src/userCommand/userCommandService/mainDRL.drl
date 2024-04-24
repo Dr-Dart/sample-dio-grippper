@@ -1,0 +1,68 @@
+################################
+#    BSD 3-Clause License
+#    Copyright (c) 2023, Doosan Robotics Inc.
+################################
+
+def grasp(index):
+    global graspDatabase
+    
+    # set value
+    io_type = graspDatabase[index]['signalType']
+    write_port = []
+    for i in range(0,len(graspDatabase[index]['port'])) :
+        if graspDatabase[index]['port'][i] != "(Empty)" :
+            write_port.append([
+                graspDatabase[index]['signal'][i],
+                int(graspDatabase[index]['port'][i]),
+                float(graspDatabase[index]['timeout'][i])
+            ])
+
+    #Set IO
+    if io_type == 'Controller Digital Out' :
+        # Write Port
+        for signal, port, timeout in write_port :
+            set_digital_output(port, signal)
+            wait(timeout)
+
+        # If success, return true
+        return True
+
+    elif io_type == 'Flange Digital Out' :
+        # Write Port
+        for signal, port, timeout in write_port :
+            set_tool_digital_output(port, signal)
+            wait(timeout)
+
+        return True
+
+def release(index):
+    global releaseDatabase
+
+    # set value
+    io_type = releaseDatabase[index]['signalType']
+    write_port = []
+    for i in range(0,len(releaseDatabase[index]['port'])) :
+        if releaseDatabase[index]['port'][i] != "(Empty)" :
+            write_port.append([
+                releaseDatabase[index]['signal'][i],
+                int(releaseDatabase[index]['port'][i]),
+                float(releaseDatabase[index]['timeout'][i])
+            ])
+
+    #Set IO
+    if io_type == 'Controller Digital Out' :
+        # Write Port
+        for signal, port, timeout in write_port :
+            set_digital_output(port, signal)
+            wait(timeout)
+
+        # If success, return true
+        return True
+
+    elif io_type == 'Flange Digital Out' :
+        # Write Port
+        for signal, port, timeout in write_port :
+            set_tool_digital_output(port, signal)
+            wait(timeout)
+
+        return True

@@ -11,7 +11,291 @@ const packageName = (() => {
     }
 })();
 
+
+// [START] THEME API /////////////////////////
+/**
+ * Declare for @mui/material/Button
+ * - https://mui.com/material-ui/api/button
+ *
+ * @api-version 1
+ * @user
+ */
+declare module '@mui/material/Button' {
+    /**
+     * An interface to override Button's 'variant' props.
+     *
+     * @api-version 1
+     * @user
+     */
+    interface ButtonPropsVariantOverrides {
+        /**
+         * A variant of a button intended for long press.
+         *
+         * @api-version 1
+         * @user
+         */
+        longPressed: true;
+    }
+}
+/**
+ * Declare for @mui/material/ToggleButton
+ * - https://mui.com/material-ui/api/toggle-button
+ *
+ * @api-version 1
+ * @user
+ */
+declare module '@mui/material/ToggleButton' {
+    /**
+     * An interface to override ToggleButton's 'color' props.
+     *
+     * @api-version 1
+     * @user
+     */
+    interface ToggleButtonPropsColorOverrides {
+        /**
+         * A color of a toggle button intended for used to provide information that is not important to the user.
+         *
+         * @api-version 1
+         * @user
+         */
+        standard: true;
+    }
+}
+/**
+ * Declare for @mui/material/Checkbox
+ * - https://mui.com/material-ui/api/checkbox
+ *
+ * @api-version 1
+ * @user
+ */
+declare module '@mui/material/Checkbox' {
+    /**
+     * An interface to override Checkbox's 'color' props.
+     *
+     * @api-version 1
+     * @user
+     */
+    interface CheckboxPropsColorOverrides {
+        /**
+         * A color of a checkbox intended for used to provide information that is not important to the user.
+         *
+         * @api-version 1
+         * @user
+         */
+        standard: true;
+    }
+}
+/**
+ * Declare for @mui/material/Radio
+ * - https://mui.com/material-ui/api/radio
+ *
+ * @api-version 1
+ * @user
+ */
+declare module '@mui/material/Radio' {
+    /**
+     * An interface to override Radio's 'color' props.
+     *
+     * @api-version 1
+     * @user
+     */
+    interface RadioPropsColorOverrides {
+        /**
+         * A color of a radio intended for used to provide information that is not important to the user.
+         *
+         * @api-version 1
+         * @user
+         */
+        standard: true;
+    }
+}
+/**
+ * Declare for @mui/material/Switch
+ * - https://mui.com/material-ui/api/switch
+ *
+ * @api-version 1
+ * @user
+ */
+declare module '@mui/material/Switch' {
+    /**
+     * An interface to override Switch's 'color' props.
+     *
+     * @api-version 1
+     * @user
+     */
+    interface SwitchPropsColorOverrides {
+        /**
+         * A color of a switch intended for used to provide information that is not important to the user.
+         *
+         * @api-version 1
+         * @user
+         */
+        standard: true;
+    }
+}
+/**
+ * Declare for @mui/material/CircularProgress
+ * - https://mui.com/material-ui/api/circular-progress
+ *
+ * @api-version 1
+ * @user
+ */
+declare module '@mui/material/CircularProgress' {
+    /**
+     * An interface to override CircularProgress's 'color' props.
+     *
+     * @api-version 1
+     * @user
+     */
+    interface CircularProgressPropsColorOverrides {
+        /**
+         * A color of a circular progress intended for used to provide information that is not important to the user.
+         *
+         * @api-version 1
+         * @user
+         */
+        standard: true;
+    }
+}
+/**
+ * Declare for @mui/material/LinearProgress
+ * - https://mui.com/material-ui/api/linear-progress
+ *
+ * @api-version 1
+ * @user
+ */
+declare module '@mui/material/LinearProgress' {
+    /**
+     * An interface to override LinearProgress's 'color' props.
+     *
+     * @api-version 1
+     * @user
+     */
+    interface LinearProgressPropsColorOverrides {
+        /**
+         * A color of a linear progress intended for used to provide information that is not important to the user.
+         *
+         * @api-version 1
+         * @user
+         */
+        standard: true;
+    }
+}
+/**
+ * Declare for @mui/material/InputBase
+ * - https://mui.com/material-ui/api/input-base
+ *
+ * @api-version 1
+ * @user
+ */
+declare module '@mui/material/InputBase' {
+    /**
+     * An interface to override InputBase's 'color' props.
+     *
+     * @api-version 1
+     * @user
+     */
+    interface InputBasePropsColorOverrides {
+        /**
+         * A color of a inputbase intended for used to provide information that is not important to the user.
+         *
+         * @api-version 1
+         * @user
+         */
+        standard: true;
+    }
+}
+/**
+ * Declare for @mui/material/TextField
+ * - https://mui.com/material-ui/api/text-field
+ *
+ * @api-version 1
+ * @user
+ */
+declare module '@mui/material/TextField' {
+    /**
+     * An interface to override TextField's 'color' props.
+     *
+     * @api-version 1
+     * @user
+     */
+    interface TextFieldPropsColorOverrides {
+        /**
+         * A color of a text field intended for used to provide information that is not important to the user.
+         *
+         * @api-version 1
+         * @user
+         */
+        standard: true;
+    }
+}
+/**
+ * Declare for @mui/material/SvgIcon
+ * - https://mui.com/material-ui/api/svg-icon
+ *
+ * @api-version 1
+ * @user
+ */
+declare module '@mui/material/SvgIcon' {
+    /**
+     * An interface to override SvgIcon's 'color' props.
+     *
+     * @api-version 1
+     * @user
+     */
+    interface SvgIconPropsColorOverrides {
+        /**
+         * A color of a svg icon intended for used to represent primary icon elements for a user.
+         *
+         * @api-version 1
+         * @user
+         */
+        main: true;
+        /**
+         * A color of a svg icon intended for used to represent secondary icon elements for a user.
+         *
+         * @api-version 1
+         * @user
+         */
+        sub: true;
+        /**
+         * A color of a svg icon intended for used to represent emphasis icon elements for a user.
+         *
+         * @api-version 1
+         * @user
+         */
+        point: true;
+        /**
+         * A color of a svg icon intended for used to represent status activate icon elements for a user.
+         *
+         * @api-version 2
+         * @user
+         */
+        statusOn: true;
+        /**
+         * A color of a svg icon intended for used to represent status deactivate icon elements for a user.
+         *
+         * @api-version 2
+         * @user
+         */
+        statusOff: true;
+    }
+}
+// [END] THEME API /////////////////////////
+
+
 // [START] DRAS API /////////////////////////
+/**
+ * If you enter this value in an option, it will be ignored or follow the global setting depending on the situation.
+ * @api-version 2
+ * @user
+ */
+ export const DR_NONE = -10000;
+ /**
+ * @ignore
+ */
+ export type DR_NONE = typeof DR_NONE;
+
 /**
  * An array of numbers of size 2.
  * @api-version 1
@@ -47,6 +331,7 @@ export type SixNumArray = [number, number, number, number, number, number];
  * @api-version 1
  * @user
  */
+export type EightNumArray = [number, number, number, number, number, number, number, number];
 export type eigthNumArray = [number, number, number, number, number, number, number, number];
 /**
  * An array of numbers of size 9.
@@ -85,12 +370,22 @@ export type TwoThreeNumArray = [ThreeNumArray, ThreeNumArray];
  */
 export type ThreeSixNumArray = [SixNumArray, SixNumArray, SixNumArray];
 /**
- * Input parameter of the setRemoteControl API.
- * Array of io mapping function trigger information of size 8.
+ * A two-dimensional array of numbers with 4 rows and 6 columns.
  * @api-version 1
  * @user
  */
-export type ConfigIoFunctionList = [ConfigIoFunction,ConfigIoFunction,ConfigIoFunction,ConfigIoFunction,ConfigIoFunction,ConfigIoFunction,ConfigIoFunction,ConfigIoFunction];
+export type FourSixNumArray = [SixNumArray, SixNumArray, SixNumArray,SixNumArray];
+/**
+ * Input parameter of the setRemoteControl API.
+ * Array of io mapping function trigger information of size 10.
+ * @api-version 1
+ * @user
+ */
+ export type ConfigIoFunctionList = [ConfigIoFunction, ConfigIoFunction
+                                    , ConfigIoFunction, ConfigIoFunction
+                                    , ConfigIoFunction, ConfigIoFunction
+                                    , ConfigIoFunction, ConfigIoFunction
+                                    , ConfigIoFunction, ConfigIoFunction];
 
 /**
  * Property data of safety zone.
@@ -427,7 +722,7 @@ export type LocalZonePropertySpeedRate = {
     /**
      * Speed rate.
      * @api-version 1
-     * @user
+     * @system
      */
     speedRate: number,
 }
@@ -804,7 +1099,7 @@ export type Line2D = {
 /**
  * The point in the 3-dimensions.
  * @api-version 1
- * @system
+ * @user
  */
 export type Point3D = {
     /**
@@ -830,7 +1125,7 @@ export type Point3D = {
 /**
  * The point in the 2-dimensions
  * @api-version 1
- * @system
+ * @user
  */
 export type Point2D = {
     /**
@@ -900,9 +1195,9 @@ export type ConveyorRobotDigitalOut = {
  * @api-version 1
  * @user
  */
- export type FlangeVersion = {
+export type FlangeVersion = {
     /**
-     * Flnage hardware version. (0xFF: old, Mseries: 0xBE, Aseries: 0xDE)
+     * Flange hardware version. (0xFF: old, Mseries: 0xBE, Aseries: 0xDE) {@link FlangeHardwareVersion}
      * @api-version 1
      * @user
      */
@@ -940,6 +1235,12 @@ export type EthernetIpData = {
      */
     data: string
 }
+/**
+ * Information on the Industrial Ethernet.
+ * @api-version 2
+ * @user
+ */
+export type IEData = EthernetIpData;
 
 /**
  * This is an enumeration type constant that refers to the authority of the robot controller, and is defined as follows.
@@ -950,33 +1251,40 @@ export type EthernetIpData = {
  */
 export const AuthorityState = {
     /**
-     * Requested to transfer from controller
+     * Received a request to transfer a control authority.
      *
      * @api-version 1
      * @user
      */
     REQUEST: 0,
     /**
-     * Denied about requests for transferring authority.
+     * Denied to request to transfer a control authority.
      *
      * @api-version 1
      * @user
      */
     DENY: 1,
     /**
-     * Granted authority
+     * Granted a control authority.
      *
      * @api-version 1
      * @user
      */
     GRANT: 2,
     /**
-     * Loss authority
+     * Loss a control authority.
      *
      * @api-version 1
      * @user
      */
-    LOSS: 3
+    LOSS: 3,
+    /**
+     * Transferring a control authority.
+     *
+     * @api-version 1
+     * @user
+     */
+    TRANSFERRING: 4
 } as const;
 /**
  * @ignore
@@ -1145,12 +1453,12 @@ export type RobotState = typeof RobotState[keyof typeof RobotState];
  */
 export const PowerManageTarget = {
     /**
-     * Inverter Power off
+     * Safety board Power off(include inverter, controller)
      *
      * @api-version 1
      * @system
      */
-    INVERTER: 0,
+    SAFETYBOARD: 0,
     /**
      * Controller Power off
      *
@@ -1315,47 +1623,47 @@ export const SafetyMode = {
      * @api-version 1
      * @user
      */
-     MANUAL: 0,
-     /**
-      * Auto Mode
-      * (자동 모드)
-      *
-      * @api-version 1
-      * @user
-      */
-     AUTO: 1,
-     /**
-      * Recovery Mode
-      * (복구 모드)
-      *
-      * @api-version 1
-      * @user
-      */
-     RECOVERY: 2,
-     /**
-      * Backdrive Mode
-      * (백드라이브 모드)
-      *
-      * @api-version 1
-      * @user
-      */
-     BACK_DRIVE: 3,
-     /**
-      * Measure Mode
-      * (측정 모드)
-      *
-      * @api-version 1
-      * @user
-      */
-     MEASURING: 4,
-     /**
-      * Initial Mode
-      * (초기 모드)
-      *
-      * @api-version 1
-      * @user
-      */
-     INITIAL: 5
+    MANUAL: 0,
+    /**
+     * Auto Mode
+     * (자동 모드)
+     *
+     * @api-version 1
+     * @user
+     */
+    AUTO: 1,
+    /**
+     * Recovery Mode
+     * (복구 모드)
+     *
+     * @api-version 1
+     * @user
+     */
+    RECOVERY: 2,
+    /**
+     * Backdrive Mode
+     * (백드라이브 모드)
+     *
+     * @api-version 1
+     * @user
+     */
+    BACK_DRIVE: 3,
+    /**
+     * Measure Mode
+     * (측정 모드)
+     *
+     * @api-version 1
+     * @user
+     */
+    MEASURING: 4,
+    /**
+     * Initial Mode
+     * (초기 모드)
+     *
+     * @api-version 1
+     * @user
+     */
+    INITIAL: 5
 } as const;
 /**
  * @ignore
@@ -1378,22 +1686,22 @@ export const SafetyModeEvent = {
      * @api-version 1
      * @system
      */
-     ENTER: 0,
-     /**
-      * Execution
-      * (실행)
-      *
-      * @api-version 1
-      * @system
-      */
-     MOVE: 1,
-     /**
-      * Complete
-      * (완료)
-      *
-      * @api-version 1
-      * @system
-      */
+    ENTER: 0,
+    /**
+     * Execution
+     * (실행)
+     *
+     * @api-version 1
+     * @system
+     */
+    MOVE: 1,
+    /**
+     * Complete
+     * (완료)
+     *
+     * @api-version 1
+     * @system
+     */
     STOP: 2
 } as const;
 /**
@@ -1618,9 +1926,21 @@ export const EthernetIpGprDataType = {
     FLOAT: 2
 } as const;
 /**
+ * Industrial Ethernet general purpose register data type.
+ *
+ * @enum
+ * @api-version 2
+ * @user
+ */
+export const IEGprDataType = EthernetIpGprDataType;
+/**
  * @ignore
  */
 export type EthernetIpGprDataType = typeof EthernetIpGprDataType[keyof typeof EthernetIpGprDataType];
+/**
+ * @ignore
+ */
+export type IEGprDataType = typeof IEGprDataType[keyof typeof IEGprDataType];
 
 /**
  * This is an enumeration type constant that refers to the GPIO digital input/output terminal installed in the edge of the robot, and is defined as follows.
@@ -1763,13 +2083,52 @@ export const GpioAnalogType = {
 export type GpioAnalogType = typeof GpioAnalogType[keyof typeof GpioAnalogType];
 
 /**
+ * The enumerated constants representing the version of the flange.
+ *
+ * @enum
+ * @api-version 2
+ * @user
+ */
+export const FlangeHardwareVersion = {
+    /**
+     * OLD version flange(Robot model distinction required)
+     * A/E Series: Digital Input 2, Digital Output 2, RS-485 1, Supply Voltage 24V
+     * M/H Series: Digital Input 6, Digital Output 6, Supply Voltage 24V
+     *
+     * @api-version 2
+     * @user
+     */
+    OLD: 0xFF,
+    /**
+     * NEW version flange for M/H
+     * Digital Input 4, Digital Output 4, Analog Input 4/RS-485 2, Supply Voltage 0V, 12V, 24V
+     *
+     * @api-version 2
+     * @user
+     */
+    MH: 0xBE,
+    /**
+     * NEW version flange for A/E
+     * Digital Input 2, Digital Output 2, Analog Input 2/RS-485 1, Supply Voltage 0V, 12V, 24V
+     *
+     * @api-version 2
+     * @user
+     */
+    AE: 0xDE,
+} as const;
+/**
+ * @ignore
+ */
+export type FlangeHardwareVersion = typeof FlangeHardwareVersion[keyof typeof FlangeHardwareVersion];
+
+/**
  * An enumerated constant indicating the input type of the GPIO analog input port installed in the flange.
  *
  * @enum
  * @api-version 1
  * @user
  */
- export const FlangeAnalogPinMode = {
+export const FlangeAnalogPinMode = {
     /**
      * RS485
      *
@@ -1790,6 +2149,62 @@ export type GpioAnalogType = typeof GpioAnalogType[keyof typeof GpioAnalogType];
  */
 export type FlangeAnalogPinMode = typeof FlangeAnalogPinMode[keyof typeof FlangeAnalogPinMode];
 
+
+/**
+ * An enumerated constant representing the interrupt type of the digital port on the robot flange.
+ *
+ * @enum
+ * @api-version 2
+ * @user
+ */
+export const FlangeInterlockServoOff = {
+    /**
+     * Maintaining power voltage & digital output.
+     *
+     * @api-version 2
+     * @user
+     */
+    MAINTAIN: 0,
+    /**
+     * Switch the power voltage & digital output to 0V and revert to the last state when ‘Servo On’.
+     *
+     * @api-version 2
+     * @user
+     */
+    SWITCH: 1,
+} as const;
+/**
+ * @ignore
+ */
+export type FlangeInterlockServoOff = typeof FlangeInterlockServoOff[keyof typeof FlangeInterlockServoOff];
+
+/**
+ * An enumerated constant representing the interrupt type of the digital port on the robot flange.
+ *
+ * @enum
+ * @api-version 2
+ * @user
+ */
+export const FlangeInterlockInterrupted = {
+    /**
+     * Maintaining power voltage & digital output.
+     *
+     * @api-version 2
+     * @user
+     */
+    MAINTAIN: 0,
+    /**
+     * Switch the power voltage & digital output to 0V and revert to the last state when reset.
+     *
+     * @api-version 2
+     * @user
+     */
+    SWITCH: 1,
+} as const;
+/**
+ * @ignore
+ */
+export type FlangeInterlockInterrupted = typeof FlangeInterlockInterrupted[keyof typeof FlangeInterlockInterrupted];
 
 /**
  * Enumerated constant representing flange-mounted GPIO analog input/output terminals
@@ -2310,6 +2725,13 @@ export const ProgramState = {
      * @user
      */
     HOLD: 3,
+    /**
+     * Program Cancelled State
+     *
+     * @api-version 1
+     * @user
+     */
+    CANCELLED: 4,
 } as const;
 /**
  * @ignore
@@ -2353,14 +2775,14 @@ export type ProgramSaveMode = typeof ProgramSaveMode[keyof typeof ProgramSaveMod
  */
 export const ProgramStopType = {
     /**
-     * Quick Stop (maintenance of motion trajectory)
+     * Slow Stop (maintenance of motion trajectory)
      *
      * @api-version 1
      * @user
      */
     SLOW: 0,
     /**
-     * Slow Stop (maintenance of motion trajectory)
+     * Quick Stop (maintenance of motion trajectory)
      *
      * @api-version 1
      * @user
@@ -2490,6 +2912,106 @@ export const JointAxis = {
  * @ignore
  */
 export type JointAxis = typeof JointAxis[keyof typeof JointAxis];
+
+
+/**
+ * Enumeration constants that mean jog axis.
+ *
+ * @enum
+ * @api-version 1
+ * @user
+ */
+export const JogAxis = {
+    /**
+     * J1 Axis
+     *
+     * @api-version 1
+     * @user
+    */
+    J1: 1,
+    /**
+     * J2 Axis
+     *
+     * @api-version 1
+     * @user
+    */
+    J2: 2,
+    /**
+     * J3 Axis
+     *
+     * @api-version 1
+     * @user
+    */
+    J3: 3,
+    /**
+     * J4 Axis
+     *
+     * @api-version 1
+     * @user
+    */
+    J4: 4,
+    /**
+     * J5 Axis
+     *
+     * @api-version 1
+     * @user
+    */
+    J5: 5,
+    /**
+     * J6 Axis
+     *
+     * @api-version 1
+     * @user
+    */
+    J6: 6,
+    /**
+     * X-axis translation of TCP.
+     *
+     * @api-version 1
+     * @user
+    */
+    TX: 1,
+    /**
+     * Y-axis translation of TCP.
+     *
+     * @api-version 1
+     * @user
+    */
+    TY: 2,
+    /**
+     * Z-axis translation of TCP.
+     *
+     * @api-version 1
+     * @user
+    */
+    TZ: 3,
+    /**
+     * X-axis rotation of TCP.
+     *
+     * @api-version 1
+     * @user
+    */
+    RX: 4,
+    /**
+     * Y-axis rotation of TCP.
+     *
+     * @api-version 1
+     * @user
+    */
+    RY: 5,
+    /**
+     * Z-axis rotation of TCP.
+     *
+     * @api-version 1
+     * @user
+    */
+    RZ: 6,
+} as const;
+/**
+ * @ignore
+ */
+export type JogAxis = typeof JogAxis[keyof typeof JogAxis];
+
 
 /**
  * Internal and external enumerated constants when querying controller IP.
@@ -2820,60 +3342,59 @@ export type ControlBrake = {
  * System ip address.
  *
  * @api-version 1
- * @system
+ * @user
  */
 export type SystemIpAddress = {
     /**
      * Current IP address usage status Internal:0, External:1
      *
      * @api-version 1
-     * @system
+     * @user
      */
     usage: SystemIpUsage,
     /**
      * Current IP address setting status dhcp:0, static:1
      *
      * @api-version 1
-     * @system
+     * @user
      */
     ipType: SystemIpType,
     /**
      * Host ip address
      *
      * @api-version 1
-     * @system
+     * @user
      */
     hostIp: string,
     /**
      * Subnet mask address
      *
      * @api-version 1
-     * @system
+     * @user
      */
     subnetMask: string,
     /**
      * Default gateway address
      *
      * @api-version 1
-     * @system
+     * @user
      */
     gateway: string,
     /**
      * Primary dns address
      *
      * @api-version 1
-     * @system
+     * @user
      */
     primaryDNS: string,
     /**
      * Secondary dns address
      *
      * @api-version 1
-     * @system
+     * @user
      */
     secondaryDNS: string,
 }
-
 
 /**
  * data type of targetExternalForceMonitoring monitorable variable
@@ -2912,26 +3433,26 @@ export type ExternalForceMonitoringData = {
      */
     z: number,
     /**
-    * Rz element of external force
-    *
-    * @api-version 1
-    * @user
-    */
-    a: number,
+     * RX element of external force
+     *
+     * @api-version 1
+     * @user
+     */
+    rx: number,
     /**
-     * Ry element of external force
+     * RY element of external force
      *
      * @api-version 1
      * @user
      */
-    b: number,
-        /**
-     * Rz element of external force
+    ry: number,
+    /**
+     * RZ element of external force
      *
      * @api-version 1
      * @user
      */
-    c: number,
+    rz: number,
 }
 
 /**
@@ -2975,6 +3496,63 @@ export const ModbusRegisterType = {
  * @ignore
  */
 export type ModbusRegisterType = typeof ModbusRegisterType[keyof typeof ModbusRegisterType];
+
+
+/**
+ * Enumeration constant for Modbus register type that can be registered in robot controller including multi function
+ *
+ * @enum
+ * @api-version 2
+ * @user
+ */
+ export const ExtendModbusRegisterType = {
+    /**
+     * Dircrete Input
+     *
+     * @api-version 2
+     * @user
+     */
+    DISCRETE_INPUTS: 0,
+    /**
+     * Coils
+     *
+     * @api-version 2
+     * @user
+     */
+    COILS: 1,
+    /**
+     * Input Register
+     *
+     * @api-version 2
+     * @user
+     */
+    INPUT_REGISTER: 2,
+    /**
+     * Holding Register
+     *
+     * @api-version 2
+     * @user
+     */
+    HOLDING_REGISTER: 3,
+    /**
+     * Multiple Coils
+     *
+     * @api-version 2
+     * @user
+     */
+    MULTIPLE_COILS_FC15: 4,
+    /**
+     * Multiple Holding Register
+     *
+     * @api-version 2
+     * @user
+     */
+    MULTIPLE_HOLDING_REGISTERS_FC16: 5,
+} as const;
+/**
+ * @ignore
+ */
+export type ExtendModbusRegisterType = typeof ExtendModbusRegisterType[keyof typeof ExtendModbusRegisterType];
 
 /**
  * Robot Install Posture Information
@@ -3135,6 +3713,31 @@ export type MeasureToolResponse = {
     cog: ThreeNumArray
 }
 
+
+/**
+ * Information of 3PE Switch Setting.
+ *
+ * @api-version 2
+ * @user
+ */
+export type Pos3EnableSwitch = {
+    /**
+     * Whether to use 3 Position Eanble switch.
+     *
+     * @api-version 2
+     * @user
+     */
+    enable: boolean,
+
+    /**
+     * 3PE Switch state. deactivate(0), activate(1)
+     *
+     * @api-version 2
+     * @user
+     */
+    state: number
+}
+
 /**
  * Digital signal active level
  *
@@ -3204,7 +3807,7 @@ export type ConfigIoFunction = {
      * @api-version 1
      * @user
      */
-    portIndex: -1|0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15,
+    portIndex: -1|0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19,
     /**
      * Digital signal active level
      *
@@ -3257,6 +3860,55 @@ export const ByteSize = {
 export type ByteSize = typeof ByteSize[keyof typeof ByteSize];
 
 /**
+ * Enumeration constant for the size of data to be transmitted during flange serial communication
+ *
+ * @enum
+ * @api-version 2
+ * @user
+ */
+export const FlangeByteSize = {
+    /**
+     * 5 bits
+     *
+     * @api-version 2
+     * @user
+     */
+    FIVEBITS: 5,
+    /**
+     * 6 bits
+     *
+     * @api-version 2
+     * @user
+     */
+    SIXBITS: 6,
+    /**
+     * 7 bits
+     *
+     * @api-version 2
+     * @user
+     */
+    SEVENBITS: 7,
+    /**
+     * 8 bits `default`
+     *
+     * @api-version 2
+     * @user
+     */
+    EIGHTBITS: 8,
+    /**
+     * 9 bits
+     *
+     * @api-version 2
+     * @user
+     */
+    NINEBITS: 9,
+} as const;
+/**
+ * @ignore
+ */
+export type FlangeByteSize = typeof FlangeByteSize[keyof typeof FlangeByteSize];
+
+/**
  * GPIO digital port setting information.
  *
  * @api-version 1
@@ -3265,19 +3917,19 @@ export type ByteSize = typeof ByteSize[keyof typeof ByteSize];
 export type GpioPort ={
     /**
      * I/O Port index
-     * Control box digital output (16 ports) 0~15,Robot Arm Digital Output (6 ports) 0~5
+     * Control box digital input(20 ports), digital output (16 ports), Robot Arm Digital Output (6 ports) 0~5
      *
      * @api-version 1
      * @user
      */
-    index: number,
-    /**
-     * Output setting - 디지털: 0.0 ~ 1.0
-     *
-     * @api-version 1
-     * @user
-     */
-    value: number
+     index: number,
+     /**
+      * Output setting - If it is a digital port, only 0 and 1 are possible
+      *
+      * @api-version 1
+      * @user
+      */
+     value: number
 }
 
 /**
@@ -3564,6 +4216,12 @@ export type TcpCommunicationClientInfo = {
     ipAddress: string
 }
 
+/**
+ * Serial Communication Information
+ *
+ * @api-version 1
+ * @user
+ */
 export type SerialCommunicationConfig = {
     /**
      * Serial port
@@ -3607,6 +4265,44 @@ export type SerialCommunicationConfig = {
      * @user
      */
     timeout: number,
+}
+
+
+/**
+ * Flange Serial Communication Information
+ *
+ * @api-version 2
+ * @user
+ */
+export type FlangeSerialCommunicationConfig = {
+    /**
+     * Baudrate.
+     *
+     * @api-version 2
+     * @user
+     */
+    baudrate: number,
+    /**
+     * Parity check. {@link ParityCheck}
+     *
+     * @api-version 2
+     * @user
+     */
+    parityBit: ParityCheck,
+    /**
+     * Byte Size. {@link FlangeByteSize}
+     *
+     * @api-version 2
+     * @user
+     */
+    byteSize: FlangeByteSize,
+    /**
+     * Stop bits {@link StopBit}
+     *
+     * @api-version 2
+     * @user
+     */
+    stopBit: StopBit
 }
 
 /**
@@ -3883,12 +4579,21 @@ export const SolutionSpace = {
      * @api-version 1
      * @user
      */
-    TYPE_7: 7
+    TYPE_7: 7,
+    /**
+     * Auto.
+     *
+     * @api-version 2
+     * @user
+     */
+    TYPE_AUTO: 255
 } as const;
 /**
  * @ignore
  */
 export type SolutionSpace = typeof SolutionSpace[keyof typeof SolutionSpace];
+
+
 
 /**
  * Types of Cockpit.
@@ -3925,145 +4630,145 @@ export type CockpitType = typeof CockpitType[keyof typeof CockpitType];
  * @api-version 1
  * @user
  */
-export const WeldingAdjustAvailableStatus = {
-    /**
-     * 조정 불가 구간
-     *
-     * @api-version 1
-     * @user
-     */
-    ADJUST_UNAVAILABLE: 0,
-    /**
-     * 조정 가능 구간
-     *
-     * @api-version 1
-     * @user
-     */
-    ADJUST_AVAILABLE: 1
-} as const;
-/**
- * @ignore
- */
-export type WeldingAdjustAvailableStatus = typeof WeldingAdjustAvailableStatus[keyof typeof WeldingAdjustAvailableStatus];
+// export const WeldingAdjustAvailableStatus = {
+//     /**
+//      * 조정 불가 구간
+//      *
+//      * @api-version 1
+//      * @user
+//      */
+//     ADJUST_UNAVAILABLE: 0,
+//     /**
+//      * 조정 가능 구간
+//      *
+//      * @api-version 1
+//      * @user
+//      */
+//     ADJUST_AVAILABLE: 1
+// } as const;
+// /**
+//  * @ignore
+//  */
+// export type WeldingAdjustAvailableStatus = typeof WeldingAdjustAvailableStatus[keyof typeof WeldingAdjustAvailableStatus];
 
-/**
- * 용접 상태 정보
- *
- * @enum
- * @api-version 1
- * @user
- */
-export const WeldingStatus = {
-    /**
-     * 비용접
-     *
-     * @api-version 1
-     * @user
-     */
-    NOT_WELDING: 0,
-    /**
-     * 용접 (정상)
-     *
-     * @api-version 1
-     * @user
-     */
-    WELDING: 1,
-    /**
-     * 용접 (이상)
-     *
-     * @api-version 1
-     * @user
-     */
-    ERROR: 9,
-    /**
-     * 모의 용접 (dry-run)
-     *
-     * @api-version 1
-     * @user
-     */
-    DRY_RUN: 99
-} as const;
-/**
- * @ignore
- */
-export type WeldingStatus = typeof WeldingStatus[keyof typeof WeldingStatus];
-
-/**
- * Welding Machine communication state.
- *
- * @enum
- * @api-version 1
- * @user
- */
-export const WeldingCommunicationState = {
-    /**
-     * Offline.
-     *
-     * @api-version 1
-     * @user
-     */
-    OFFLINE: 0,
-    /**
-     * Online.
-     *
-     * @api-version 1
-     * @user
-     */
-    ONLINE: 1
-} as const;
-/**
- * @ignore
- */
-export type WeldingCommunicationState = typeof WeldingCommunicationState[keyof typeof WeldingCommunicationState];
-
-/**
- * Ethernet / IP Slave communication state.
- *
- * @enum
- * @api-version 1
- * @user
- */
-export const WeldingSlaveCommunicationState = {
-    /**
-     * EIP Slave Offline.
-     *
-     * @api-version 1
-     * @user
-     */
-    EIP_SLAVE_OFFLINE: 0,
-    /**
-     * Master Online.
-     *
-     * @api-version 1
-     * @user
-     */
-    MASTER_ONLINE: 1,
-    /**
-     * Robot data Online.
-     *
-     * @api-version 1
-     * @user
-     */
-    ROBOT_DATA_ONLINE: 2,
-    /**
-     * Interface Incomplete.
-     *
-     * @api-version 1
-     * @user
-     */
-    INTERFACE_INCOMPLETE: 3,
-    /**
-     * Welding Machine Online.
-     *
-     * @api-version 1
-     * @user
-     */
-    WELDING_MACHINE_ONLINE: 4
-} as const;
-/**
- * @ignore
- */
-export type WeldingSlaveCommunicationState = typeof WeldingSlaveCommunicationState[keyof typeof WeldingSlaveCommunicationState];
+// /**
+//  * 용접 상태 정보
+//  *
+//  * @enum
+//  * @api-version 1
+//  * @user
+//  */
+// export const WeldingStatus = {
+//     /**
+//      * 비용접
+//      *
+//      * @api-version 1
+//      * @user
+//      */
+//     NOT_WELDING: 0,
+//     /**
+//      * 용접 (정상)
+//      *
+//      * @api-version 1
+//      * @user
+//      */
+//     WELDING: 1,
+//     /**
+//      * 용접 (이상)
+//      *
+//      * @api-version 1
+//      * @user
+//      */
+//     ERROR: 9,
+//     /**
+//      * 모의 용접 (dry-run)
+//      *
+//      * @api-version 1
+//      * @user
+//      */
+//     DRY_RUN: 99
+// } as const;
+// /**
+//  * @ignore
+//  */
+// export type WeldingStatus = typeof WeldingStatus[keyof typeof WeldingStatus];
+//
+// /**
+//  * Welding Machine communication state.
+//  *
+//  * @enum
+//  * @api-version 1
+//  * @user
+//  */
+// export const WeldingCommunicationState = {
+//     /**
+//      * Offline.
+//      *
+//      * @api-version 1
+//      * @user
+//      */
+//     OFFLINE: 0,
+//     /**
+//      * Online.
+//      *
+//      * @api-version 1
+//      * @user
+//      */
+//     ONLINE: 1
+// } as const;
+// /**
+//  * @ignore
+//  */
+// export type WeldingCommunicationState = typeof WeldingCommunicationState[keyof typeof WeldingCommunicationState];
+//
+// /**
+//  * Ethernet / IP Slave communication state.
+//  *
+//  * @enum
+//  * @api-version 1
+//  * @user
+//  */
+// export const WeldingSlaveCommunicationState = {
+//     /**
+//      * EIP Slave Offline.
+//      *
+//      * @api-version 1
+//      * @user
+//      */
+//     EIP_SLAVE_OFFLINE: 0,
+//     /**
+//      * Master Online.
+//      *
+//      * @api-version 1
+//      * @user
+//      */
+//     MASTER_ONLINE: 1,
+//     /**
+//      * Robot data Online.
+//      *
+//      * @api-version 1
+//      * @user
+//      */
+//     ROBOT_DATA_ONLINE: 2,
+//     /**
+//      * Interface Incomplete.
+//      *
+//      * @api-version 1
+//      * @user
+//      */
+//     INTERFACE_INCOMPLETE: 3,
+//     /**
+//      * Welding Machine Online.
+//      *
+//      * @api-version 1
+//      * @user
+//      */
+//     WELDING_MACHINE_ONLINE: 4
+// } as const;
+// /**
+//  * @ignore
+//  */
+// export type WeldingSlaveCommunicationState = typeof WeldingSlaveCommunicationState[keyof typeof WeldingSlaveCommunicationState];
 
 /**
  * Modbus slave coil information
@@ -4073,33 +4778,33 @@ export type WeldingSlaveCommunicationState = typeof WeldingSlaveCommunicationSta
  */
 export type EthernetIpMonitoringModbusCoil = {
     /**
-     * Controlbox digital input 1~16 (coil 0 ~ 15) read only
+     * Controlbox digital input 1~20 (coil 0 ~ 19) read only
      *
-     * @api-version 1
+     * @api-version 2
      * @user
      */
-    ctrlDigitalInput: number,
+    ctrlDigitalInput: TwentyNumArray,
     /**
      * Controlbox digital output 1~16 (coil 16 ~ 31) read/write
      *
-     * @api-version 1
+     * @api-version 2
      * @user
      */
-    ctrlDigitalOutput: number,
+    ctrlDigitalOutput: SixteenNumArray,
     /**
      * Tool digital input 1~6 (coil 32 ~ 37) read only
      *
-     * @api-version 1
+     * @api-version 2
      * @user
      */
-    toolDigitalInput: number,
+    toolDigitalInput: SixNumArray,
     /**
      * Tool digital output 1~6 (coil 38 ~ 43) read/write
      *
-     * @api-version 1
+     * @api-version 2
      * @user
      */
-    toolDigitalOutput: number,
+    toolDigitalOutput: SixNumArray,
     /**
      * Servo on robot (col 260) read only
      *
@@ -4145,6 +4850,14 @@ export type EthernetIpMonitoringModbusCoil = {
 }
 
 /**
+ * Modbus slave coil information
+ *
+ * @api-version 2
+ * @user
+ */
+export type IEMonitoringModbusCoil = EthernetIpMonitoringModbusCoil
+
+/**
  * Modbus slave register information
  *
  * @api-version 1
@@ -4152,19 +4865,19 @@ export type EthernetIpMonitoringModbusCoil = {
  */
 export type EthernetIpMonitoringModbusRegister = {
     /**
-     * Controlbox digital input 1~16 (H Reg 0) read only
+     * Controlbox digital input 1~20 (H Reg 0) read only
      *
-     * @api-version 1
+     * @api-version 2
      * @user
      */
-    ctrlDigitalInput: number,
+    ctrlDigitalInput: TwentyNumArray,
     /**
      * Controlbox digital output 1~16 (H Reg 1) read/write
      *
-     * @api-version 1
+     * @api-version 2
      * @user
      */
-    ctrlDigitalOutput: number,
+    ctrlDigitalOutput: SixteenNumArray,
     /**
      * Controlbox analog input 1 (H Reg 4) read only
      *
@@ -4224,17 +4937,80 @@ export type EthernetIpMonitoringModbusRegister = {
     /**
      * Tool digital input 1~6 (H Reg 21) read only
      *
-     * @api-version 1
+     * @api-version 2
      * @user
      */
-    ctrlToolDigitalInput: number,
+    toolDigitalInput: SixNumArray,
     /**
      * Tool digital output 1~6 (H Reg 22) write only
      *
-     * @api-version 1
+     * @api-version 2
      * @user
      */
-    ctrlToolDigitalOutput: number,
+    toolDigitalOutput: SixNumArray,
+    /**
+     * Tool analog intput 1 (H Reg 23) read only
+     *
+     * @api-version 2
+     * @user
+     */
+    toolAnalogInput1: number,
+    /**
+     * The type of tool analog intput 1 (H Reg 24) read only
+     *
+     * @api-version 2
+     * @user
+     */
+    toolAnalogInputType1: number,
+    /**
+     * Tool analog intput 2 (H Reg 25) read only
+     *
+     * @api-version 2
+     * @user
+     */
+    toolAnalogInput2: number,
+    /**
+     * The type of tool analog intput 2 (H Reg 26) read only
+     *
+     * @api-version 2
+     * @user
+     */
+    toolAnalogInputType2: number,
+    /**
+     * The type of tool analog intput 3 (H Reg 27) read only
+     *
+     * @api-version 2
+     * @user
+     */
+    toolAnalogInput3: number,
+    /**
+     * The type of tool analog intput 3 (H Reg 28) read only
+     *
+     * @api-version 2
+     * @user
+     */
+    toolAnalogInputType3: number,
+    /**
+     * The type of tool analog intput 4 (H Reg 29) read only
+     *
+     * @api-version 2
+     * @user
+     */
+    toolAnalogInput4: number,
+    /**
+     * The type of tool analog intput 4 (H Reg 30) read only
+     *
+     * @api-version 2
+     * @user
+     */
+    toolAnalogInputType4: number,
+    /**
+     * Tool voltage output level (H Reg 31) read only
+     *
+     * @api-version 2
+     * @user
+     */
+    toolVoltageOutputLevel: number,
     /**
      * General pupose 16bit register (size 128) (H Reg 128~255) read/write
      *
@@ -4369,6 +5145,13 @@ export type EthernetIpMonitoringModbusRegister = {
      */
     taskExternalForce: SixNumArray,
 }
+/**
+ * Modbus slave register information
+ *
+ * @api-version 2
+ * @user
+ */
+export type IEMonitoringModbusRegister = EthernetIpMonitoringModbusRegister
 
 /**
  * General purpose data
@@ -4385,6 +5168,14 @@ export type EthernetIpMonitoringGpr = {
      */
     gpr: number[]
 };
+
+/**
+ * General purpose data
+ *
+ * @api-version 2
+ * @user
+ */
+export type IEMonitoringGpr = EthernetIpMonitoringGpr;
 
 /**
  * Ethernet ip monitoring data
@@ -4417,14 +5208,44 @@ export type EthernetIpMonitoring = {
 }
 
 /**
+ * IndustrialEthernet monitoring data
+ *
+ * @api-version 2
+ * @user
+ */
+export type IEMonitoring = {
+    /**
+     * Modbus coil
+     *
+     * @api-version 2
+     * @user
+     */
+    mbusCoil: IEMonitoringModbusCoil,
+    /**
+     * Modbus register
+     *
+     * @api-version 2
+     * @user
+     */
+    mbusHoldingRegister: IEMonitoringModbusRegister,
+    /**
+     * General pulpose data
+     *
+     * @api-version 2
+     * @user
+     */
+    industrialEthernetGPR: IEMonitoringGpr
+}
+
+/**
  * Robot Task space pose.
  *
  * @api-version 1
  * @user
  */
- export type TaskPose = {
+export type TaskPose = {
     /**
-     * Robot Task space pose. (X, Y, Z, A, B, C)
+     * Robot Task space pose. (X, Y, Z, RZ, RY, RX)
      *
      * @api-version 1
      * @user
@@ -4439,6 +5260,117 @@ export type EthernetIpMonitoring = {
      */
     targetSolutionSpace: SolutionSpace
 }
+
+
+
+/**
+ * Robot pose expression type.
+ *
+ * @api-version 2
+ * @user
+ */
+ export const OrientationType = {
+    /**
+     * (x,y,z,rz1,ry,rz2)
+     * RotZ*RotY*RotZ
+     *
+     * @api-version 2
+     * @user
+     */
+    EULER_ZYZ: 0,
+    /**
+     * (x,y,z,rz,ry,rx)
+     * RotZ*RotY*RotX
+     *
+     * @api-version 2
+     * @user
+     */
+    EULER_ZYX: 1,
+    /**
+     * (x,y,z,rx,ry,rz)
+     * RotX*RotY*RotZ
+     *
+     * @api-version 2
+     * @user
+     */
+    EULER_XYZ: 2,
+    /**
+     * (x,y,z,rx,ry,rz)
+     * RotZ*RotY*RotX
+     *
+     * @api-version 2
+     * @user
+     */
+    FIXED_XYZ: 3,
+    /**
+     * (x,y,z,vx,vy,vz,theta)
+     *
+     * @api-version 2
+     * @user
+     */
+    ROTVEC: 4,
+    /**
+     * (x,y,z,q0,q1,q2,q3)
+     *
+     * @api-version 2
+     * @user
+     */
+    QUATERNION: 5,
+    /**
+     * using default orientation type. (EULER_ZYX)
+     *
+     * @api-version 2
+     * @user
+     */
+    NONE: 255,
+}as const;
+/**
+ * @ignore
+ */
+export type OrientationType = typeof OrientationType[keyof typeof OrientationType];
+
+/**
+ * Manipulator pose
+ *
+ * @api-version 2
+ * @user
+ */
+ export type ManipulatorPose = {
+    /**
+     * pose variables
+     *
+     * @api-version 2
+     * @user
+     */
+    pose: number[],
+
+    /**
+     * solution space that determines robot pose
+     *
+     * @api-version 2
+     * @user
+     */
+    solutionSpace: SolutionSpace | 255;
+
+
+    /**
+     * turn no that determines robot pose
+     * if set 255. robot will move to the nearest target position.
+     *
+     * @api-version 2
+     * @user
+     */
+    turnNo: number | 255;
+
+    /**
+     * Orientation Type
+     *
+     * @api-version 2
+     * @user
+     */
+    orientationType:OrientationType;
+}
+
 
 /**
  * Safety Zone Type
@@ -4502,7 +5434,7 @@ export type SafetyZoneType = typeof SafetyZoneType[keyof typeof SafetyZoneType];
  * @api-version 1
  * @user
  */
- export type TcpCommunicationMonitoringData = {
+export type TcpCommunicationMonitoringData = {
     /**
      * The uniqueId of server socket.
      *
@@ -4521,30 +5453,30 @@ export type SafetyZoneType = typeof SafetyZoneType[keyof typeof SafetyZoneType];
 
 
 
-     /**
-      * Total data length
-      *
-      * @api-version 1
-      * @user
-      */
-      totalLength: number,
+    /**
+     * Total data length
+     *
+     * @api-version 1
+     * @user
+     */
+    totalLength: number,
 
-      /**
-       * Current sequence no of data stream
-       *
-       * @api-version 1
-       * @user
-       */
-      currentSequenceNo: number,
+    /**
+     * Current sequence no of data stream
+     *
+     * @api-version 1
+     * @user
+     */
+    currentSequenceNo: number,
 
 
-      /**
-       * Last sequence no of data stream
-       *
-       * @api-version 1
-       * @user
-       */
-      endSequenceNo: number,
+    /**
+     * Last sequence no of data stream
+     *
+     * @api-version 1
+     * @user
+     */
+    endSequenceNo: number,
 
     /**
      * The recieved data.
@@ -4571,7 +5503,7 @@ export type StoreAuthenticationData = {
  *
  * @api-version 1
  * @user
-*/
+ */
 export type FrameworkModulePackageInfo = {
     /**
      * Package name
@@ -4835,13 +5767,12 @@ export const FrameworkModuleStatus = {
  */
 export type FrameworkModuleStatus = typeof FrameworkModuleStatus[keyof typeof FrameworkModuleStatus];
 
-
 /**
  * TCP Comm Result
  *
  * @api-version 1
  * @user
-*/
+ */
 export type TcpCommunicationResult = {
     /**
      * return value
@@ -4865,7 +5796,7 @@ export type TcpCommunicationResult = {
  *
  * @api-version 1
  * @user
-*/
+ */
 export type SerialCommunicationResult = {
     /**
      * return value
@@ -4884,14 +5815,13 @@ export type SerialCommunicationResult = {
     uniqueId: number
 }
 
-
 /**
  * System Version Information
  *
  * @api-version 1
  * @user
  */
- export type SystemVersionInfo = {
+export type SystemVersionInfo = {
     /**
      * Package Version Information
      *
@@ -4978,7 +5908,7 @@ export type SerialCommunicationResult = {
      */
     system: string,
 
-     /**
+    /**
      * OS Information
      *
      * @api-version 1
@@ -5011,11 +5941,569 @@ export type SerialCommunicationResult = {
     cockpit: CockpitType
 }
 
+/**
+ *  Connected robot type.
+ *
+ * @enum
+ * @api-version 2
+ * @user
+ */
+export const RobotType = {
+    /**
+     * Not connected to Controller.
+     *
+     * @api-version 2
+     * @user
+     */
+    NOT_CONNECTED: 0,
+    /**
+     * Connected to real robot.
+     *
+     * @api-version 2
+     * @user
+     */
+    REAL: 1,
+    /**
+     * Connected to Dart-Simulator.
+     *
+     * @api-version 2
+     * @user
+     */
+    SIMULATOR: 2
+} as const;
+/**
+ * @ignore
+ */
+export type RobotType = typeof RobotType[keyof typeof RobotType];
+
+/**
+ * Enumeration constant for robot checksum state
+ *
+ * @enum
+ * @api-version 1
+ * @user
+ */
+export const ChecksumState = {
+    /**
+     * state of matched normal & safety data
+     *
+     * @api-version 1
+     * @user
+     */
+    MATCHED_DATA: 0,
+    /**
+     * state of unmatched normal data state
+     *
+     * @api-version 1
+     * @user
+     */
+    UNMATCHED_NORMAL_DATA: 1,
+    /**
+     * state of unmatched safety data
+     *
+     * @api-version 1
+     * @user
+     */
+    UNMATCHED_SAFETY_DATA: 2,
+} as const;
+/**
+ * @ignore
+ */
+export type ChecksumState = typeof ChecksumState[keyof typeof ChecksumState];
+
+/**
+ * State of Mode Changed Callback
+ *
+ * @api-version 1
+ * @user
+ */
+ export const ModeChangeState = {
+    /**
+     * Enter recovery mode.
+     *
+     * @api-version 1
+     * @user
+     */
+    ENTER_RECOVERY_MODE: 0,
+    /**
+     * Enter backdrive mode
+     *
+     * @api-version 1
+     * @user
+     */
+    ENTER_BACKDRIVE_MODE: 1,
+    /**
+     * Mode off
+     *
+     * @api-version 1
+     * @user
+     */
+    MODE_OFF: 2,
+} as const;
+/**
+ * @ignore
+ */
+export type ModeChangeState = typeof ModeChangeState[keyof typeof ModeChangeState];
+
+
+/**
+ * enumulation of remote control command
+ *
+ * @api-version 1
+ * @user
+ */
+ export const RemoteControlCommand = {
+    /**
+     * unknown state
+     *
+     * @api-version 1
+     * @user
+     */
+    UNKNOWN: 0,
+
+    /**
+     * servo on
+     *
+     * @api-version 1
+     * @user
+     */
+    SERVO_ON: 1,
+    /**
+     * program start
+     *
+     * @api-version 1
+     * @user
+     */
+    PROGRAM_START: 2,
+    /**
+     * program stop
+     *
+     * @api-version 1
+     * @user
+     */
+    PROGRAM_STOP:3,
+    /**
+     * program pause
+     *
+     * @api-version 1
+     * @user
+     */
+    PROGRAM_PAUSE:4,
+    /**
+     * program resume
+     *
+     * @api-version 1
+     * @user
+     */
+    PROGRAM_RESUME:5,
+    /**
+     * power on
+     *
+     * @api-version 1
+     * @user
+     */
+    POWER_ON:6,
+    /**
+     * power off
+     *
+     * @api-version 1
+     * @user
+     */
+    POWER_OFF:7,
+} as const;
+/**
+ * @ignore
+ */
+export type RemoteControlCommand = typeof RemoteControlCommand[keyof typeof RemoteControlCommand];
+
+/**
+ * Supported functions are different for each robot model.
+ * A list of robot functions and whether they are supported.
+ *
+ * @api-version 1
+ * @user
+ */
+ export type RobotFeatureList = {
+    /**
+    * Whether the FTS sensor is present.
+    *
+    * @api-version 1
+    * @user
+    */
+    FTS: boolean,
+    /**
+    * Whether the JTS sensor is present.
+    *
+    * @api-version 1
+    * @user
+    */
+    JTS: boolean,
+    /**
+    * Whether the free motion type direct teaching is available
+    *
+    * @api-version 1
+    * @user
+    */
+    FreeTeaching: boolean,
+    /**
+    * Whether the constraints motion type direct teaching is available
+    *
+    * @api-version 1
+    * @user
+    */
+    ConstraintsTeaching: boolean,
+    /**
+    * Whether collision detection is possible.
+    *
+    * @api-version 1
+    * @user
+    */
+    CollisionDetection: boolean,
+    /**
+    * Whether or not the installation posture measurement function is supported.
+    *
+    * @api-version 1
+    * @user
+    */
+    MeasureInstallPose: boolean,
+    /**
+    * Whether or not the tool weight measurement function is supported.
+    *
+    * @api-version 1
+    * @user
+    */
+    MeasureToolWeight: boolean,
+    /**
+    * Whether the friction coefficient measurement function is supported.
+    *
+    * @api-version 1
+    * @user
+    */
+    MeasureFriction: boolean,
+    /**
+    * Whether nudge is supported
+    *
+    * @api-version 1
+    * @user
+    */
+    Nudge: boolean,
+    /**
+    * Whether cockpit is supported
+    *
+    * @api-version 1
+    * @user
+    */
+    Cockpit: boolean,
+    /**
+    * Whether force control is available
+    *
+    * @api-version 1
+    * @user
+    */
+    ForceControl: boolean,
+    /**
+    * Whether compliance control is available
+    *
+    * @api-version 1
+    * @user
+    */
+    ComplianceControl: boolean,
+    /**
+    * Whether the force monitoring is supported.
+    *
+    * @api-version 1
+    * @user
+    */
+    ForceMonitoring: boolean,
+    /**
+    * Whether home mastering is needed
+    *
+    * @api-version 1
+    * @user
+    */
+    HomeMastering: boolean,
+    /**
+    * Whether it supports various installation postures.
+    *
+    * @api-version 1
+    * @user
+    */
+    VariousInstallPose: boolean,
+    /**
+    * Whether to support gravity compensation function.
+    *
+    * @api-version 1
+    * @user
+    */
+    GravityCompensation: boolean
+}
+
+/**
+* Hardware specification
+*
+* @api-version 2
+* @user
+*/
+export type RobotHardwareSpecification = {
+    /**
+    * Maximum reach. (mm)
+    *
+    * @api-version 2
+    * @user
+    */
+    maxReach: number,
+
+     /**
+     * Maximum payload. (kg)
+     *
+     * @api-version 2
+     * @user
+     */
+    payload: number,
+
+     /**
+     * Maximum payload when acceleration is limited (kg)
+     *
+     * @api-version 2
+     * @user
+     */
+    payloadWithAceelerationLimit: number,
+
+     /**
+     * Hardware limitations related to joint space.
+     *
+     * @api-version 2
+     * @user
+     */
+    jointHardLimit: {
+        /**
+         * Minimum joint range (degree)
+         *
+         * @api-version 2
+         * @user
+         */
+        minRange: SixNumArray,
+        /**
+         * Maximum joint range (degree)
+         *
+         * @api-version 2
+         * @user
+         */
+        maxRange: SixNumArray,
+        /**
+         * Maximum joint velocity (degree/s)
+         *
+         * @api-version 2
+         * @user
+         */
+        maxVelocity: SixNumArray
+    },
+}
+
+/**
+ * List of measureFrictionValue Result
+ *
+ * @api-version 1
+ * @user
+ */
+export type FrictionValueResult = {
+    /**
+     * target Friction
+     *
+     * @api-version 1
+     * @user
+     */
+    result : SixNumArray,
+
+    /**
+     * Friction error
+     *
+     * @api-version 1
+     * @user
+     */
+    error : SixNumArray,
+
+    /**
+     * positive Speed Factor
+     *
+     * @api-version 1
+     * @user
+     */
+    positive : FourSixNumArray,
+
+    /**
+     * negative Speed Factor
+     *
+     * @api-version 1
+     * @user
+     */
+    negative : FourSixNumArray,
+
+    /**
+     * temperature
+     *
+     * @api-version 1
+     * @user
+     */
+    temperature : SixNumArray,
+}
+
+
+/**
+ * Task data indicated by position and direction of each axis
+ *
+ * @api-version 1
+ * @user
+ */
+export type TaskPositionAndDirection = {
+    /**
+     * pose. X,Y,Z,RZ,RY,RX
+     *
+     * @api-version 1
+     * @user
+     */
+    pose: SixNumArray,
+
+    /**
+     * Direction along X
+     *
+     * @api-version 1
+     * @user
+     */
+    directionX: ThreeNumArray,
+
+    /**
+     * Direction along Y
+     *
+     * @api-version 1
+     * @user
+     */
+    directionY: ThreeNumArray,
+
+    /**
+     * Direction along Z
+     *
+     * @api-version 1
+     * @user
+     */
+    directionZ: ThreeNumArray,
+}
+
+/**
+ * TCP pose w.r.t Base, World, and Active User coordinate systems
+ *
+ * @api-version 1
+ * @user
+ */
+export type TCPPoseInfo = {
+    /**
+     * TCP pose w.r.t Base
+     *
+     * @api-version 1
+     * @user
+     */
+    baseToTCP: TaskPositionAndDirection,
+    /**
+     * TCP pose w.r.t World
+     *
+     * @api-version 1
+     * @user
+     */
+    worldToTCP: TaskPositionAndDirection,
+    /**
+     * TCP pose w.r.t Active User
+     *
+     * @api-version 1
+     * @user
+     */
+    userToTCP: TaskPositionAndDirection,
+}
+
+/**
+ * error handling error
+ *
+ * @api-version 2
+ * @user
+ */
+ export const ErrorHandlingState = {
+    /**
+     * Normal
+     *
+     * @api-version 2
+     * @user
+     */
+    NORMAL: 0,
+    /**
+     * Error
+     *
+     * @api-version 2
+     * @user
+     */
+    ERROR: 1,
+} as const;
+/**
+ * @ignore
+ */
+export type ErrorHandlingState = typeof ErrorHandlingState[keyof typeof ErrorHandlingState];
+
+/**
+ * error handling mode
+ *
+ * @api-version 2
+ * @user
+ */
+ export const ErrorHandlingMode = {
+    /**
+     * Normal
+     *
+     * @api-version 2
+     * @user
+     */
+    NORMAL: 0,
+    /**
+     * Error
+     *
+     * @api-version 2
+     * @user
+     */
+    WELDING: 1,
+} as const;
+/**
+ * @ignore
+ */
+export type ErrorHandlingMode = typeof ErrorHandlingMode[keyof typeof ErrorHandlingMode];
+
+/**
+ * switch relay contract
+ *
+ * @api-version 2
+ * @user
+ */
+ export const SwitchRelayContact = {
+    /**
+     * Normally open
+     *
+     * @api-version 2
+     * @user
+     */
+    A: 0,
+    /**
+     * Normally close
+     *
+     * @api-version 2
+     * @user
+     */
+    B: 1,
+} as const;
+/**
+ * @ignore
+ */
+export type SwitchRelayContact = typeof SwitchRelayContact[keyof typeof SwitchRelayContact];
+
 // [END] DRAS API /////////////////////////
 
 
 // [START] Common (like as Parent interface) API /////////////////////////
-
 /**
  * A class of set with APIs to interact with DART-Platform's system.
  *
@@ -5059,6 +6547,7 @@ export class System {
  */
 export interface ISystemManager {
 }
+
 
 /**
  * An abstract class to information about an environment.
@@ -5151,12 +6640,12 @@ export abstract class Context {
      */
     static readonly MEASURE_MANAGER = "MeasureManager";
     /**
-     * Use with {@link getSystemManager} to retrieve {@link IApplicationManager}.
+     * Use with {@link getSystemManager} to retrieve {@link IArcweldingManager}.
      *
-     * @api-version 1
+     * @api-version 2
      * @user
      */
-    static readonly APPLICATION_MANAGER = "ApplicationManager";
+    static readonly ARCWELDING_MANAGER = "ArcweldingManager";
     /**
      * Use with {@link getSystemManager} to retrieve {@link IRobotParameterManager}.
      *
@@ -5164,19 +6653,10 @@ export abstract class Context {
      * @user
      */
     static readonly ROBOT_PARAMETER_MANAGER = "RobotParameterManager";
-
-    /**
-     * Use with {@link getSystemManager} to retrieve {@link ILevelModeManager}.
-     *
-     * @api-version 1
-     * @user
-     */
-    static readonly LEVEL_MODE_MANAGER = "LevelModeManager";
     // [END] Robot Control System API /////////////////////////
 
 
     // [START] Hardware Control System API /////////////////////////
-
     /**
      * Use with {@link getSystemManager} to retrieve {@link INetworkManager}.
      *
@@ -5203,12 +6683,12 @@ export abstract class Context {
      */
     static readonly SAFETYPASSWORD_MANAGER = "SafetyPasswordManager";
     /**
-     * Use with {@link getSystemManager} to retrieve {@link IUpdateManager}.
+     * Use with {@link getSystemManager} to retrieve {@link IUpdateAndRestoreManager}.
      *
      * @api-version 1
      * @system
      */
-    static readonly UPDATE_MANAGER = "UpdateManager";
+    static readonly UPDATE_AND_RESTORE_MANAGER = "UpdateAndRestoreManager";
     /**
      * Use with {@link getSystemManager} to retrieve {@link IResetAndRestoreManager}.
      *
@@ -5216,6 +6696,27 @@ export abstract class Context {
      * @system
      */
     static readonly RESET_RESTORE_MANAGER = "ResetAndRestoreManager";
+    /**
+     * Use with {@link getSystemManager} to retrieve {@link IUserManager}.
+     *
+     * @api-version 1
+     * @user
+     */
+    static readonly USER_MANAGER = "UserManager";
+    /**
+     * Use with {@link getSystemManager} to retrieve {@link IClipboardManager}.
+     *
+     * @api-version 2
+     * @system
+     */
+    static readonly CLIPBOARD_MANAGER = "ClipboardManager";
+    /**
+     * Use with {@link getSystemManager} to retrieve {@link IAiManager}.
+     *
+     * @api-version 2
+     * @user
+     */
+    static readonly AI_MANAGER = "AiManager";
     // [END] Etc Control System API /////////////////////////
 
 
@@ -5227,6 +6728,13 @@ export abstract class Context {
      * @system
      */
     static readonly DART_IDE_MANAGER = "DartIdeManager";
+    /**
+     * Use with {@link getSystemManager} to retrieve {@link IDevManager}.
+     *
+     * @api-version 1
+     * @system
+     */
+    static readonly DEV_MANAGER = "DevManager";
     // [END] Dev System API /////////////////////////
 
 
@@ -5240,13 +6748,13 @@ export abstract class Context {
      */
     static readonly DART_FILE_SYSTEM = "dart_file_system";
     /**
-     * Use with {@link getSystemLibrary} to retrieve {@link IDartFilePicker}.
+     * Use with {@link getSystemLibrary} to retrieve {@link IFilePicker}.
      * The library provide APIs to get file from local storage.
      *
-     * @api-version 1
-     * @system
+     * @api-version 2
+     * @user
      */
-    static readonly DART_FILE_PICKER = "dart_file_picker";
+    static readonly FILE_PICKER = "file_picker";
     /**
      * Use with {@link getSystemLibrary} to retrieve {@link IDartDatabase}.
      * It enables interacting with the file system in Windows, linux, macOS and Android.
@@ -5256,12 +6764,37 @@ export abstract class Context {
      */
     static readonly DART_DATABASE = "dart_database";
     /**
+     * Use with {@link getSystemLibrary} to retrieve {@link IDartProcess}.ts
+     * The library provide APIs to control process.
+     *
+     * @api-version 1
+     * @system
+     */
+    static readonly DART_PROCESS = "dart_process";
+
+    /**
+     * Use with {@link getSystemLibrary} to retrieve {@link IExternalProcess}.ts
+     * The library provide APIs to control process.
+     *
+     * @api-version 2
+     * @system
+     */
+    static readonly EXTERNAL_PROCESS = "external_process";
+
+    /**
      * Use with {@link getSystemLibrary} to retrieve {@link IMathLibrary}.
      *
      * @api-version 1
      * @user
      */
     static readonly MATH_LIBRARY = "MathLib";
+    /**
+     * Use with {@link getSystemLibrary} to retrieve {@link ITcpSocketLibrary}.
+     *
+     * @api-version 2
+     * @user
+     */
+    static readonly TCP_SOCKET_LIBRARY = "TcpSocketLibrary";
     // [END] Libraries /////////////////////////
 
 
@@ -5309,16 +6842,17 @@ export abstract class Context {
      * - {@link ROBOT_MANAGER}
      * - {@link AUTHORITY_MANGER}
      * - {@link MEASURE_MANAGER}
-     * - {@link APPLICATION_MANAGER}
      * - {@link ROBOT_PARAMETER_MANAGER}
-     * - {@link LEVEL_MODE_MANAGER}
-     * - {@link DIALOG_MANAGER}
-     * - {@link RESET_RESTORE_MANAGER}
      * - {@link NETWORK_MANAGER}
-     * - {@link DART_IDE_MANAGER}
      * - {@link CONFIGURATION_MANAGER}
      * - {@link SAFETYPASSWORD_MANAGER}
-     * - {@link UPDATE_MANAGER}
+     * - {@link UPDATE_AND_RESTORE_MANAGER}
+     * - {@link RESET_RESTORE_MANAGER}
+     * - {@link USER_MANAGER}
+     * - {@link CLIPBOARD_MANAGER}
+     * - {@link AI_MANAGER}
+     * - {@link DART_IDE_MANAGER}
+     * - {@link DEV_MANAGER}
      *
      * @param name The name of the desired manager.
      * @return The manager or {@link null} if there is no manager which is matched with the name.
@@ -5333,9 +6867,12 @@ export abstract class Context {
      * The library of the returned object varies by the requested name.
      * Available names are:
      * - {@link DART_FILE_SYSTEM}
-     * - {@link DART_FILE_PICKER}
+     * - {@link FILE_PICKER}
      * - {@link DART_DATABASE}
+     * - {@link DART_PROCESS}
+     * - {@link EXTERNAL_PROCESS}
      * - {@link MATH_LIBRARY}
+     * - {@link TCP_SOCKET_LIBRARY}
      *
      * @param name The name of the desired library.
      * @param options Options for the desired library.
@@ -5382,7 +6919,7 @@ export abstract class ModuleContext extends Context {
 
     /**
      * A screen's id which the ModuleScreen has been rendered.
-     * It will be set as undefined if this context is for ModuleScreen component's.
+     * It will be set as undefined if this context is for ModuleService component.
      *
      * @api-version 1
      * @user
@@ -5391,7 +6928,7 @@ export abstract class ModuleContext extends Context {
 
     /**
      * A screen's type which the ModuleScreen has been rendered.
-     * It will be set as undefined if this context is for ModuleScreen component's.
+     * It will be set as undefined if this context is for ModuleService component.
      *
      * @api-version 1
      * @user
@@ -5517,6 +7054,17 @@ export class Message {
      * @user
      */
     static readonly ACTION_DEVICE_SETTINGS_DATABASE_READER = "dart.message.action.DEVICE_SETTINGS_DATABASE_READER";
+
+    /**
+     * ModuleService Action: Represents a service component to provide REST APIs to communicate with 3rd party AI Server.
+     *
+     * Now it is used with:
+     * - {@link CATEGORY_SERVICE}
+     *
+     * @api-version 2
+     * @user
+     */
+    static readonly ACTION_GET_REST_APIS_TO_COMMUNICATE_WITH_AI_SERVER = "dart.message.action.GET_REST_APIS_TO_COMMUNICATE_WITH_AI_SERVER";
 
     /**
      * ModuleScreen Category: A category for screen component.
@@ -5781,7 +7329,6 @@ export abstract class IEnvironment {
     abstract getVersion(): string;
     abstract getSdkVersion(): string;
     abstract getCompatibleModuleSdkVersion(): string[];
-    abstract getModulePackageFileFilter(): string
 }
 
 /** @inheritDoc ILogger */
@@ -5899,26 +7446,33 @@ export abstract class Panel {
          */
         TOAST:                      0x1600,
         /**
-         * Panel for Safety such as Emergency Stop, Protective Stop, etc.
+         * Panel for Special popup such as Emergency Stop, Protective Stop, etc.
          *
          * @api-version 1
          * @user
          */
-        SAFETY:                     0x1700,
+        SPECIAL:                    0x1700,
+        /**
+         * Panel for System's full screen such as Factory reset, Data export / import, etc.
+         *
+         * @api-version 1
+         * @user
+         */
+        SYSTEM_FULL_SCREEN:         0x1800,
         /**
          * Panel for System Connection.
          *
          * @api-version 1
          * @user
          */
-        SYSTEM_CONNECTION:          0x1800,
+        SYSTEM_CONNECTION:          0x1900,
         /**
          * Panel for System error such as Connection Error, Version Mismatch, etc.
          *
          * @api-version 1
          * @user
          */
-        SYSTEM_ERROR:               0x1900
+        SYSTEM_ERROR:               0x1A00
     } as const;
 }
 
@@ -5937,7 +7491,7 @@ export interface OnShowListener {
      * @api-version 1
      * @user
      */
-    onShow(dialog: IDialog): void;
+    onShow(dialog: DialogInterface): void;
 }
 
 /**
@@ -5955,7 +7509,7 @@ export interface OnCancelListener {
      * @api-version 1
      * @user
      */
-    onCancel (dialog: IDialog): void;
+    onCancel (dialog: DialogInterface): void;
 }
 
 /**
@@ -5973,7 +7527,7 @@ export interface OnDismissListener {
      * @api-version 1
      * @user
      */
-    onDismiss(dialog: IDialog): void;
+    onDismiss(dialog: DialogInterface): void;
 }
 
 /**
@@ -5987,12 +7541,12 @@ export interface OnClickListener {
      * This method will be invoked when a button in the dialog is clicked.
      *
      * @param dialog the dialog that received the click
-     * @param which the button that was clicked (ex. {@link IDialog.BUTTON_POSITIVE}).
+     * @param which the button that was clicked (ex. {@link DialogInterface.BUTTON_POSITIVE}).
      *
      * @api-version 1
      * @user
      */
-    onClick(dialog: IDialog, which: number): void;
+    onClick(dialog: DialogInterface, which: number): void;
 }
 
 /**
@@ -6403,6 +7957,17 @@ export interface IDialog extends DialogInterface {
     setCancelable(cancelable: boolean): void;
 
     /**
+     * Set a background dim on the dialog.
+     * You cannot change a title view after call {@link IDialog.show}.
+     *
+     * @param enabled Set whether the background dim is enabled or not.
+     *
+     * @api-version 1
+     * @user
+     */
+    setBackgroundDim(enabled: boolean): void;
+
+    /**
      * Sets a listener to be invoked when the dialog is shown.
      *
      * @param listener The {@link OnShowListener} to use.
@@ -6441,7 +8006,8 @@ export interface IDialog extends DialogInterface {
      * - {@link Panel.TYPE.MODULE_POPUP_SCREEN}
      * - {@link Panel.TYPE.MODULE_FULL_SCREEN}
      * - {@link Panel.TYPE.SYSTEM_DIALOG}
-     * - {@link Panel.TYPE.SAFETY}
+     * - {@link Panel.TYPE.SPECIAL}
+     * - {@link Panel.TYPE.SYSTEM_FULL_SCREEN}
      * - {@link Panel.TYPE.SYSTEM_CONNECTION}
      * - {@link Panel.TYPE.SYSTEM_ERROR}
      *
@@ -6586,6 +8152,16 @@ export interface IDialogBuilder {
      * @user
      */
     setCancelable(cancelable: boolean): IDialogBuilder;
+
+    /**
+     * Set a background dim on the dialog.
+     *
+     * @param enabled Set whether the background dim is enabled or not.
+     *
+     * @api-version 1
+     * @user
+     */
+    setBackgroundDim(enabled: boolean): IDialogBuilder;
 
     /**
      * Sets a listener to be invoked when the dialog is shown.
@@ -6782,6 +8358,30 @@ export interface IBoardDialog extends DialogInterface {
     setCancelable(cancelable: boolean): void;
 
     /**
+     * Sets whether this dialog is draggable.
+     * It a dialog is set as draggable, then {@link setAnchor}, {@link setAlignment} and {@link setCancelable} will be ignored.
+     * You cannot change a dialog size after call {@link IBoardDialog.show}.
+     *
+     * @param draggable Whether the dialog is draggable.
+     * @param defaultPosition The [x, y] position at which the popup screen will be displayed. If is not set, then the dialog will be positioned at center.
+     *
+     * @api-version 1
+     * @system
+     */
+    setDraggable(draggable: boolean, defaultPosition?: { x?: number, y?: number }): void;
+
+    /**
+     * Set a background dim on the dialog.
+     * You cannot change a title view after call {@link IBoardDialog.show}.
+     *
+     * @param enabled Set whether the background dim is enabled or not.
+     *
+     * @api-version 1
+     * @user
+     */
+    setBackgroundDim(enabled: boolean): void;
+
+    /**
      * Sets a listener to be invoked when the dialog is shown.
      *
      * @param listener The {@link OnShowListener} to use.
@@ -6820,7 +8420,8 @@ export interface IBoardDialog extends DialogInterface {
      * - {@link Panel.TYPE.MODULE_POPUP_SCREEN}
      * - {@link Panel.TYPE.MODULE_FULL_SCREEN}
      * - {@link Panel.TYPE.SYSTEM_DIALOG}
-     * - {@link Panel.TYPE.SAFETY}
+     * - {@link Panel.TYPE.SPECIAL}
+     * - {@link Panel.TYPE.SYSTEM_FULL_SCREEN}
      * - {@link Panel.TYPE.SYSTEM_CONNECTION}
      * - {@link Panel.TYPE.SYSTEM_ERROR}
      *
@@ -6987,6 +8588,28 @@ export interface IBoardDialogBuilder {
     setCancelable(cancelable: boolean): IBoardDialogBuilder;
 
     /**
+     * Sets whether this dialog is draggable.
+     * It a dialog is set as draggable, then {@link setAnchor}, {@link setAlignment} and {@link setCancelable} will be ignored.
+     *
+     * @param draggable Whether the dialog is draggable.
+     * @param defaultPosition The [x, y] position at which the popup screen will be displayed. If is not set, then the dialog will be positioned at center.
+     *
+     * @api-version 1
+     * @system
+     */
+    setDraggable(draggable: boolean, defaultPosition?: { x?: number, y?: number }): IBoardDialogBuilder;
+
+    /**
+     * Set a background dim on the dialog.
+     *
+     * @param enabled Set whether the background dim is enabled or not.
+     *
+     * @api-version 1
+     * @user
+     */
+    setBackgroundDim(enabled: boolean): IBoardDialogBuilder;
+
+    /**
      * Sets a listener to be invoked when the dialog is shown.
      *
      * @param listener The {@link OnShowListener} to use.
@@ -7083,6 +8706,270 @@ export abstract class IToast {
      */
     abstract show(type: number, title: string | null, message: string, preventDuplicated?: boolean): void;
 }
+
+/**
+ * Interface used to handle a snackbar.
+ *
+ * @api-version 1
+ * @user
+ */
+export interface SnackbarInterface {
+    /**
+     * Set a title text.
+     * If user set a text as null or empty then the title view's area will be gone.
+     *
+     * @param text A text to display in the title.
+     *
+     * @api-version 1
+     * @user
+     */
+    setTitle(text: string | null): void;
+
+    /**
+     * Set a message. The message is mandatory, so it couldn't be empty.
+     *
+     * @param text A text to display in the content.
+     *
+     * @api-version 1
+     * @user
+     */
+    setMessage(text: string): void;
+
+    /**
+     * Get current progress. If progress is not set as 'determinate' then it will be return 0 always.
+     *
+     * @return A value of the current progress.
+     *
+     * @api-version 1
+     * @user
+     */
+    getProgress(): number;
+
+    /**
+     * Set a value of the progress indicator for the determinate. Value between 0 and 100.
+     * It is applied when only the snackbar has been set a progressbar as 'determinate' through {@link ISnackbarBuilder.setProgress}.
+     *
+     * @param progress A value of the progress indicator for the determinate. Value between 0 and 100.
+     *
+     * @api-version 1
+     * @user
+     */
+    setProgress(progress: number): void;
+
+    /**
+     * Dismisses the snackbar.
+     *
+     * @api-version 1
+     * @user
+     */
+    dismiss(): void;
+}
+
+/**
+ * Interface used to handle a snackbar.
+ *
+ * @api-version 1
+ * @user
+ */
+export module SnackbarInterface {
+    /**
+     * Information message type.
+     *
+     * @api-version 1
+     * @user
+     */
+    export const TYPE_INFO = 0;
+
+    /**
+     * Warning message type.
+     *
+     * @api-version 1
+     * @user
+     */
+    export const TYPE_WARN = 1;
+
+    /**
+     * Error message type.
+     *
+     * @api-version 1
+     * @user
+     */
+    export const TYPE_ERROR = 2;
+
+    /**
+     * Success message type.
+     *
+     * @api-version 1
+     * @user
+     */
+    export const TYPE_SUCCESS = 3;
+}
+
+/**
+ * Interface used to allow the creator of a snackbar to run some code when action button is clicked.
+ *
+ * @api-version 1
+ * @user
+ */
+export interface OnActionClickListener {
+    /**
+     * This method will be invoked when an action button in the snackbar is clicked.
+     *
+     * @param snackbar the snackbar that received the click
+     *
+     * @api-version 1
+     * @user
+     */
+    onClick(snackbar: SnackbarInterface): void;
+}
+
+/**
+ * Interface used to allow the creator of a snackbar to run some code when the snackbar is dismissed.
+ *
+ * @api-version 1
+ * @user
+ */
+export interface OnSnackbarDismissListener {
+    /**
+     * This method will be invoked when the snackbar is dismissed.
+     *
+     * @param snackbar the snackbar that received the event.
+     *
+     * @api-version 1
+     * @user
+     */
+    onDismiss(snackbar: SnackbarInterface): void;
+}
+
+/** @inheritDoc ISnackbar */
+// @ts-ignore
+export const Snackbar = (() => window.Snackbar)() as ISnackbar;
+/**
+ * A class to display message as Snackbar.
+ *
+ * @api-version 1
+ * @user
+ */
+export abstract class ISnackbar {
+    /**
+     * Show a snackbar.
+     *
+     * @api-version 1
+     * @user
+     */
+    abstract show(builder: ISnackbarBuilder): SnackbarInterface | null;
+}
+
+/** @inheritDoc ISnackbar */
+// @ts-ignore
+export const SnackbarBuilder = (() => window.SnackbarBuilder)() as (new <T extends ISnackbarBuilder>(context: Context) => T);
+/**
+ * A class to build a snackbar.
+ *
+ * @api-version 1
+ * @user
+ */
+export interface ISnackbarBuilder {
+    /**
+     * Set a snackbar type.
+     * Available types are:
+     * - {@link SnackbarInterface.TYPE_INFO}
+     * - {@link SnackbarInterface.TYPE_WARN}
+     * - {@link SnackbarInterface.TYPE_ERROR}
+     * - {@link SnackbarInterface.TYPE_SUCCESS}
+     *
+     * @param type A type of snackbar.
+     *
+     * @api-version 1
+     * @user
+     */
+    setType(type: number): ISnackbarBuilder;
+
+    /**
+     * Set a title text
+     *
+     * @param text A text to display in the title.
+     *
+     * @api-version 1
+     * @user
+     */
+    setTitle(text: string): ISnackbarBuilder;
+
+    /**
+     * Set a message. The message is mandatory, so it couldn't be empty.
+     *
+     * @param text A text to display in the content.
+     *
+     * @api-version 1
+     * @user
+     */
+    setMessage(text: string): ISnackbarBuilder;
+
+    /**
+     * Set an action button.
+     *
+     * @param text A text to display in the button.
+     * @param enabled True if this view is enabled, false otherwise.
+     * @param listener This method will be invoked when an action button in the snackbar is clicked.
+     *
+     * @api-version 1
+     * @user
+     */
+    setActionButton(text: string, enabled: boolean, listener: OnActionClickListener): ISnackbarBuilder;
+
+    /**
+     * Set a progressbar. If this is set, then {@link @mui/material/LinearProgress} will be shown in the snackbar.
+     *
+     * @param determinate Whether allows to enable the indeterminate mode or determinate.
+     * @param progress Default progress value. Value between 0 and 100. It is work on only determinate mode.
+     *
+     * @api-version 1
+     * @user
+     */
+    setProgress(determinate: boolean, progress: number): ISnackbarBuilder;
+
+    /**
+     * Set a close button in the snackbar.
+     * The button is shown at top right corner in the snackbar.
+     *
+     * @param enabled Set whether the close button is enabled or not.
+     *
+     * @api-version 1
+     * @user
+     */
+    setCloseButton(enabled: boolean): ISnackbarBuilder;
+
+    /**
+     * Set whether to persistently display snackbar.
+     * The Snackbar by default stays on for 3 seconds and then disappears.
+     *
+     * @param persistent Set whether to persistently display snackbar.
+     *
+     * @api-version 1
+     * @user
+     */
+    setPersistent(persistent: boolean): ISnackbarBuilder;
+
+    /**
+     * Set whether to prevent duplicated snackbar.
+     *
+     * @param preventDuplicated Ignores displaying multiple snackbars with the same 'type', 'title' and 'message'.
+     *
+     * @api-version 1
+     * @user
+     */
+    setPreventDuplicated(preventDuplicated: boolean): ISnackbarBuilder;
+
+    /**
+     * Sets a listener to be invoked when the snackbar is dismissed.
+     *
+     * @param listener The {@link OnSnackbarDismissListener} to use.
+     *
+     * @api-version 1
+     * @user
+     */
+    setOnDismissListener(listener: OnSnackbarDismissListener): ISnackbarBuilder;
+}
 // [END] UI /////////////////////////
 
 
@@ -7101,6 +8988,14 @@ export class Manifest {
      * @user
      */
     static readonly SDK_VERSION_1 = "1";
+
+    /**
+     * Dart-SDK Version 2
+     *
+     * @api-version 2
+     * @user
+     */
+    static readonly SDK_VERSION_2 = "2";
 
     /**
      * Types of user module.
@@ -7237,14 +9132,6 @@ export class Manifest {
      */
     static readonly FRAMEWORK_SUB_TYPE = {
         /**
-         * 'TCP Modbus Slave' module in Communication type module.
-         *
-         * @api-version 1
-         * @user
-         */
-        MODBUS: "TCPModbusSlave",
-
-        /**
          * 'TCP' type module in Communication type module.
          *
          * @api-version 1
@@ -7261,31 +9148,31 @@ export class Manifest {
         SERIAL: "Serial",
 
         /**
-         * 'Serial' module in Communication type module.
+         * 'Modbus' module in Communication type module.
          *
          * @api-version 1
          * @user
          */
-        FOCAS: "FOCAS",
+        MODBUS: "Modbus",
 
         /**
-         * 'Admittance' module in Control type module.
+         * 'ModbusIO' module in Communication type module.
          *
          * @api-version 1
          * @user
          */
-        ADMITTANCE: "AdmittanceControl",
+        MODBUS_IO: "ModbusIO",
 
         /**
-         * 'Impedance' module in Control type module.
+         * 'Force/Compliance' module in Control type module.
          *
          * @api-version 1
          * @user
          */
-        IMPEDANCE: "ImpedanceControl",
+        FORCE_COMPLIANCE : "Force/Compliance",
 
         /**
-         * 'Others' module in Control type module.
+         * 'Others' module.
          *
          * @api-version 1
          * @user
@@ -7429,7 +9316,7 @@ export abstract class BaseModule {
 }
 
 /**
- * An interface to interact with screen.
+ * An interface to interact with a ModuleScreen component.
  *
  * @api-version 1
  * @system
@@ -7444,6 +9331,7 @@ export interface IModuleScreenInterface {
      * @system
      */
     isScreenFocused(): boolean;
+
     /**
      * Whether the screen is visible or not.
      * In the case of a PopupScreen, it is not focused, but can be seen.
@@ -7454,6 +9342,7 @@ export interface IModuleScreenInterface {
      * @system
      */
     isScreenVisible(): boolean;
+
     /**
      * Get screen mode.
      * Available modes are:
@@ -7666,6 +9555,18 @@ export abstract class ModuleScreen extends React.Component<ModuleScreenProps, an
     };
 
     /**
+     * Called when screen's visible state has been changed.
+     *
+     * @param visible A visible state.
+     *
+     * @api-version 2
+     * @system
+     */
+    onScreenVisible(visible: boolean): void {
+        // empty
+    };
+
+    /**
      * Called when screen's screen mode state has been changed.
      *
      * @param screenMode A screen mode. It is either {@link PopupScreenMode.SINGLE} or {@link PopupScreenMode.DUAL}.
@@ -7674,6 +9575,19 @@ export abstract class ModuleScreen extends React.Component<ModuleScreenProps, an
      * @system
      */
     onScreenModeChanged(screenMode: PopupScreenMode): void {
+        // empty
+    }
+
+    /**
+     * Called when the screen has been dragged.
+     * This event only occurs if the module screen type is {@link ScreenType.POPUP_SCREEN}.
+     *
+     * @param dragEvent A {@link PopupScreenDragEvent}.
+     *
+     * @api-version 2
+     * @system
+     */
+    onScreenDragged(dragEvent: PopupScreenDragEvent): void {
         // empty
     }
 
@@ -8112,12 +10026,116 @@ export const ModulePackageInstallErrorCode = {
     ERROR_NOT_COMPATIBLE_SDK_VERSION: 0x0001_000a,
 
     /**
+     * Failed to change state of module package because the Dart-Platform does not have a control authority.
+     *
+     * @api-version 2
+     * @user
+     */
+    ERROR_NO_CONTROL_AUTHORITY: 0x0001_000b,
+
+    /**
      * An error occurred on a framework module package.
      *
      * @api-version 1
      * @user
      */
     ERROR_ON_FRAMEWORK_MODULE: 0x0001_0010,
+
+    /**
+     * Failed to change state of module package because it is measuring state.
+     *
+     * @api-version 2
+     * @user
+     */
+    ERROR_DURING_MEASURING: 0x0001_0020,
+
+    /**
+     * Failed to change state of module package because it is recovery state.
+     *
+     * @api-version 2
+     * @user
+     */
+    ERROR_DURING_RECOVERY: 0x0001_0021,
+
+    /**
+     * Failed to change state of module package because it is backdrive state.
+     *
+     * @api-version 2
+     * @user
+     */
+    ERROR_DURING_BACKDRIVE: 0x0001_0022,
+
+    /**
+     * Failed to change state of module package because it is handguiding state.
+     *
+     * @api-version 2
+     * @user
+     */
+    ERROR_DURING_HANDGUIDE: 0x0001_0023,
+
+    /**
+     * Failed to change state of module package because it is under remote control.
+     *
+     * @api-version 2
+     * @user
+     */
+    ERROR_DURING_REMOTE_CONTROL_MODE: 0x0001_0024,
+
+    /**
+     * Failed to change state of module package because data is being exported
+     *
+     * @api-version 2
+     * @user
+     */
+    ERROR_DURING_EXPORTING_DATA: 0x0001_0025,
+
+    /**
+     * Failed to change state of module package because data is being imported
+     *
+     * @api-version 2
+     * @user
+     */
+    ERROR_DURING_IMPORTING_DATA: 0x0001_0026,
+
+    /**
+     * Failed to change state of module package because update is in progress.
+     *
+     * @api-version 2
+     * @user
+     */
+    ERROR_DURING_UPDATE: 0x0001_0027,
+
+    /**
+     * Failed to change state of module package because restore is in progress.
+     *
+     * @api-version 2
+     * @user
+     */
+    ERROR_DURING_RESTORE: 0x0001_0028,
+
+    /**
+     * Failed to change state of module package because factory reset is in progress.
+     *
+     * @api-version 2
+     * @user
+     */
+    ERROR_DURING_FACTORY_RESET: 0x0001_0029,
+
+    /**
+     * Failed to change state of module package because it is under safety stop.
+     *
+     * @api-version 2
+     * @user
+     */
+     ERROR_DURING_SAFETY_STOP: 0x0001_002a,
+
+     /**
+      * Failed to change state of module package because it is under emergency stop.
+      *
+      * @api-version 2
+      * @user
+      */
+     ERROR_DURING_EMERGENCY_STOP: 0x0001_002b,
     // [END] COMMON ERRORS /////////////////////////
 
 
@@ -8140,6 +10158,14 @@ export const ModulePackageInstallErrorCode = {
      * @user
      */
     ERROR_INVALID_VERSION: 0x0100_0001,
+
+    /**
+     * Failed to update the module package because buyer account has been changed.
+     *
+     * @api-version 2
+     * @user
+     */
+    ERROR_BUYER_ACCOUNT_CHANGED: 0x0100_0002,
     // [END] UPDATE ERRORS /////////////////////////
 
 
@@ -8535,6 +10561,29 @@ export type PopupScreenData = {
 }
 
 /**
+ * The interface represents events that occur due to the user interacting with a popup screen component.
+ *
+ * @api-version 2
+ * @user
+ */
+export type PopupScreenDragEvent = {
+    /**
+     * The event's screen top coordinate.
+     *
+     * @api-version 2
+     * @user
+     */
+    readonly top: number;
+    /**
+     * The event's screen left coordinate.
+     *
+     * @api-version 2
+     * @user
+     */
+    readonly left: number;
+}
+
+/**
  * Overall information about the contents of a module package.
  * This corresponds to all the information collected from manifest.json.
  *
@@ -8686,15 +10735,6 @@ export interface IModulePackageInfo {
     readonly requiredPackageNames: string[];
 
     /**
-     * The value of executableOperationLevel component info ({@link IModuleScreenInfo}).
-     * Comes from 'executableOperationLevel' of the manifest.json.
-     *
-     * @api-version 1
-     * @user
-     */
-    readonly executableOperationLevel: string[];
-
-    /**
      * The type of the module package. Comes from 'type' of the manifest.json.
      * Available types are:
      * - {@link Manifest.USER_TYPE.HOME}
@@ -8774,15 +10814,6 @@ export interface IModulePackageInfo {
      * @user
      */
     readonly isEssentialPackage: boolean;
-
-    /**
-     * Whether the module package is dev package or not.
-     * It will be set as true if the package has been installed from Dart-IDE.
-     *
-     * @api-version 1
-     * @user
-     */
-    readonly isDevPackage: boolean;
 
     /**
      * A directory path where is installed the module package.
@@ -8975,7 +11006,14 @@ export interface IModuleComponentInfo {
  * @user
  */
 export interface IModuleScreenInfo extends IModuleComponentInfo {
-
+    /**
+     * An icon file path that represented the screen component.
+     * It must be set as a reference to image resource like as: 'assets/images/icon.png"
+     *
+     * @api-version 2
+     * @user
+     */
+    icon: string;
 }
 
 /**
@@ -9028,9 +11066,9 @@ export type IFrameworkModuleInfo = {
      * The subtype of the framework module. Comes from 'ModuleSubCategory' of the manifest.json.
      * - {@link Manifest.FRAMEWORK_SUB_TYPE.TCP}
      * - {@link Manifest.FRAMEWORK_SUB_TYPE.SERIAL}
-     * - {@link Manifest.FRAMEWORK_SUB_TYPE.FOCAS}
      * - {@link Manifest.FRAMEWORK_SUB_TYPE.MODBUS}
-     * - {@link Manifest.FRAMEWORK_SUB_TYPE.ADMITTANCE}
+     * - {@link Manifest.FRAMEWORK_SUB_TYPE.MODBUS_IO}
+     * - {@link Manifest.FRAMEWORK_SUB_TYPE.FORCE_COMPLIANCE}
      * - {@link Manifest.FRAMEWORK_SUB_TYPE.OTHERS}
      *
      * @api-version 1
@@ -9292,6 +11330,14 @@ export interface IModulePackageManager extends ISystemManager {
     readonly favoriteComponentInfos: Monitorable<{ packageName: string, componentId: string }[]>;
 
     /**
+     * {@link Monitorable} an array of target framework modules to loading automatically.
+     *
+     * @api-version 2
+     * @user
+     */
+    readonly autoLoadFrameworkModules: Monitorable<{ packageName: string, subTypes: string[] }[]>;
+
+    /**
      * Install the given module package file or data.
      * If already module package which has same package name has been installed, then the operation will be failed.
      * This operation will be failed as below situation:
@@ -9445,17 +11491,16 @@ export interface IModulePackageManager extends ISystemManager {
     /**
      * Set a staring module component.
      * When Dart-Platform booting is complete, the component registered as a starting component is automatically executed.
-     * Only components set to the Message.CATEGORY_SCREEN category can be registered as start components.
      *
      * @param packageName The package name of the desired module package.
-     * @param options optional information about the component of the starting module package. {@link Message.category} is always set as {@link Message.CATEGORY_SCREEN}.
+     * @param options optional information about the component of the starting module package.
      * @param enabled True if you want to set the module package as starting module.
      * @return Return true if the request has been operated successfully, otherwise false.
      *
      * @api-version 1
      * @system
      */
-    setStartingComponent(packageName: string, options: { action?: string, componentId?: string } | null, enabled: boolean): boolean;
+    setStartingComponent(packageName: string, options: { action?: string, category?: string, componentId?: string } | null, enabled: boolean): boolean;
 
     /**
      * Return essential module package names
@@ -9512,6 +11557,19 @@ export interface IModulePackageManager extends ISystemManager {
     unloadFrameworkModule(uniqueId: number): Promise<FrameworkModuleStatus>;
 
     /**
+     * Sets whether to load a framework package automatically.
+     *
+     * @param enabled Whether to load the {@link packageName} automatically.
+     * @param packageName A desired framework module package name to load.
+     * @param subType A desired framework module's subtype {@link Manifest.FRAMEWORK_SUB_TYPE}. If {@link subType} is null and {@link enabled} is false, all subTypes will be disabled.
+     * @return Return <Promise> Fulfills with true if the request has been operated successfully, otherwise false.
+     *
+     * @api-version 2
+     * @system
+     */
+    setAutoLoadFrameworkModuleEnabled(enabled: boolean, packageName: string, subType?: string): Promise<boolean>;
+
+    /**
      * Register a {@link FrameworkModuleStateListener} to be notified of framework module's state changes.
      *
      * @param listener The {@link FrameworkModuleStateListener} to be registered.
@@ -9519,7 +11577,7 @@ export interface IModulePackageManager extends ISystemManager {
      * @api-version 1
      * @user
      */
-    registerFrameworkModuleStateListener(listener: FrameworkModuleStateListener): void;
+    registerFrameworkModuleStateListener(listener: Partial<FrameworkModuleStateListener>): void;
 
     /**
      * Unregisters a {@link FrameworkModuleStateListener} you previously registered using {@link registerFrameworkModuleStateListener}.
@@ -9529,7 +11587,7 @@ export interface IModulePackageManager extends ISystemManager {
      * @api-version 1
      * @user
      */
-    unregisterFrameworkModuleStateListener(listener: FrameworkModuleStateListener): void;
+    unregisterFrameworkModuleStateListener(listener: Partial<FrameworkModuleStateListener>): void;
 }
 
 /**
@@ -9667,8 +11725,8 @@ export interface IModuleServiceManager extends ISystemManager {
     /**
      * Unbind from a service component.
      *
-     * @param message A {@link Message} previously supplied to {@link bindModuleService}.
-     * @param binder A {@link IModuleComponentBinder} interface previously supplied to {@link bindModuleService}.
+     * @param message A {@link Message} previously supplied to {@link IModuleServiceManager.bindModuleService}.
+     * @param binder A {@link IModuleComponentBinder} interface previously supplied to {@link IModuleServiceManager.bindModuleService}.
      * @return Return true if the request has been operated successfully, otherwise false.
      *
      * @api-version 1
@@ -9688,8 +11746,7 @@ export interface IDartStoreManager extends ISystemManager {
     /**
      * auto register serial number to Dart-Store
      *
-     * @param serialNo The Controller Serial Number.
-     * @param token when login store, received the token id.
+     * @param tokenId when login store, received the token id.
      *
      * @api-version 1
      * @system
@@ -9700,7 +11757,6 @@ export interface IDartStoreManager extends ISystemManager {
      * For changing the status of module to Activate in online or offline
      *
      * @param data The data that authentication of Active for sending store.
-     * @param serialNo The Controller Serial Number.
      * @return Return result that response from store
      *
      * @api-version 1
@@ -9712,13 +11768,45 @@ export interface IDartStoreManager extends ISystemManager {
      * For changing the status of module to Deactivate in online or offline
      *
      * @param data The data that authentication of Active for sending store.
-     * @param serialNo The Controller Serial Number.
      * @return Return result that response from store
      *
      * @api-version 1
      * @system
      */
     requestModuleDeactivation(data: StoreAuthenticationData): Promise<boolean>
+
+    /**
+     * To check Dart-Store login status
+     *
+     * @return Return Login status results
+     *
+     * @api-version 2
+     * @system
+     */
+    checkLoginStatus(): Promise<boolean>;
+
+    /**
+     * Show a dialog to log in with Dart-Store account.
+     *
+     * @param customTitle A custom title. If it is not set, then default title will be displayed.
+     * @param customMessage A custom message. If it is not set, then default message will be displayed.
+     * @return Return <Promise> Fulfills with true if user successfully log in, otherwise false.
+     *
+     * @api-version 2
+     * @system
+     */
+    showLoginStore(customTitle?: string, customMessage?: string): Promise<boolean>;
+
+    /**
+     * Export deactivate code of each module as file.
+     *
+     * @param targets Target {@link StoreAuthenticationData} to export.
+     * @return Return <Promise> Fulfills with true if the request has been operated successfully, otherwise {@link FilePickerErrorCode}.
+     *
+     * @api-version 2
+     * @system
+     */
+    exportDeactivateCodeFiles(targets: StoreAuthenticationData[]): Promise<{ result: boolean, errorCode?: FilePickerErrorCode }>;
 }
 // [END] Module Control System API /////////////////////////
 
@@ -9782,41 +11870,13 @@ export type LogAlarm = {
 };
 
 /**
- * INetworkManager checks the state of being able to connect to an external network.
- *
- * @api-version 1
- * @user
- */
-export interface INetworkManager extends ISystemManager {
-
-    /**
-     * Check Network Connection
-     *
-     * @return  Result: If the network is available, return true, or false.
-     *
-     * @api-version 1
-     * @user
-     */
-    isNetworkAvailable(): Promise<boolean>;
-
-    /**
-     * Check URL Reachable
-     *
-     * @return  Result: If the URL is reachable, return true, or false.
-     *
-     * @api-version 1
-     * @user
-     */
-     isReachableURL(url:string): Promise<boolean>;
-}
-/**
  * IMotionManager have motion api in Robot.
  * For example, servoOn(), systemShutDown(), reboot() etc...
  *
  * @api-version 1
  * @user
  */
-export interface IMotionManager extends ISystemManager {
+ export interface IMotionManager extends ISystemManager {
     /**
      * {@link Monitorable} Speed mode (0: normal, 1: reduced)
      *
@@ -9837,7 +11897,7 @@ export interface IMotionManager extends ISystemManager {
      * @api-version 1
      * @user
      */
-    jogControl(type: RobotSpace, axis: number, moveReference: number, velocity: number): Promise<boolean>;
+    jogControl(type: RobotSpace, axis: JogAxis, moveReference: number, velocity: number): Promise<boolean>;
 
     /**
      * Jog Motion Stop
@@ -9864,9 +11924,9 @@ export interface IMotionManager extends ISystemManager {
      * Moves the robot from the current joint position to the targeted joint position.
      *
      * @param targetPose sets six positions(j1,j2,j3,j4,j5,j6)
-     * @param targetVelocity sets velocity
-     * @param targetAcceleration sets acceleration
-     * @param targetTime sets arrival time [sec]
+     * @param targetVelocity sets velocity. This value can be set for each joint or collectively.
+     * @param targetAcceleration sets acceleration. This value can be set for each joint or collectively.
+     * @param targetTime sets arrival time [sec]. if you want to ignore this parameter, input the number lower then zero.
      * @param moveMode sets move mode. Enumerated constants which means the definition reference about the position to be moved when performing motion control, based on the work zone at the robot controller.
      * - 0: Absolute
      * - 1: Relative
@@ -9887,15 +11947,15 @@ export interface IMotionManager extends ISystemManager {
      * @api-version 1
      * @user
      */
-    moveJoint(targetPose: SixNumArray, targetVelocity: number, targetAcceleration: number, targetTime: number, moveMode: number, blendingRadius: number, blendingType: number): Promise<boolean>;
+    moveJoint(targetPose: SixNumArray, targetVelocity: number|SixNumArray, targetAcceleration: number|SixNumArray, targetTime: number, moveMode: number, blendingRadius: number, blendingType: number): Promise<boolean>;
 
     /**
      * (movel) linear moving function
      *
-     * @param targetPose set six positions(x,y,z,a,b,c)
+     * @param targetPose set six positions(x,y,z,rz,ry,rx)
      * @param targetVelocity set two velocity (Linear velocity, Rotational velocity)
      * @param targetAcceleration set two acceleration (Linear acceleration, Rotational acceleration)
-     * @param targetTime sets arrival time [sec]
+     * @param targetTime sets arrival time [sec]. if you want to ignore this parameter, input the number lower then zero.
      * @param moveMode sets move mode.
      * Enumerated constant which means the definition reference about the position to be moved when performing motion control based on the work zone at the robot controller.
      * - 0: Absolute
@@ -9916,20 +11976,52 @@ export interface IMotionManager extends ISystemManager {
      *
      * @return Promise<boolean>
      *
-     * @api-verion 1
+     * @api-version 1
      * @user
      */
     moveLinear(targetPose: SixNumArray, targetVelocity: TwoNumArray, targetAcceleration: TwoNumArray, targetTime: number, moveMode: number, moveReference: number, blendingRadius: number, blendingType: number): Promise<boolean>;
 
     /**
+     * (movel) linear moving function
+     *
+     * @param targetPose set {@link ManipulatorPose}
+     * @param targetVelocity set two velocity (Linear velocity, Rotational velocity)
+     * @param targetAcceleration set two acceleration (Linear acceleration, Rotational acceleration)
+     * @param targetTime sets arrival time [sec]. if you want to ignore this parameter, input the number lower then zero.
+     * @param moveMode sets move mode.
+     * Enumerated constant which means the definition reference about the position to be moved when performing motion control based on the work zone at the robot controller.
+     * - 0: Absolute
+     * - 1: Relative
+     * - `default` 0
+     * @param moveReference sets coordinate.
+     * Enumerated constants which means the definition standard about the position to go when the robot controller performs the motion control based on the work space.
+     * - 0: Robot base
+     * - 1: Robot TCP
+     * - `default` 0
+     * @param blendingRadius set blend radius
+     * - `default` 0
+     * @param blendingType set blend type
+     * Enumerated constants which means blending speed type of each stopover point when motion control is performed at the robot controller.
+     * - 0: Overlays the speed of preceding motion and following motion
+     * - 1: Overrides the speed of preceding motion into the speed of following motion
+     * - `default` 0
+     *
+     * @return Promise<boolean>
+     *
+     * @api-version 2
+     * @user
+     */
+    moveLinear(targetPose: ManipulatorPose, targetVelocity: TwoNumArray, targetAcceleration: TwoNumArray, targetTime: number, moveMode: number, moveReference: number, blendingRadius: number, blendingType: number): Promise<boolean>;
+
+    /**
      * (movejx) Joint moving function from Task Pose.
      * Moves the robot to the target position within the joint area with robot controller. The target position moves same as the movel as it is the location within the workspace. However, because the robot motion acts inside the joint area, the straight path to the target position cannot be guaranteed. Additionally, one of the 8 robot configurations that responds to one work space coordinate, must be assigned to the solutionSpace (solution space).
      *
-     * @param targetPose sets six positions(x,y,z,a,b,c)
+     * @param targetPose sets six positions(x,y,z,rz,ry,rx)
      * @param solutionSpace sets solution space (0 ~ 7)
-     * @param targetVelocity sets two velocity (Linear, Rotational)
-     * @param targetAcceleration sets two acceleration (Linear, Rotational)
-     * @param targetTime sets arrival time [sec]
+     * @param targetVelocity sets velocity. This value can be set for each joint or collectively.
+     * @param targetAcceleration sets acceleration. This value can be set for each joint or collectively.
+     * @param targetTime sets arrival time [sec]. if you want to ignore this parameter, input the number lower then zero.
      * @param moveMode sets move mode.
      * Enumerated constant which means the definition reference about the position to be moved when performing motion control based on the work zone at the robot controller.
      * - 0: Absolute
@@ -9955,10 +12047,48 @@ export interface IMotionManager extends ISystemManager {
      * - About the path of blending status according to the option blendingType, targetVelocity, and targetAcceleration, refer to the movej () motion description.
      * - When inputting relative motion (moveMode= 1), it cannot be blended to the processing motion, so it is recommended to blend by using amovej () or amovel.
      *
-     * @api-verion 1
+     * @api-version 1
      * @user
      */
-    moveJointPosx(targetPose: SixNumArray, solutionSpace: number, targetVelocity: number, targetAcceleration: number, targetTime: number, moveMode: number, moveReference: number, blendingRadius: number, blendingType: number): Promise<boolean>;
+    moveJointPosx(targetPose: SixNumArray, solutionSpace: number, targetVelocity: number|SixNumArray, targetAcceleration: number|SixNumArray, targetTime: number, moveMode: number, moveReference: number, blendingRadius: number, blendingType: number): Promise<boolean>;
+
+    /**
+     * (movejx) Joint moving function from Task Pose.
+     * Moves the robot to the target position within the joint area with robot controller. The target position moves same as the movel as it is the location within the workspace. However, because the robot motion acts inside the joint area, the straight path to the target position cannot be guaranteed. Additionally, one of the 8 robot configurations that responds to one work space coordinate, must be assigned to the solutionSpace (solution space).
+     *
+     * @param targetPose sets {@link Manipulator}
+     * @param targetVelocity sets velocity. This value can be set for each joint or collectively.
+     * @param targetAcceleration sets acceleration. This value can be set for each joint or collectively.
+     * @param targetTime sets arrival time [sec]. if you want to ignore this parameter, input the number lower then zero.
+     * @param moveMode sets move mode.
+     * Enumerated constant which means the definition reference about the position to be moved when performing motion control based on the work zone at the robot controller.
+     * - 0: Absolute
+     * - 1: Relative
+     * - `default` 0
+     * @param moveReference sets coordinate.
+     * Enumerated constants which means the definition standard about the position to go when the robot controller performs the motion control based on the work space.
+     * - 0: Robot base
+     * - 1: Robot TCP
+     * - `default` 0
+     * @param blendingRadius sets blend radius
+     * - `default` 0
+     * @param blendingType sets blend type
+     * Enumerated constants which means blending speed type of each stopover point when motion control is performed at the robot controller.
+     * - 0: Overlays the speed of preceding motion and following motion
+     * - 1: Overrides the speed of preceding motion into the speed of following motion
+     * - `default` 0
+     *
+     * @return Promise<boolean>
+     *
+     * **Remarks**
+     * - When assigning targetTime, targetVelocity and targetAcceleration are ignored and handled based on the targetTime.
+     * - About the path of blending status according to the option blendingType, targetVelocity, and targetAcceleration, refer to the movej () motion description.
+     * - When inputting relative motion (moveMode= 1), it cannot be blended to the processing motion, so it is recommended to blend by using amovej () or amovel.
+     *
+     * @api-version 2
+     * @user
+     */
+    moveJointPosx(targetPose: ManipulatorPose, targetVelocity: number|SixNumArray, targetAcceleration: number|SixNumArray, targetTime: number, moveMode: number, moveReference: number, blendingRadius: number, blendingType: number): Promise<boolean>;
 
     /**
      * (servoj) Joint moving function.
@@ -9968,7 +12098,7 @@ export interface IMotionManager extends ISystemManager {
      * @param targetPose sets six positions(j1,j2,j3,j4,j5,j6)
      * @param targetVelocity sets six velocities(j1,j2,j3,j4,j5,j6)
      * @param targetAcceleration sets six accelerations(j1,j2,j3,j4,j5,j6)
-     * @param targetTime sets arrival time [sec]
+     * @param targetTime sets arrival time [sec]. if you want to ignore this parameter, input the number lower then zero.
      *
      * @return Promise<boolean>
      *
@@ -9982,13 +12112,13 @@ export interface IMotionManager extends ISystemManager {
 
     /**
      * (servol) linear moving function.
-     * Moves the robot from the current joint position to the targeted joint position.
+     * Moves the robot from the current task position to the targeted task position.
      * Generates the path of moving to corresponding task position even if the target changes every moment. Unlike movel, it is in order to instantly respond to outer environment change during the movement of robot from client to the robot controller.
      *
-     * @param targetPose Six Task Space information (unit: mm/deg)
+     * @param targetPose Six Task Space information (unit: mm or deg)
      * @param targetVelocity Two speed information: Maximum Translation speed (mm/sec), Maximum Rotation speed (unit: deg/sec2  )
      * @param targetAcceleration Acceleration information -Two acceleration information: Maximum Translation acceleration, and Maximum Rotation acceleration(unit: deg/sec2  )
-     * @param targetTime sets arrival time [sec]
+     * @param targetTime sets arrival time [sec]. if you want to ignore this parameter, input the number lower then zero.
      *
      * @return Promise<boolean>
      *
@@ -10001,16 +12131,36 @@ export interface IMotionManager extends ISystemManager {
     moveServoLinear(targetPose: SixNumArray, targetVelocity: TwoNumArray, targetAcceleration: TwoNumArray, targetTime: number): Promise<boolean>;
 
     /**
+     * (servol) linear moving function.
+     * Moves the robot from the current task position to the targeted task position.
+     * Generates the path of moving to corresponding task position even if the target changes every moment. Unlike movel, it is in order to instantly respond to outer environment change during the movement of robot from client to the robot controller.
+     *
+     * @param targetPose {@link ManipulatorPose}
+     * @param targetVelocity Two speed information: Maximum Translation speed (mm/sec), Maximum Rotation speed (unit: deg/sec2  )
+     * @param targetAcceleration Acceleration information -Two acceleration information: Maximum Translation acceleration, and Maximum Rotation acceleration(unit: deg/sec2  )
+     * @param targetTime sets arrival time [sec]. if you want to ignore this parameter, input the number lower then zero.
+     *
+     * @return Promise<boolean>
+     *
+     * **Remarks**
+     * - When assigning targetTime, targetVelocity and targetAcceleration are ignored and instead handled based on the targetTime.
+     *
+     * @api-version 2
+     * @user
+     */
+    moveServoLinear(targetPose: ManipulatorPose, targetVelocity: TwoNumArray, targetAcceleration: TwoNumArray, targetTime: number): Promise<boolean>;
+
+    /**
      * (parallel_axis) This function matches the normal vector of the plane consists of Points.
      *
-     * @param targetPose1 set point(x,y,z,a,b,c)
-     * @param targetPose2 set point(x,y,z,a,b,c)
-     * @param targetPose3 set point(x,y,z,a,b,c)
+     * @param targetPose1 set point(x,y,z,rz,ry,rx)
+     * @param targetPose2 set point(x,y,z,rz,ry,rx)
+     * @param targetPose3 set point(x,y,z,rz,ry,rx)
      * @param taskAxis Refer to the Definition of Constant and Enumeration Type
      * @param sourceReference Refer to the Definition of Constant and Enumeration Type
      * @return Promise<boolean>
      *
-     * @api-verion 1
+     * @api-version 1
      * @user
      */
     moveParallelToAxis(targetPose1: SixNumArray, targetPose2: SixNumArray, targetPose3: SixNumArray, taskAxis: TaskAxis, sourceReference: CoordinateSystem): Promise<boolean>;
@@ -10018,15 +12168,15 @@ export interface IMotionManager extends ISystemManager {
     /**
      * (align_axis) This function matches the normal vector of the plane consists of Points.
      *
-     * @param targetPose1 set point(x,y,z,a,b,c)
-     * @param targetPose2 set point(x,y,z,a,b,c)
-     * @param targetPose3 set point(x,y,z,a,b,c)
+     * @param targetPose1 set point(x,y,z,rz,ry,rx)
+     * @param targetPose2 set point(x,y,z,rz,ry,rx)
+     * @param targetPose3 set point(x,y,z,rz,ry,rx)
      * @param sourceVector set normal vector
      * @param taskAxis Refer to the Definition of Constant and Enumeration Type
      * @param eTargetRef Refer to the Definition of Constant and Enumeration Type
      * @return Promise<boolean>
      *
-     * @api-verion 1
+     * @api-version 1
      * @user
      */
     moveToAxisWithAlign(targetPose1: SixNumArray, targetPose2: SixNumArray, targetPose3: SixNumArray, sourceVector: ThreeNumArray, taskAxis: TaskAxis, targetReference: CoordinateSystem): Promise<boolean>;
@@ -10044,6 +12194,7 @@ export interface IMotionManager extends ISystemManager {
 
     /**
      * homing motion
+     * If getUserHome is false, use HWHome, otherwise use UserHome.
      *
      * @return Promise<boolean>
      *
@@ -10051,6 +12202,27 @@ export interface IMotionManager extends ISystemManager {
      * @user
      */
     moveToHome(): Promise<boolean>;
+
+     /**
+     * homing motion stop
+     * If getUserHome is false, use HWHome, otherwise use UserHome.
+     *
+     * @return Promise<boolean>
+     *
+     * @api-version 1
+     * @user
+     */
+    moveToHomeStop(): Promise<boolean>;
+
+    /**
+     * homing motion
+     *
+     * @return Promise<boolean>
+     *
+     * @api-version 1
+     * @user
+     */
+    moveToHWHome(): Promise<boolean>;
 
     /**
      * homing motion stop
@@ -10060,7 +12232,7 @@ export interface IMotionManager extends ISystemManager {
      * @api-version 1
      * @user
      */
-    moveToHomeStop(): Promise<boolean>;
+    moveToHWHomeStop(): Promise<boolean>;
 
     /**
      * user homing motion
@@ -10104,12 +12276,34 @@ export interface IMotionManager extends ISystemManager {
     getUserHomePose(): Promise<SixNumArray>;
 
     /**
+     * whether to use user home.
+     *
+     * @param use use moveToUserHome(true), use moveToHWHome(false)
+     * @return Promise<boolean>
+     *
+     * @api-version 1
+     * @user
+     */
+    setUseUserHome(use: boolean): Promise<boolean>;
+
+    /**
+     * whether to use user home.
+     *
+     * @return Promise<boolean> moveToUserHome(true), use moveToHWHome(false)
+     *
+     * @api-version 1
+     * @user
+     */
+    getUseUserHome(): boolean;
+
+    /**
      * Hold to run
      *
      * @return Promise<boolean>
      *
      * @api-version 1
      * @user
+     * @deprecated This API no longer works and there is no need to use it.
      */
     holdToRun(): Promise<boolean>;
 
@@ -10126,7 +12320,7 @@ export interface IMotionManager extends ISystemManager {
      * @api-version 1
      * @user
      */
-    jogControlH2R(type: RobotSpace, axis: number, moveReference: number, velocity: number): Promise<boolean>;
+    jogControlH2R(type: RobotSpace, axis: JogAxis, moveReference: number, velocity: number): Promise<boolean>;
 
     /**
      * Hold to run
@@ -10142,6 +12336,7 @@ export interface IMotionManager extends ISystemManager {
     /**
      * Hold to run
      * homing motion
+     *  If getUserHome is false, go to HWHome, otherwise go to UserHome.
      *
      * @return Promise<boolean>
      *
@@ -10149,6 +12344,29 @@ export interface IMotionManager extends ISystemManager {
      * @user
      */
     moveToHomeH2R(): Promise<boolean>;
+
+     /**
+     * Hold to run
+     * homing motion stop
+     *  If getUserHome is false, use HWHome, otherwise use UserHome.
+     *
+     * @return Promise<boolean>
+     *
+     * @api-version 1
+     * @user
+     */
+    moveToHomeStopH2R(): Promise<boolean>;
+
+    /**
+     * Hold to run
+     * homing motion
+     *
+     * @return Promise<boolean>
+     *
+     * @api-version 1
+     * @user
+     */
+    moveToHWHomeH2R(): Promise<boolean>;
 
     /**
      * Hold to run
@@ -10159,7 +12377,7 @@ export interface IMotionManager extends ISystemManager {
      * @api-version 1
      * @user
      */
-    moveToHomeStopH2R(): Promise<boolean>;
+    moveToHWHomeStopH2R(): Promise<boolean>;
 
     /**
      * Hold to run
@@ -10185,74 +12403,194 @@ export interface IMotionManager extends ISystemManager {
 
     /**
      * Hold to run
-     * (movej) Joint moving function
+     * (movej) Joint moving function.
+     * Moves the robot from the current joint position to the targeted joint position.
      *
-     * @param targetPose set six positions(j1,j2,j3,j4,j5,j6)
-     * @param targetVelocity set velocity
-     * @param targetAcceleration set acceleration
-     * @param targetTime set time
-     * @param moveMode set move mode
-     * @param blendingRadius  set blend radius
-     * @param blendingType set blend type
+     * @param targetPose sets six positions(j1,j2,j3,j4,j5,j6)
+     * @param targetVelocity sets velocity. This value can be set for each joint or collectively.
+     * @param targetAcceleration sets acceleration. This value can be set for each joint or collectively.
+     * @param targetTime sets arrival time [sec]. if you want to ignore this parameter, input the number lower then zero.
+     * @param moveMode sets move mode. Enumerated constants which means the definition reference about the position to be moved when performing motion control, based on the work zone at the robot controller.
+     * - 0: Absolute
+     * - 1: Relative
+     * - `default` 0
+     * @param blendingRadius  sets blend radius
+     * - `default` 0
+     * @param blendingType sets blend type. enumerated type which means blending speed type of each stop over when performing motion control at the robot controller.
+     * - 0: Overlays the speed of preceding motion and following motion
+     * - 1: Overrides the speed of preceding motion into the speed of following motion
+     * - `default` 0
+     *
      * @return Promise<boolean>
+     *
+     * **Remarks**
+     * - When assigning targetTime, targetVelocity and targetAcceleration are ignored and instead handled based on the targetTime.
+     * - In case the following motion is blended with the condition of which blendingType is 0 and blendingRadius is bigger than 0, or in case the remaining motion time which is decided by the remaining distance speed and acceleration of preceding motion is longer than the motion time of following motion, the preceding motion will be terminated after the following motion is terminated.
+     *
      *
      * @api-version 1
      * @user
      */
-    moveJointH2R(targetPose: SixNumArray, targetVelocity: number, targetAcceleration: number, targetTime: number, moveMode: number, blendingRadius: number, blendingType: number): Promise<boolean>;
+    moveJointH2R(targetPose: SixNumArray, targetVelocity: number|SixNumArray, targetAcceleration: number|SixNumArray, targetTime: number, moveMode: number, blendingRadius: number, blendingType: number): Promise<boolean>;
 
     /**
      * Hold to run
      * (movel) linear moving function
      *
-     * @param targetPose set six positions(x,y,z,a,b,c)
-     * @param targetVelocity set two velocity (Linear, Rotational)
-     * @param targetAcceleration set two acceleration (Linear, Rotational)
-     * @param targetTime set time
-     * @param moveMode set move mode
-     * @param moveReference set coordinate
+     * @param targetPose sets six positions(x,y,z,rz,ry,rx)
+     * @param targetVelocity set two velocity (Linear velocity, Rotational velocity)
+     * @param targetAcceleration set two acceleration (Linear acceleration, Rotational acceleration)
+     * @param targetTime sets arrival time [sec]. if you want to ignore this parameter, input the number lower then zero.
+     * @param moveMode sets move mode.
+     * Enumerated constant which means the definition reference about the position to be moved when performing motion control based on the work zone at the robot controller.
+     * - 0: Absolute
+     * - 1: Relative
+     * - `default` 0
+     * @param moveReference sets coordinate.
+     * Enumerated constants which means the definition standard about the position to go when the robot controller performs the motion control based on the work space.
+     * - 0: Robot base
+     * - 1: Robot TCP
+     * - `default` 0
      * @param blendingRadius set blend radius
+     * - `default` 0
      * @param blendingType set blend type
+     * Enumerated constants which means blending speed type of each stopover point when motion control is performed at the robot controller.
+     * - 0: Overlays the speed of preceding motion and following motion
+     * - 1: Overrides the speed of preceding motion into the speed of following motion
+     * - `default` 0
+     *
      * @return Promise<boolean>
      *
-     * @api-verion 1
+     * @api-version 1
      * @user
      */
     moveLinearH2R(targetPose: SixNumArray, targetVelocity: TwoNumArray, targetAcceleration: TwoNumArray, targetTime: number, moveMode: number, moveReference: number, blendingRadius: number, blendingType: number): Promise<boolean>;
 
     /**
      * Hold to run
-     * (movejx) Joint moving function from Task Pose
+     * (movel) linear moving function
      *
-     * @param targetPose set six positions(x,y,z,a,b,c)
-     * @param solutionSpace set solution space (0 ~ 7)
-     * @param targetVelocity set two velocity (Linear, Rotational)
-     * @param targetAcceleration set two acceleration (Linear, Rotational)
-     * @param targetTime set time
-     * @param moveMode set move mode
-     * @param moveReference set coordinate
+     * @param targetPose {@link ManipulatorPose}
+     * @param targetVelocity set two velocity (Linear velocity, Rotational velocity)
+     * @param targetAcceleration set two acceleration (Linear acceleration, Rotational acceleration)
+     * @param targetTime sets arrival time [sec]. if you want to ignore this parameter, input the number lower then zero.
+     * @param moveMode sets move mode.
+     * Enumerated constant which means the definition reference about the position to be moved when performing motion control based on the work zone at the robot controller.
+     * - 0: Absolute
+     * - 1: Relative
+     * - `default` 0
+     * @param moveReference sets coordinate.
+     * Enumerated constants which means the definition standard about the position to go when the robot controller performs the motion control based on the work space.
+     * - 0: Robot base
+     * - 1: Robot TCP
+     * - `default` 0
      * @param blendingRadius set blend radius
+     * - `default` 0
      * @param blendingType set blend type
+     * Enumerated constants which means blending speed type of each stopover point when motion control is performed at the robot controller.
+     * - 0: Overlays the speed of preceding motion and following motion
+     * - 1: Overrides the speed of preceding motion into the speed of following motion
+     * - `default` 0
+     *
      * @return Promise<boolean>
      *
-     * @api-verion 1
+     * @api-version 2
      * @user
      */
-    moveJointPosxH2R(targetPose: SixNumArray, solutionSpace: number, targetVelocity: number, targetAcceleration: number, targetTime: number, moveMode: number, moveReference: number, blendingRadius: number, blendingType: number): Promise<boolean>;
+    moveLinearH2R(targetPose: ManipulatorPose, targetVelocity: TwoNumArray, targetAcceleration: TwoNumArray, targetTime: number, moveMode: number, moveReference: number, blendingRadius: number, blendingType: number): Promise<boolean>;
+
+    /**
+     * Hold to run
+     * (movejx) Joint moving function from Task Pose.
+     * Moves the robot to the target position within the joint area with robot controller. The target position moves same as the movel as it is the location within the workspace. However, because the robot motion acts inside the joint area, the straight path to the target position cannot be guaranteed. Additionally, one of the 8 robot configurations that responds to one work space coordinate, must be assigned to the solutionSpace (solution space).
+     *
+     * @param targetPose sets six positions(x,y,z,rz,ry,rx)
+     * @param solutionSpace sets solution space (0 ~ 7)
+     * @param targetVelocity sets velocity .This value can be set for each joint or collectively.
+     * @param targetAcceleration sets acceleration. This value can be set for each joint or collectively.
+     * @param targetTime sets arrival time [sec]. if you want to ignore this parameter, input the number lower then zero.
+     * @param moveMode sets move mode.
+     * Enumerated constant which means the definition reference about the position to be moved when performing motion control based on the work zone at the robot controller.
+     * - 0: Absolute
+     * - 1: Relative
+     * - `default` 0
+     * @param moveReference sets coordinate.
+     * Enumerated constants which means the definition standard about the position to go when the robot controller performs the motion control based on the work space.
+     * - 0: Robot base
+     * - 1: Robot TCP
+     * - `default` 0
+     * @param blendingRadius sets blend radius
+     * - `default` 0
+     * @param blendingType sets blend type
+     * Enumerated constants which means blending speed type of each stopover point when motion control is performed at the robot controller.
+     * - 0: Overlays the speed of preceding motion and following motion
+     * - 1: Overrides the speed of preceding motion into the speed of following motion
+     * - `default` 0
+     *
+     * @return Promise<boolean>
+     *
+     * **Remarks**
+     * - When assigning targetTime, targetVelocity and targetAcceleration are ignored and handled based on the targetTime.
+     * - About the path of blending status according to the option blendingType, targetVelocity, and targetAcceleration, refer to the movej () motion description.
+     * - When inputting relative motion (moveMode= 1), it cannot be blended to the processing motion, so it is recommended to blend by using amovej () or amovel.
+     *
+     * @api-version 1
+     * @user
+     */
+    moveJointPosxH2R(targetPose: SixNumArray, solutionSpace: number, targetVelocity: number|SixNumArray, targetAcceleration: number|SixNumArray, targetTime: number, moveMode: number, moveReference: number, blendingRadius: number, blendingType: number): Promise<boolean>;
+
+    /**
+     * Hold to run
+     * (movejx) Joint moving function from Task Pose.
+     * Moves the robot to the target position within the joint area with robot controller. The target position moves same as the movel as it is the location within the workspace. However, because the robot motion acts inside the joint area, the straight path to the target position cannot be guaranteed. Additionally, one of the 8 robot configurations that responds to one work space coordinate, must be assigned to the solutionSpace (solution space).
+     *
+     * @param targetPose sets {@link Manipulator}
+     * @param targetVelocity sets velocity .This value can be set for each joint or collectively.
+     * @param targetAcceleration sets acceleration. This value can be set for each joint or collectively.
+     * @param targetTime sets arrival time [sec]. if you want to ignore this parameter, input the number lower then zero.
+     * @param moveMode sets move mode.
+     * Enumerated constant which means the definition reference about the position to be moved when performing motion control based on the work zone at the robot controller.
+     * - 0: Absolute
+     * - 1: Relative
+     * - `default` 0
+     * @param moveReference sets coordinate.
+     * Enumerated constants which means the definition standard about the position to go when the robot controller performs the motion control based on the work space.
+     * - 0: Robot base
+     * - 1: Robot TCP
+     * - `default` 0
+     * @param blendingRadius sets blend radius
+     * - `default` 0
+     * @param blendingType sets blend type
+     * Enumerated constants which means blending speed type of each stopover point when motion control is performed at the robot controller.
+     * - 0: Overlays the speed of preceding motion and following motion
+     * - 1: Overrides the speed of preceding motion into the speed of following motion
+     * - `default` 0
+     *
+     * @return Promise<boolean>
+     *
+     * **Remarks**
+     * - When assigning targetTime, targetVelocity and targetAcceleration are ignored and handled based on the targetTime.
+     * - About the path of blending status according to the option blendingType, targetVelocity, and targetAcceleration, refer to the movej () motion description.
+     * - When inputting relative motion (moveMode= 1), it cannot be blended to the processing motion, so it is recommended to blend by using amovej () or amovel.
+     *
+     * @api-version 2
+     * @user
+     */
+    moveJointPosxH2R(targetPose: ManipulatorPose, targetVelocity: number|SixNumArray, targetAcceleration: number|SixNumArray, targetTime: number, moveMode: number, moveReference: number, blendingRadius: number, blendingType: number): Promise<boolean>;
 
     /**
      * Hold to run
      * (align_axis) This function matches the normal vector of the plane consists of Points.
      *
-     * @param targetPose1 set point(x,y,z,a,b,c)
-     * @param targetPose2 set point(x,y,z,a,b,c)
-     * @param targetPose3 set point(x,y,z,a,b,c)
+     * @param targetPose1 set point(x,y,z,rz,ry,rx)
+     * @param targetPose2 set point(x,y,z,rz,ry,rx)
+     * @param targetPose3 set point(x,y,z,rz,ry,rx)
      * @param sourceVector set normal vector
      * @param taskAxis Refer to the Definition of Constant and Enumeration Type
      * @param eTargetRef Refer to the Definition of Constant and Enumeration Type
      * @return Promise<boolean>
      *
-     * @api-verion 1
+     * @api-version 1
      * @user
      */
     moveToAxisWithAlignH2R(targetPose1: SixNumArray, targetPose2: SixNumArray, targetPose3: SixNumArray, sourceVector: ThreeNumArray, taskAxis: TaskAxis, targetReference: CoordinateSystem): Promise<boolean>;
@@ -10261,14 +12599,14 @@ export interface IMotionManager extends ISystemManager {
      * Hold to run
      * (parallel_axis) This function matches the normal vector of the plane consists of Points.
      *
-     * @param targetPose1 set point(x,y,z,a,b,c)
-     * @param targetPose2 set point(x,y,z,a,b,c)
-     * @param targetPose3 set point(x,y,z,a,b,c)
+     * @param targetPose1 set point(x,y,z,rz,ry,rx)
+     * @param targetPose2 set point(x,y,z,rz,ry,rx)
+     * @param targetPose3 set point(x,y,z,rz,ry,rx)
      * @param taskAxis Refer to the Definition of Constant and Enumeration Type
      * @param sourceReference Refer to the Definition of Constant and Enumeration Type
      * @return Promise<boolean>
      *
-     * @api-verion 1
+     * @api-version 1
      * @user
      */
     moveParallelToAxisH2R(targetPose1: SixNumArray, targetPose2: SixNumArray, targetPose3: SixNumArray, taskAxis: TaskAxis, sourceReference: CoordinateSystem): Promise<boolean>;
@@ -10282,7 +12620,7 @@ export interface IMotionManager extends ISystemManager {
      * @param targetPose sets six positions(j1,j2,j3,j4,j5,j6)
      * @param targetVelocity sets six velocities(j1,j2,j3,j4,j5,j6)
      * @param targetAcceleration sets six accelerations(j1,j2,j3,j4,j5,j6)
-     * @param targetTime sets arrival time [sec]
+     * @param targetTime sets arrival time [sec]. if you want to ignore this parameter, input the number lower then zero.
      *
      * @return Promise<boolean>
      *
@@ -10294,26 +12632,47 @@ export interface IMotionManager extends ISystemManager {
     */
     moveServoJointH2R(targetPose: SixNumArray, targetVelocity: SixNumArray, targetAcceleration: SixNumArray, targetTime: number): Promise<boolean>;
 
-     /**
-      * Hold to run
-      * (servol) linear moving function.
-      * Moves the robot from the current joint position to the targeted joint position.
-      * Generates the path of moving to corresponding task position even if the target changes every moment. Unlike movel, it is in order to instantly respond to outer environment change during the movement of robot from client to the robot controller.
-      *
-      * @param targetPose Six Task Space information (unit: mm/deg)
-      * @param targetVelocity Two speed information: Maximum Translation speed (mm/sec), Maximum Rotation speed (unit: deg/sec2  )
-      * @param targetAcceleration Acceleration information -Two acceleration information: Maximum Translation acceleration, and Maximum Rotation acceleration(unit: deg/sec2  )
-      * @param targetTime sets arrival time [sec]
-      *
-      * @return Promise<boolean>
-      *
-      * **Remarks**
-      * - When assigning targetTime, targetVelocity and targetAcceleration are ignored and instead handled based on the targetTime.
-      *
-      * @api-version 1
-      * @user
-     */
+    /**
+     * Hold to run
+     * (servol) linear moving function.
+     * Moves the robot from the current task position to the targeted task position.
+     * Generates the path of moving to corresponding task position even if the target changes every moment. Unlike movel, it is in order to instantly respond to outer environment change during the movement of robot from client to the robot controller.
+     *
+     * @param targetPose Six Task Space information (unit: mm/deg)
+     * @param targetVelocity Two speed information: Maximum Translation speed (mm/sec), Maximum Rotation speed (unit: deg/sec2  )
+     * @param targetAcceleration Acceleration information -Two acceleration information: Maximum Translation acceleration, and Maximum Rotation acceleration(unit: deg/sec2  )
+     * @param targetTime sets arrival time [sec]. if you want to ignore this parameter, input the number lower then zero.
+     *
+     * @return Promise<boolean>
+     *
+     * **Remarks**
+     * - When assigning targetTime, targetVelocity and targetAcceleration are ignored and instead handled based on the targetTime.
+     *
+     * @api-version 1
+     * @user
+    */
     moveServoLinearH2R(targetPose: SixNumArray, targetVelocity: TwoNumArray, targetAcceleration: TwoNumArray, targetTime: number): Promise<boolean>;
+
+    /**
+     * Hold to run
+     * (servol) linear moving function.
+     * Moves the robot from the current task position to the targeted task position.
+     * Generates the path of moving to corresponding task position even if the target changes every moment. Unlike movel, it is in order to instantly respond to outer environment change during the movement of robot from client to the robot controller.
+     *
+     * @param targetPose {@link ManipulatorPose}
+     * @param targetVelocity Two speed information: Maximum Translation speed (mm/sec), Maximum Rotation speed (unit: deg/sec2  )
+     * @param targetAcceleration Acceleration information -Two acceleration information: Maximum Translation acceleration, and Maximum Rotation acceleration(unit: deg/sec2  )
+     * @param targetTime sets arrival time [sec]. if you want to ignore this parameter, input the number lower then zero.
+     *
+     * @return Promise<boolean>
+     *
+     * **Remarks**
+     * - When assigning targetTime, targetVelocity and targetAcceleration are ignored and instead handled based on the targetTime.
+     *
+     * @api-version 2
+     * @user
+    */
+    moveServoLinearH2R(targetPose: ManipulatorPose, targetVelocity: TwoNumArray, targetAcceleration: TwoNumArray, targetTime: number): Promise<boolean>;
 
     /**
      * Set the latency mode of motion
@@ -10326,191 +12685,6 @@ export interface IMotionManager extends ISystemManager {
      */
     setTrajectoryEndMode(mode: number): Promise<boolean>;
 }
-/**
- * Robot Parameter settings API interface that can only get and set
- *
- * @api-version 1
- * @user
- */
- export interface IParameterItem<T> {
-    /**
-     * {@link Monitorable} an item
-     *
-     * @api-version 1
-     * @user
-     */
-    readonly item: Monitorable<T>;
-    /**
-     * Set data
-     *
-     * @param data The data of item to be set
-     * @return Return <Promise> Fulfills with true if the request has been operated successfully, otherwise false.
-     *
-     * @api-version 1
-     * @system
-     */
-    set(data: T): Promise<boolean>
-
-    /**
-     * Get data
-     *
-     * @return Return data
-     *
-     * @api-version 1
-     * @user
-     */
-    get(): T | null
-}
-
-/**
- * List-type robot parameter setting API interface.
- *
- * @api-version 1
- * @user
- */
-export interface IParameterMultiItem<T> {
-    /**
-     * {@link Monitorable} an item list
-     *
-     * @api-version 1
-     * @user
-     */
-    readonly items: Monitorable<T[]>;
-    /**
-     * Change the value of an existing item.
-     *
-     * @param data The data of item to be set
-     * @return Return <Promise> Fulfills with true if the request has been operated successfully, otherwise false.
-     *
-     * @api-version 1
-     * @system
-     */
-    set(data: T): Promise<boolean>
-    /**
-     * Get data list
-     *
-     * @return Return data
-     *
-     * @api-version 1
-     * @user
-     */
-    get(): T[]
-    /**
-     * Add Item
-     *
-     * @param data The data of item to be added
-     * @return Return <Promise> Fulfills with true if the request has been operated successfully, otherwise false.
-     *
-     * @api-version 1
-     * @system
-     */
-    add(data: T): Promise<boolean>
-    /**
-     * Delete Item
-     *
-     * @param data The id or name of item to be deleted
-     * @return Return <Promise> Fulfills with true if the request has been operated successfully, otherwise false.
-     *
-     * @api-version 1
-     * @system
-     */
-    delete(id: string | number): Promise<boolean>
-}
-
-
-/**
- * List-type robot parameter setting API interface. The currently selected item can be set.
- *
- * @api-version 1
- * @user
- */
-export interface IParameterSelectableItem<T> extends IParameterMultiItem<T> {
-    /**
-     * {@link Monitorable} The current selected item.
-     *
-     * @api-version 1
-     * @user
-     */
-    readonly selection: Monitorable<string>;
-
-    /**
-     * Adds tool data. Registers the Tool information which will be equipped at the end of the robot in advance for safety.
-     * If this API callers has no system permission, then the safety password authentication dialog will be shown.
-     *
-     * @param data {@link ToolWeight} or {@link ToolShape} or {@link ToolCenterPoint}
-     * @return Return <Promise> Fulfills with true if the request has been operated successfully, otherwise false.
-     *
-     * @api-version 1
-     * @user
-     */
-    add(data: T): Promise<boolean>;
-
-    /**
-     * Sets tool data. Sets the information about the currently equipped Tool from the Tool information registered in advance to the robot controller.
-     * If this API callers has no system permission, then the safety password authentication dialog will be shown.
-     *
-     * @param data {@link ToolWeight} or {@link ToolShape} or {@link ToolCenterPoint}
-     * @return Return <Promise> Fulfills with true if the request has been operated successfully, otherwise false.
-     *
-     * @api-version 1
-     * @user
-     */
-    set(data: T): Promise<boolean>;
-
-    /**
-     * Deletes tool data. Deletes the previously registered Tool information at the robot controller.
-     * If this API callers has no system permission, then the safety password authentication dialog will be shown.
-     *
-     * @param name tool data name
-     * @return Return <Promise> Fulfills with true if the request has been operated successfully, otherwise false.
-     *
-     * @api-version 1
-     * @user
-     */
-    delete(name: string): Promise<boolean>;
-
-    /**
-     * Get tool data list
-     *
-     * @return Return tool data list. {@link ToolWeight} or {@link ToolShape} or {@link ToolCenterPoint}
-     *
-     * @api-version 1
-     * @user
-     */
-    get(): T[];
-
-    /**
-     * Select tool
-     *
-     * @param name tool data name
-     * @return Return <Promise> Fulfills with true if the request has been operated successfully, otherwise false.
-     *
-     * @api-version 1
-     * @user
-     */
-    select(name: string): Promise<boolean>;
-
-    /**
-     * Deselect
-     *
-     * @return Return <Promise> Fulfills with true if the request has been operated successfully, otherwise false.
-     *
-     * @api-version 1
-     * @user
-     */
-    deselect(): Promise<boolean>;
-
-    /**
-     * Get selected item name
-     *
-     * @return Return selected item name
-     *
-     * @api-version 1
-     * @user
-     */
-    getSelection(): string;
-}
-
 /**
  * system variable type
  *
@@ -10574,13 +12748,12 @@ export const SystemVariableType = {
      * @api-version 1
      * @user
      */
-    UNKNOWN: 7,
+    UNKNOWN: 7
 } as const;
 /**
  * @ignore
  */
 export type SystemVariableType = typeof SystemVariableType[keyof typeof SystemVariableType];
-
 /**
  * System Variable
  *
@@ -10610,6 +12783,7 @@ export type SystemVariable = {
     value: string;
 };
 
+
 /**
  * IPositionManager have position setting api in Robot.
  * For example, setting coordinate, get current position etc...
@@ -10617,7 +12791,7 @@ export type SystemVariable = {
  * @api-version 1
  * @user
  */
-export interface IPositionManager extends ISystemManager {
+ export interface IPositionManager extends ISystemManager {
     /**
      * {@link Monitorable} CurrentPoses.
      *
@@ -10627,12 +12801,36 @@ export interface IPositionManager extends ISystemManager {
     readonly poses: Monitorable<{ jointPose: SixNumArray, flangePosition: SixNumArray, toolPosition: SixNumArray, solutionSpace: SolutionSpace }>;
 
     /**
-     * {@link Monitorable} jointPose.
+     * {@link Monitorable} current joint pose.
      *
      * @api-version 1
      * @user
      */
     readonly jointPose: Monitorable<SixNumArray>;
+
+    /**
+     * {@link Monitorable} current joint velocity.
+     *
+     * @api-version 2
+     * @user
+     */
+    readonly jointVelocity: Monitorable<SixNumArray>;
+
+    /**
+     * {@link Monitorable} target joint pose
+     *
+     * @api-version 2
+     * @user
+     */
+    readonly targetJointPose: Monitorable<SixNumArray>;
+
+     /**
+      * {@link Monitorable} target joint velocity.
+      *
+      * @api-version 2
+      * @user
+      */
+    readonly targetJointVelocity: Monitorable<SixNumArray>;
 
     /**
      * {@link Monitorable} flangePosition.
@@ -10643,12 +12841,44 @@ export interface IPositionManager extends ISystemManager {
     readonly flangePosition: Monitorable<SixNumArray>;
 
     /**
-     * {@link Monitorable} toolPosition.
+     * {@link Monitorable} current tool position.
      *
      * @api-version 1
      * @user
      */
     readonly toolPosition: Monitorable<SixNumArray>;
+
+    /**
+     * {@link Monitorable} current tool velocity.
+     *
+     * @api-version 2
+     * @user
+     */
+    readonly toolVelocity: Monitorable<SixNumArray>;
+
+    /**
+     * {@link Monitorable} target tool position.
+     *
+     * @api-version 2
+     * @user
+     */
+    readonly targetToolPosition: Monitorable<SixNumArray>;
+
+    /**
+     * {@link Monitorable} target tool velocity.
+     *
+     * @api-version 2
+     * @user
+     */
+    readonly targetToolPosittoolVelocityion: Monitorable<SixNumArray>;
+
+    /**
+     * {@link Monitorable} Current tcp pose w.r.t Base, World, and Active User coordinate systems
+     *
+     * @api-version 1
+     * @user
+     */
+    readonly currentTCPPose: Monitorable<TCPPoseInfo>;
 
     /**
      * {@link Monitorable} robot configuration number. (0 ~ 7)
@@ -10665,12 +12895,11 @@ export interface IPositionManager extends ISystemManager {
      * @user
      */
     readonly singularityRiskLevel : Monitorable<number>;
-
     /**
      * Get Current Pose
      *
      * @param eSpaceType RobotSpace(Joint: 0, Task: 1)
-     * @return Promise<SixNumArray> get current joint/task pose (J1, J2, J3, J4, J5, J6)/(X, Y, Z, A, B, C)
+     * @return Promise<SixNumArray> get current joint/task pose (J1, J2, J3, J4, J5, J6)/(X, Y, Z, RZ, RY, RX)
      *
      * @api-version 1
      * @user
@@ -10690,7 +12919,7 @@ export interface IPositionManager extends ISystemManager {
     /**
      * Get Current Task Pose and Solution space
      *
-     * @return Promise<TaskPose> get current task pose (X, Y, Z, A, B, C), Solution Space
+     * @return Promise<TaskPose> get current task pose (X, Y, Z, RZ, RY, RX), Solution Space
      *
      * @api-version 1
      * @user
@@ -10698,14 +12927,38 @@ export interface IPositionManager extends ISystemManager {
     getCurrentPosX(reference: CoordinateSystem): Promise<TaskPose>
 
     /**
+     * Get current manipulator pose.
+     *
+     * @param reference The reference coordinate of task space pose values
+     * @param orientationType The OrientatioType of result. If not set, it is {@link OrientationType.EULER_ZYX}
+     *
+     * @return Promise<ManipulatorPose> get current manipulator pose
+     *
+     * @api-version 2
+     * @user
+     */
+    getCurrentManipulatorPosx(reference: CoordinateSystem, orientationType?:OrientationType): Promise<ManipulatorPose>
+
+    /**
      * Get Current Tool Position
      *
-     * @return SixNumArray get current Tool Position (X, Y, Z, A, B, C)
+     * @return SixNumArray get current Tool Position (X, Y, Z, RZ, RY, RX)
      *
      * @api-version 1
      * @user
      */
     getToolPos(): SixNumArray
+
+    /**
+     * Get TCP pose w.r.t Base, World, and Active User coordinate systems
+     * This value is the same as the monitoring variable currentTCPose.
+     *
+     * @return Return <Promise> Fulfills with the {@link TCPPoseInfo}.
+     *
+     * @api-version 1
+     * @user
+     */
+    getCurrentTCPPoseInformation(): TCPPoseInfo;
 
     /**
      * Gets Current Solution Space.
@@ -10736,22 +12989,50 @@ export interface IPositionManager extends ISystemManager {
     inverseKinematics(sourcePose: SixNumArray, solutionSpace: SolutionSpace, targetReference: CoordinateSystem): Promise<SixNumArray>
 
     /**
+    * Calculate robot task space pose using joint space pose.
+    *
+    * @param sourcePose task space pose values
+    * @param targetReference The reference coordinate of task space pose values(input values)
+    * @param initialPoseOption When creating a multi-turn solution, select a solution close to the reference position according to the option. 0: Based on posj(0,0,0,0,0,0) position, 1: Based on current joint angle position. If not set, it is 1.
+    *
+    * @return robot joint space pose values
+    *
+    * @api-version 2
+    * @user
+    */
+    inverseKinematicsEx(sourcePose: ManipulatorPose, targetReference: CoordinateSystem, initialPoseOption?:0|1): Promise<SixNumArray>
+
+    /**
      * Calculate robot joint space pose using task space pose.
      *
-     * @param sourcePose task space pose values
-     * @param targetReference The reference coordinate of task space pose values(return values)
+     * @param sourcePose joint space pose values
+     * @param eTargetRef The reference coordinate of task space pose values(return values)
      *
      * @return robot task space pose values
      *
      * @api-version 1
      * @user
      */
-    forwardKinematics(sourcePose: SixNumArray, targetReference: CoordinateSystem): Promise<SixNumArray>
+    forwardKinematics(sourcePose: SixNumArray, targetReference:CoordinateSystem): Promise<SixNumArray>
+
+    /**
+     * Calculate robot joint space pose using task space pose.
+     *
+     * @param sourcePose joint space pose values
+     * @param eTargetRef The reference coordinate of task space pose values(return values)
+     * @param orientationType The OrientatioType of result. If not set, it is {@link OrientationType.EULER_ZYX}
+     *
+     * @return robot task space pose values {@link ManipulatorPose}
+     *
+     * @api-version 2
+     * @user
+     */
+    forwardKinematicsEx(sourcePose: SixNumArray, targetReference:CoordinateSystem, orientationType?:OrientationType): Promise<ManipulatorPose>
 
     /**
      * Get Current Flange Position
      *
-     * @return SixNumArray get current Flange Position (X, Y, Z, A, B, C)
+     * @return SixNumArray get current Flange Position (X, Y, Z, RZ, RY, RX)
      *
      * @api-version 1
      * @user
@@ -10773,7 +13054,7 @@ export interface IPositionManager extends ISystemManager {
      * @param thickness 4th position
      * @param offsetValue offset for place position(X, Y, Z)
      *
-     * @return Promise<SixNumArray> Point of index  (X, Y, Z, A, B, C)
+     * @return Promise<SixNumArray> Point of index  (X, Y, Z, RZ, RY, RX)
      * Delivers the position information of joint zone which is calculated via the given 위치 information and offset information. This is a response to the calculation request on workzone position information.
      *
      * **Remarks**
@@ -10784,13 +13065,14 @@ export interface IPositionManager extends ISystemManager {
      */
     getPatternPoint(position1: SixNumArray, position2: SixNumArray, position3: SixNumArray, position4: SixNumArray, pattern: PatternType, index: number, row: number, column: number, stack: number, thickness: number, offsetValue: ThreeNumArray): Promise<SixNumArray>
 
+
     /**
      * Convert targetPose with respect to inputReference to the task coordinate with respect to outputReference.
      * @param targetPose The pose w.r.t inputReference
      * @param inputReference The reference coordinate system for targetPose.
      * @param outputReference The reference coordinate system for calculated pose.
      *
-     * @return Promise<SixNumArray> The pose w.r.t outputReference (X, Y, Z, A, B, C)
+     * @return Promise<SixNumArray> The pose w.r.t outputReference (X, Y, Z, RZ, RY, RX)
      *
      * @api-version 1
      * @user
@@ -10798,13 +13080,28 @@ export interface IPositionManager extends ISystemManager {
     coordTransform(targetPose: SixNumArray, inputReference:CoordinateSystem, outputReference: CoordinateSystem): Promise<SixNumArray>;
 
     /**
-    * Get CalculateCoordinate in Robot Parameters
-    *
-    * @return Promise<SixNumArray> or null
+     * Convert targetPose to the task coordinate with respect to outputReference.
      *
-    * @api-version 1
-    * @user
-    */
+     * @param targetPose The pose
+     * @param inputReference The reference coordinate system for targetPose.
+     * @param outputReference The reference coordinate system for calculated pose.
+     * @param orientationType The OrientatioType of result. If not set, it is {@link OrientationType.EULER_ZYX}
+     *
+     * @return Promise<ManipulatorPose> The calculated pose
+     *
+     * @api-version 2
+     * @user
+     */
+    coordTransform(targetPose: ManipulatorPose, inputReference:CoordinateSystem, outputReference: CoordinateSystem, orientationType?: OrientationType): Promise<ManipulatorPose>;
+
+    /**
+     * Get CalculateCoordinate in Robot Parameters
+     *
+     * @return Promise<SixNumArray> or null
+      *
+     * @api-version 1
+     * @user
+     */
     calculateCoordinate(data: CalculateCoordinate): Promise<SixNumArray | null>;
 
     /**
@@ -10814,23 +13111,37 @@ export interface IPositionManager extends ISystemManager {
      * @param sourceReference The reference coordinate system for sourcePose.
      * @param targetReference The reference coordinate system for calculated pose.
      *
-     * @return Promise<SixNumArray> The calculated pose w.r.t targetReference (X, Y, Z, A, B, C)
+     * @return Promise<SixNumArray> The calculated pose w.r.t targetReference (X, Y, Z, RZ, RY, RX)
      *
      * @api-version 1
      * @user
      */
-    trans(sourcePose: SixNumArray, offset: SixNumArray, sourceReference: CoordinateSystem, eTargetRef: CoordinateSystem): Promise<SixNumArray>;
+    trans(sourcePose: SixNumArray, offset: SixNumArray, sourceReference: CoordinateSystem, targetReference: CoordinateSystem): Promise<SixNumArray>;
+
+    /**
+     * "description": "Offset sourcePose by offset. and Convert Offseted pose is with respect to targetReference.",
+     * @param sourcePose The pose
+     * @param offset The offset
+     * @param targetReference The reference coordinate system for calculated pose.
+     * @param orientationType The OrientatioType of result. If not set, it is {@link OrientationType.EULER_ZYX}
+     *
+     * @return Promise<ManipulatorPose> The calculated pose
+     *
+     * @api-version 2
+     * @user
+     */
+    trans(sourcePose: ManipulatorPose, offset: ManipulatorPose, sourceReference: CoordinateSystem, targetReference: CoordinateSystem, orientationType?:OrientationType): Promise<ManipulatorPose>;
 
      /**
      * get base to target coordinate relationship.
      * @param target
      *
-     * @return Promise<SixNumArray> The base to target (X, Y, Z, A, B, C)
+     * @return Promise<SixNumArray> The base to target (X, Y, Z, RZ, RY, RX)
      *
      * @api-version 1
      * @user
      */
-    getBaseToCoordinate(target: CoordinateSystem): Promise<SixNumArray | null>;
+    getBaseToCoordinate(target: CoordinateSystem): SixNumArray | null;
 }
 
 /**
@@ -11106,6 +13417,47 @@ export type CockpitButtons = {
 };
 
 /**
+ * Servo state.
+ *
+ * @api-version 2
+ * @user
+ */
+export const ServoState = {
+    /**
+     * Turned off.
+     *
+     * @api-version 2
+     * @user
+     */
+    OFF: 0,
+    /**
+     * Turning on.
+     *
+     * @api-version 2
+     * @user
+     */
+    TURNING_ON: 1,
+    /**
+     * Turned on.
+     *
+     * @api-version 2
+     * @user
+     */
+    ON: 2,
+    /**
+     * Turning off.
+     *
+     * @api-version 2
+     * @user
+     */
+    TURNING_OFF: 3
+} as const;
+/**
+ * @ignore
+ */
+export type ServoState = typeof ServoState[keyof typeof ServoState];
+
+/**
  * IRobotManager have APIs which are related with Robot.
  * For example, get connected robot model information, whether it is connected with real robot or not, etc...
  *
@@ -11120,6 +13472,14 @@ export interface IRobotManager extends ISystemManager {
      * @system
      */
     readonly sysVersion: Monitorable<SystemVersionInfo>;
+
+    /**
+     * {@link Monitorable} flange hardware version
+     *
+     * @api-version 2
+     * @user
+     */
+    readonly flangeHardwareVersion: Monitorable<FlangeHardwareVersion>;
 
     /**
      * {@link Monitorable} Connection State. true:connect, false:disconnect
@@ -11200,21 +13560,28 @@ export interface IRobotManager extends ISystemManager {
 
     /**
      * {@link Monitorable}
-     * RobotParameter checksum value of controller
+     * RobotParameter checksum value for robot controller both normal and safety data and status
+     * normal data : cockpit, user coordinates, normal input&output
+     * safety data : robot limits, safety stop mode, safety input&output, safety zone, tool center position, tool weight, tool shape, mount pose, nudge, world coordinate
+     * checksum : normal and safety data checksum of robot parameter data set on controller
+     * state : robot parameter file checksum is matched with robot parameter data set on controller
+     * 0: state of matched normal & safety data
+     * 1: state of unmatched normal data state
+     * 2: state of unmatched safety data
      *
      * @api-version 1
      * @user
      */
-    readonly robotChecksum: Monitorable<string>;
+    readonly robotChecksum: Monitorable<{checksum: string, state: ChecksumState}>;
 
     /**
-    * {@link Monitorable}
-    * robot motion speed. 0 to 100%
-    *
-    * @api-version 1
-    * @user
-    */
-   readonly operationSpeed:Monitorable<number>;
+     * {@link Monitorable}
+     * robot motion speed. 0 to 100%
+     *
+     * @api-version 1
+     * @user
+     */
+    readonly operationSpeed:Monitorable<number>;
 
     /**
      * {@link Monitorable} {@link RobotState}.
@@ -11249,12 +13616,28 @@ export interface IRobotManager extends ISystemManager {
     readonly servoState: Monitorable<boolean>;
 
     /**
+     * {@link Monitorable} for representing servo state as {@link ServoState}.
+     *
+     * @api-version 2
+     * @user
+     */
+    readonly servoDetailState: Monitorable<ServoState>;
+
+    /**
      * {@link Monitorable} {@link RobotSystem}.
      *
      * @api-version 1
      * @user
      */
     readonly robotSystem: Monitorable<RobotSystem>;
+
+    /**
+     * {@link Monitorable} {@link RobotType}.
+     *
+     * @api-version 2
+     * @user
+     */
+    readonly robotType: Monitorable<RobotType>;
 
     /**
      * {@link Monitorable} alarm data.
@@ -11280,6 +13663,53 @@ export interface IRobotManager extends ISystemManager {
      * @user
      */
     readonly protectiveSafeOff: Monitorable<boolean>;
+
+    /**
+     * {@link Monitorable}
+     * Indicates the state transition in the following two cases.
+     * 1. In case of an emergency, the combination of the Cockpit button converts the Safety Stop state to the Recovery Mode Direct Teaching state.
+     * 2. Entering back drive mode in Safe-Off state and forcibly switching to brake automatic release state.
+     *
+     * @api-version 1
+     * @user
+     */
+    readonly modeChanged: Monitorable<ModeChangeState>;
+    /**
+     * {@link Monitorable}
+     * Changed when the remote control mode is changed. If true, remote control mode.
+     * It changes to true when receiving the start input signal from the remote control ready state.({@link remoteControlReadyModeChanged})
+     *
+     * @api-version 1
+     * @user
+    */
+    readonly remoteControlModeChanged: Monitorable<boolean>;
+
+    /**
+     * {@link Monitorable} Notify that signal information has changed to I/O mapped to Remote Control command
+     *
+     * @api-version 1
+     * @user
+    */
+    readonly remoteControlCommand: Monitorable<RemoteControlCommand>;
+
+    /**
+     * {@link Monitorable}
+     * Changed when the remote control ready mode is changed. If true, remote control ready mode.
+     * It is the same value as the return value of the {@link setRemoteControl} method.
+     * Used for state synchronization in Dart-Platform without control.
+     *
+     * @api-version 2
+     * @user
+    */
+    readonly remoteControlReadyModeChanged: Monitorable<boolean>;
+
+    /**
+     * {@link Monitorable} 3PE Switch availability and state.
+     *
+     * @api-version 2
+     * @user
+     */
+    readonly pos3EnableSwitch: Monitorable<Pos3EnableSwitch>;
 
     /**
      * Robot servo on function
@@ -11449,7 +13879,7 @@ export interface IRobotManager extends ISystemManager {
      * @api-version 1
      * @system
      */
-     getControllerSerialNumber(): string
+    getControllerSerialNumber(): string
 
     /**
      * Get controller IP Address
@@ -11470,6 +13900,15 @@ export interface IRobotManager extends ISystemManager {
      * @system
      */
     setIpAddress(systemIp: SystemIpAddress): Promise<boolean>;
+
+    /**
+     * Get controller IP Address
+     * @return Promise<boolean> return true if ip query succeeds, false if unsuccessful.
+     *
+     * @api-version 2
+     * @user
+     */
+    getControllerIpAddress(): Promise<SystemIpAddress>;
 
     /**
      * Brake control for non-motorized operation in backdrive mode.
@@ -11615,6 +14054,62 @@ export interface IRobotManager extends ISystemManager {
      * @system
      */
     changeOperationSpeed(speed: number): Promise<boolean>
+
+    /**
+     * Search Serial Device List
+     *
+     * @summary Serial로 연결된 Device 장치 검색
+     * @return Return {@link SerialPortList}
+     *
+     * @api-version 1
+     * @user
+     */
+    getSerialPortList(): Promise<SerialPortList>;
+
+    /**
+     * During force control, the scale value is transmitted to change the force gain value.
+     *
+     * @param forceFactor force scale factor
+     * @param targetTime Time taken to set up.
+     *
+     * @api-version 1
+     * @user
+     * @deprecated Do not use in Module.
+     */
+    setForceFactor(forceFactor: SixNumArray, targetTime: number): Promise<void>;
+
+    /**
+     * During force control, the scale value is transmitted to change the damping gain value.
+     *
+     * @param dampingFactor damping scale factor
+     * @param targetTime Time taken to set up.
+     *
+     * @api-version 1
+     * @user
+     * @deprecated Do not use in Module.
+     */
+    setDampingFactor(dampingFactor: SixNumArray, targetTime: number): Promise<void>;
+
+    /**
+     * Supported functions are different for each robot model.
+     * return the list of robot functions and whether they are supported.
+     *
+     * @return Return {@link RobotFeatureList}
+     *
+     * @api-version 1
+     * @user
+     */
+    getSupportRobotFeatureList(): RobotFeatureList;
+
+    /**
+     * Get robot hardware specifications.
+     *
+     * @return Return {@link RobotHardwareSpecification}
+     *
+     * @api-version 2
+     * @user
+     */
+    getRobotHardwareSpecification(): RobotHardwareSpecification;
 }
 
 /**
@@ -11818,6 +14313,7 @@ export type InstallPose = {
     rotation: number;
 };
 
+
 /**
  * Safety I/O in Robot Parameters
  *
@@ -11826,12 +14322,252 @@ export type InstallPose = {
  */
 export type SafetyIO = {
     /**
-     * Function information mapped to Safety io.
+     * Function information mapped to Safety input & output
+     * Safety input {@link SafetyInputValues}
+     * Safety output {@link SafetyOutputValues}
      * @api-version 1
      * @user
      */
-    io: [TenNumArray, eigthNumArray];
+    io: [TenNumArray, EightNumArray];
 };
+
+/**
+ * Features available in safety input
+ *
+ * @api-version 1
+ * @user
+ */
+export const SafetyInputValues = {
+    /**
+     * Protective Stop (STO) (L) : Safe Torque Off
+     *
+     * @api-version 1
+     * @user
+     */
+    PROTECTIVE_STOP_STO_LOW: 1,
+
+    /**
+     * Emergency Stop (L)
+     *
+     * @api-version 1
+     * @user
+     */
+    EMERGENCY_STOP_LOW: 2,
+    /**
+     * Protective Stop (L)
+     *
+     * @api-version 1
+     * @user
+     */
+    PROTECTIVE_STOP_LOW: 3,
+    /**
+     * Reduced Speed (L)
+     *
+     * @api-version 1
+     * @user
+     */
+    REDUCED_SPEED_ACTIVATION_LOW: 4,
+    /**
+     * 3-pos Enable Switch (L to H & H)
+     *
+     * @api-version 1
+     * @user
+     */
+    POS_3_ENABLE_SWITCH_HIGH: 5,
+    /**
+     * Hand-guiding Enable Switch (L to H & H)
+     *
+     * @api-version 1
+     * @user
+     */
+    HAND_GUIDING_ENABLE_SWITCH_HIGH: 6,
+    /**
+     * Hand Guide Control End & Task Resume (L to H) : Auto Reset & Resume (Rising Edge)
+     *
+     * @api-version 1
+     * @user
+     */
+    HAND_GUIDING_END_TASK_RESUME_RISING_EDGE: 7,
+    /**
+     * Protective Stop (Auto Reset & Resume) (L)
+     *
+     * @api-version 1
+     * @user
+     */
+    PROTECTIVE_STOP_LOW_AUTO_RESET_RESUME_RISING_EDGE: 8,
+    /**
+     * Safe Zone Dynamic Enable (H)
+     *
+     * @api-version 1
+     * @user
+     */
+    SAFETY_ZONE_DYNAMIC_ENABLE_HIGH: 9,
+    /**
+     * Remote Control Mode (H)
+     *
+     * @api-version 1
+     * @user
+     */
+    REMOTE_CONTROL_ENABLE_HIGH: 10,
+    /**
+     * Emergency Stop (No Loopback) (L)
+     *
+     * @api-version 1
+     * @user
+     */
+    EMERGENCY_STOP_NO_LOOPBACK_LOW: 11,
+    /**
+     * Interlock Reset (L to H)
+     *
+     * @api-version 1
+     * @user
+     */
+    INTERLOCK_RESET_RISING_EDGE: 13,
+    /**
+     * Protective Stop (SS1) (L)
+     *
+     * @api-version 1
+     * @user
+     */
+    PROTECTIVE_STOP_SS1_LOW: 14,
+    /**
+     * Protective Stop (SS2) (L)
+     *
+     * @api-version 1
+     * @user
+     */
+    PROTECTIVE_STOP_SS2_LOW: 15,
+    /**
+     * Safety Zone Dynamic Enabled (L)
+     *
+     * @api-version 1
+     * @user
+     */
+    SAFETY_ZONE_DYNAMIC_ENABLE_LOW: 16
+} as const;
+/**
+ * @ignore
+ */
+export type SafetyInputValues = typeof SafetyInputValues[keyof typeof SafetyInputValues];
+
+/**
+ * Features available in safety output
+ *
+ * @api-version 1
+ * @user
+ */
+export const SafetyOutputValues = {
+    /**
+     * Safe Torque Off (STO) (L)
+     *
+     * @api-version 1
+     * @user
+     */
+    SAFE_TORQUE_OFF_LOW: 1,
+
+    /**
+     * Safe Operating Stop (SOS)
+     *
+     * @api-version 1
+     * @user
+     */
+    SAFE_OPERATING_STOP_LOW: 2,
+    /**
+     * Normal Speed Status (L)
+     *
+     * @api-version 1
+     * @user
+     */
+    NORMAL_SPEED_LOW: 4,
+    /**
+     * Reduced Speed Status (L)
+     *
+     * @api-version 1
+     * @user
+     */
+    REDUCED_SPEED_LOW: 5,
+    /**
+     * Auto Mode (L)
+     *
+     * @api-version 1
+     * @user
+     */
+    AUTO_MODE_LOW: 6,
+    /**
+     * Manual Mode (L)
+     *
+     * @api-version 1
+     * @user
+     */
+    MANUAL_MODE_LOW: 7,
+    /**
+     * Standalone Zone (L)
+     *
+     * @api-version 1
+     * @user
+     */
+    STANDALONE_ZONE_LOW: 8,
+    /**
+     * Collaborative Zone (L)
+     *
+     * @api-version 1
+     * @user
+     */
+    COLLABORATIVE_ZONE_LOW: 9,
+    /**
+     * High Priority Zone(L)
+     *
+     * @api-version 1
+     * @user
+     */
+    HIGH_PRIORITY_ZONE_LOW: 10,
+    /**
+     * Tool Orientation Limited Zone (L)
+     *
+     * @api-version 1
+     * @user
+     */
+    TOOL_ORIENTATION_LIMIT_ZONE_LOW: 11,
+    /**
+     * Emergency Stop (L)
+     *
+     * @api-version 1
+     * @user
+     */
+    EMERGENCY_STOP_LOW: 12,
+    /**
+     * Emergency Stop (excl. No Loopback Input) (L)
+     *
+     * @api-version 1
+     * @user
+     */
+    EMERGENCY_STOP_NO_LOOPBACK_INPUT_LOW: 13,
+    /**
+     * Designated Zone (L)
+     *
+     * @api-version 1
+     * @user
+     */
+    DESIGNATED_ZONE_LOW: 15,
+    /**
+     * Remote Mode (L)
+     *
+     * @api-version 1
+     * @user
+     */
+    REMOTE_CONTROL_MODE_LOW: 17,
+    /**
+     * Abnormal(L)
+     *
+     * @api-version 1
+     * @user
+     */
+    ABNORMAL_LOW: 18,
+} as const;
+/**
+ * @ignore
+ */
+export type SafetyOutputValues = typeof SafetyOutputValues[keyof typeof SafetyOutputValues];
 
 /**
  * Normal I/O in Robot Parameters
@@ -11842,11 +14578,252 @@ export type SafetyIO = {
 export type NormalIO = {
     /**
      * Function information mapped to Normal io.
+     * Normal Input(0): {@link NormalInputValues}
+     * Normal Output(1): {@link NormalOutputValues}
      * @api-version 1
      * @user
      */
     io: [TwentyNumArray, SixteenNumArray];
 };
+
+/**
+ * Flange I/O in Robot Parameters
+ *
+ * @api-version 2
+ * @user
+ */
+export type FlangeIOType = {
+    /**
+     * Supply Voltage
+     *
+     * @api-version 2
+     * @user
+     */
+    supplyVoltage: GpioDigitalVoltage;
+    /**
+     * Digital Output Type
+     *
+     * @api-version 2
+     * @user
+     */
+    digitalOutputType: {
+        x1: GpioDigitalType;
+        x2: GpioDigitalType;
+    };
+    /**
+     * Flange Analog X1
+     *
+     * @api-version 2
+     * @user
+     */
+    flangeAnalogX1: {
+        pinMode: FlangeAnalogPinMode;
+        baudRate: number;
+        dataBit: FlangeByteSize;
+        parityBit: ParityCheck;
+        stopBit: StopBit;
+    };
+    /**
+     * Flange Analog X2
+     *
+     * @api-version 2
+     * @user
+     */
+    flangeAnalogX2: {
+        pinMode: FlangeAnalogPinMode;
+        baudRate: number;
+        dataBit: FlangeByteSize;
+        parityBit: ParityCheck;
+        stopBit: StopBit;
+    };
+    /**
+     * Servo Off
+     *
+     * @api-version 2
+     * @user
+     */
+    servoOff: FlangeInterlockServoOff;
+    /**
+     * Interrupted
+     *
+     * @api-version 2
+     * @user
+     */
+    interrupted: FlangeInterlockInterrupted;
+}
+
+/**
+ * Features available in normal input
+ *
+ * @api-version 2
+ * @user
+ */
+export const NormalInputValues = {
+    /**
+     * Not used.
+     *
+     * @api-version 2
+     * @user
+     */
+    NOT_USED: 0,
+    /**
+     * Power on (H)
+     *
+     * @api-version 2
+     * @user
+     */
+    POWER_ON_HIGH: 1,
+    /**
+     * Power off (H)
+     *
+     * @api-version 2
+     * @user
+     */
+    POWER_OFF_HIGH: 2,
+} as const;
+/**
+ * @ignore
+ */
+export type NormalInputValues = typeof NormalInputValues[keyof typeof NormalInputValues];
+
+/**
+ * Features available in normal output
+ *
+ * @api-version 2
+ * @user
+ */
+export const NormalOutputValues = {
+    /**
+     * Not used.
+     *
+     * @api-version 2
+     * @user
+     */
+    NOT_USED: 0,
+    /**
+     * Safe Torque Off (STO) (L)
+     *
+     * @api-version 2
+     * @user
+     */
+    SAFE_TORQUE_OFF_LOW: 1,
+    /**
+     * Safe Operating Stop (SOS)
+     *
+     * @api-version 2
+     * @user
+     */
+    SAFE_OPERATING_STOP_LOW: 2,
+    /**
+     * Deceleration (L)
+     *
+     * @api-version 2
+     * @user
+     */
+    DECELERATION_LOW: 3,
+    /**
+     * Normal Speed Status (L)
+     *
+     * @api-version 2
+     * @user
+     */
+    NORMAL_SPEED_LOW: 4,
+    /**
+     * Reduced Speed Status (L)
+     *
+     * @api-version 2
+     * @user
+     */
+    REDUCED_SPEED_LOW: 5,
+    /**
+     * Auto Mode (L)
+     *
+     * @api-version 2
+     * @user
+     */
+    AUTO_MODE_LOW: 6,
+    /**
+     * Manual Mode (L)
+     *
+     * @api-version 2
+     * @user
+     */
+    MANUAL_MODE_LOW: 7,
+    /**
+     * Standalone Zone (L)
+     *
+     * @api-version 2
+     * @user
+     */
+    STANDALONE_ZONE_LOW: 8,
+    /**
+     * Collaborative Zone (L)
+     *
+     * @api-version 2
+     * @user
+     */
+    COLLABORATIVE_ZONE_LOW: 9,
+    /**
+     * High Priority Zone(L)
+     *
+     * @api-version 2
+     * @user
+     */
+    HIGH_PRIORITY_ZONE_LOW: 10,
+    /**
+     * Tool Orientation Limited Zone (L)
+     *
+     * @api-version 2
+     * @user
+     */
+    TOOL_ORIENTATION_LIMIT_ZONE_LOW: 11,
+    /**
+     * Task operating (L)
+     *
+     * @api-version 2
+     * @user
+     */
+    TASK_OPERATING_LOW: 12,
+    /**
+     * Designated Zone (L)
+     *
+     * @api-version 2
+     * @user
+     */
+    DESIGNATED_ZONE_LOW: 13,
+    /**
+     * Robot in motion (L)
+     *
+     * @api-version 2
+     * @user
+     */
+    ROBOT_IN_MOTION_LOW: 14,
+    /**
+     * Robot in (L)
+     *
+     * @api-version 2
+     * @user
+     */
+    REMOTE_CONTROL_MODE_LOW: 15,
+    /**
+     * Robot in motion (L)
+     *
+     * @api-version 2
+     * @user
+     */
+     MATSTERING_ALARM_LOW: 16,
+    /**
+     * Robot in motion (L)
+     *
+     * @api-version 2
+     * @user
+     */
+    HOME_POSITION_LOW: 17,
+} as const;
+/**
+ * @ignore
+ */
+export type NormalOutputValues = typeof NormalOutputValues[keyof typeof NormalOutputValues];
 
 /**
  * Safety Zone in Robot Parameters
@@ -12023,6 +15000,7 @@ export type CalculateCoordinate = {
     inputCount: 1 | 2 | 3 | 4;
     /**
      * Input Mode
+     * Used only when the number of {@link CalculateCoordinate.inputCount} is 2
      * 0: using TCP Z axis, 1: using Point 1 Z axis
      *
      * @api-version 1
@@ -12073,6 +15051,13 @@ export type CalculateCoordinate = {
  * @user
  */
 export type RobotParameter = {
+    /**
+     * Updated Date
+     *
+     * @api-version 1
+     * @user
+     */
+    updatedAt?: number;
     /**
      * Joint Range
      *
@@ -12247,7 +15232,35 @@ export type RobotParameter = {
      * @api-version 1
      * @user
      */
-     delUserCoordinate?: number[];
+    delUserCoordinate?: number[];
+    /**
+     * Flange I/O
+     *
+     * @api-version 2
+     * @user
+     */
+    flangeIO?: FlangeIOType;
+};
+
+
+/**
+ * Homing option setting in robot parameters
+ * @api-version 1
+ * @system
+ */
+ export type HomingOption = {
+    /**
+     * Whether to use custom home.
+     * @api-version 1
+     * @system
+     */
+    useCustomHome: boolean;
+    /**
+     * Custom home target pose.
+     * @api-version 1
+     * @system
+     */
+    customHomePose: SixNumArray;
 };
 
 /**
@@ -12301,6 +15314,13 @@ export const RobotModel = { // ROBOT_MODEL
      */
     A0509S: "A0509S",
     /**
+     * A0509F(NSF)
+     *
+     * @api-version 1
+     * @user
+     */
+    A0509F: "A0509F",
+    /**
      * A0912
      *
      * @api-version 1
@@ -12314,6 +15334,13 @@ export const RobotModel = { // ROBOT_MODEL
      * @user
      */
     A0912S: "A0912S",
+    /**
+     * A0912F(NSF)
+     *
+     * @api-version 1
+     * @user
+     */
+    A0912F: "A0912F",
     /**
      * H2017
      *
@@ -12526,14 +15553,13 @@ export type FlangeAnalogIoAlias = {
     input: [string, string, string, string];
 }
 
-
 /**
  * Robot Parameter settings API interface that can only get and set
  *
  * @api-version 1
  * @user
  */
- export interface IParameterItem<T> {
+export interface IParameterItem<T> {
     /**
      * {@link Monitorable} an item
      *
@@ -12617,7 +15643,6 @@ export interface IParameterMultiItem<T> {
      */
     delete(id: string | number): Promise<boolean>
 }
-
 
 /**
  * List-type robot parameter setting API interface. The currently selected item can be set.
@@ -12816,12 +15841,20 @@ export interface IRobotParameterManager extends ISystemManager {
     ioSpeedRatio: IParameterItem<number>;
 
     /**
+     * Homing option setting api
+     *
+     * @api-version 1
+     * @user
+     */
+    homingOption: IParameterItem<HomingOption>;
+
+    /**
      * Get all robot parameter names added.
      *
      * @return Promise<string[]> return all robot parameter names added.
      *
      * @api-version 1
-     * @system
+     * @user
      */
     getAllName(): Promise<string[]>;
 
@@ -12853,12 +15886,22 @@ export interface IRobotParameterManager extends ISystemManager {
      * Get robot parameter in db
      *
      * @param name robot parameter name
-     * @return Return <Promise> Fulfills with true if the request has been operated successfully, otherwise false.
+     * @return Return Robot Parameter {@link RobotParameter}
      *
      * @api-version 1
-     * @system
+     * @user
      */
     get(name: string): Promise<RobotParameter | null>;
+
+    /**
+     * Get robot parameter in db
+     *
+     * @return Return robot parameter array {@link RobotParameter}
+     *
+     * @api-version 1
+     * @user
+     */
+    getAll(): Promise<{ name: string; data: RobotParameter }[]>;
 
     /**
      * remove robot parameter in db
@@ -12878,7 +15921,7 @@ export interface IRobotParameterManager extends ISystemManager {
      * @return Return Initial Robot Parameter {@link RobotParameter}
      *
      * @api-version 1
-     * @system
+     * @user
      */
     getInitialValue(robotModel: RobotModel): RobotParameter;
 
@@ -12889,7 +15932,7 @@ export interface IRobotParameterManager extends ISystemManager {
      * @return Return Robot Limits {@link RobotLimit}
      *
      * @api-version 1
-     * @system
+     * @user
      */
     getRobotLimit(robotModel: RobotModel): RobotLimit;
 
@@ -12900,7 +15943,7 @@ export interface IRobotParameterManager extends ISystemManager {
      * @return Return Max Payload [kg]
      *
      * @api-version 1
-     * @system
+     * @user
      */
     getMaxPayload(robotModel: RobotModel): number;
 
@@ -12910,7 +15953,7 @@ export interface IRobotParameterManager extends ISystemManager {
      * @return Return Robot Parameter {@link RobotParameter}
      *
      * @api-version 1
-     * @system
+     * @user
      */
     getSystem(): RobotParameter;
 
@@ -12931,7 +15974,7 @@ export interface IRobotParameterManager extends ISystemManager {
      * @return Return Controller Digital I/O Alias {@link ControllerDigitalIoAlias}
      *
      * @api-version 1
-     * @system
+     * @user
      */
     getControllerDigitalIoAlias(): Promise<ControllerDigitalIoAlias | null>;
 
@@ -12952,7 +15995,7 @@ export interface IRobotParameterManager extends ISystemManager {
      * @return Return Flange Digital I/O Alias {@link FlangeDigitalIoAlias}
      *
      * @api-version 1
-     * @system
+     * @user
      */
     getFlangeDigitalIoAlias(): Promise<FlangeDigitalIoAlias | null>;
 
@@ -12973,7 +16016,7 @@ export interface IRobotParameterManager extends ISystemManager {
      * @return Return Controller Analog I/O Alias {@link ControllerAnalogIoAlias}
      *
      * @api-version 1
-     * @system
+     * @user
      */
     getControllerAnalogIoAlias(): Promise<ControllerAnalogIoAlias | null>;
 
@@ -12994,7 +16037,7 @@ export interface IRobotParameterManager extends ISystemManager {
      * @return Return Flange Analog I/O Alias {@link FlangeAnalogIoAlias}
      *
      * @api-version 1
-     * @system
+     * @user
      */
     getFlangeAnalogIoAlias(): Promise<FlangeAnalogIoAlias | null>;
 
@@ -13015,7 +16058,7 @@ export interface IRobotParameterManager extends ISystemManager {
      * @return System Variable list {@link SystemVariable}
      *
      * @api-version 1
-     * @system
+     * @user
      */
     getSystemVariables():Promise<SystemVariable[]>;
 
@@ -13051,6 +16094,39 @@ export interface IRobotParameterManager extends ISystemManager {
      * @system
      */
     delSystemVariable(name: string):  Promise<boolean>;
+
+    /**
+     * set option of move home
+     *
+     * @param use use moveToUserHome(true), use moveToHWHome(false)
+     * @param pose if use userhome. go to this pose.
+     * @return Promise<boolean>
+     *
+     * @api-version 1
+     * @system
+     */
+    setHomingOption(data: HomingOption): Promise<boolean>;
+
+    /**
+     * set wheter to use custom home position.
+     *
+     * @param use use moveToUserHome(true), use moveToHWHome(false)
+     * @return Promise<boolean>
+     *
+     * @api-version 2
+     * @system
+     */
+    setUseUserHome(use: boolean): Promise<boolean>;
+
+    /**
+     * get option of move home
+     *
+     * @return move home option.
+     *
+     * @api-version 1
+     * @user
+     */
+    getHomingOption(): Promise<HomingOption>;
 }
 
 /**
@@ -13131,8 +16207,18 @@ export interface ICommunicationManager extends ISystemManager {
      *
      * @api-version 1
      * @user
+     * @deprecated
      */
     ethernetIp: IEthernetIP
+
+    /**
+     * industrialEthernet have device connection using industrialEthernet communication
+     * For example, setting that EthernetIp data
+     *
+     * @api-version 2
+     * @user
+     */
+    industrialEthernet: IIndustrialEthernet
 }
 
 /**
@@ -13141,7 +16227,7 @@ export interface ICommunicationManager extends ISystemManager {
  * @api-version 1
  * @user
  */
- export interface ITcpIp {
+export interface ITcpIp {
     /**
      * {@link Monitorable}
      * Server socket message received
@@ -13209,7 +16295,7 @@ export interface ICommunicationManager extends ISystemManager {
      * @api-version 1
      * @user
      */
-     open(uniqueId: number, mode: TcpCommunicationMode, ipAddress:string, portIndex: number) : Promise<TcpCommunicationResult>;
+    open(uniqueId: number, mode: TcpCommunicationMode, ipAddress:string, portIndex: number) : Promise<TcpCommunicationResult>;
 
     /**
      * Close TCP comm
@@ -13220,7 +16306,7 @@ export interface ICommunicationManager extends ISystemManager {
      * @api-version 1
      * @user
      */
-     close(uniqueId: number) : Promise<TcpCommunicationResult>;
+    close(uniqueId: number) : Promise<TcpCommunicationResult>;
 
     /**
      * Query server information
@@ -13231,7 +16317,7 @@ export interface ICommunicationManager extends ISystemManager {
      * @api-version 1
      * @user
      */
-     queryServerInfo(uniqueId: number) : Promise<TcpCommunicationServerInfo>;
+    queryServerInfo(uniqueId: number) : Promise<TcpCommunicationServerInfo>;
 
     /**
      * Query server information
@@ -13243,7 +16329,7 @@ export interface ICommunicationManager extends ISystemManager {
      * @api-version 1
      * @user
      */
-     queryClientInfo(uniqueId: number, clientId: number) : Promise<TcpCommunicationClientInfo>;
+    queryClientInfo(uniqueId: number, clientId: number) : Promise<TcpCommunicationClientInfo>;
 
     /**
      * Write data using client socket
@@ -13257,17 +16343,17 @@ export interface ICommunicationManager extends ISystemManager {
      */
     sendToServer(uniqueId: number, data:Uint8Array|string): Promise<boolean>;
 
-     /**
-      * Write data using server socket
-      * @param uniqueID Unique id.
-      * @param clientID client id.
-      * @param data The data to be sent
-      *
-      * @return errorType: ErrorType, result: Fulfills with true if the request has been operated successfully, otherwise false.
-      *
-      * @api-version 1
-      * @user
-      */
+    /**
+     * Write data using server socket
+     * @param uniqueID Unique id.
+     * @param clientID client id.
+     * @param data The data to be sent
+     *
+     * @return errorType: ErrorType, result: Fulfills with true if the request has been operated successfully, otherwise false.
+     *
+     * @api-version 1
+     * @user
+     */
     sendToClient(uniqueID: number, clientId: number, data:Uint8Array|string): Promise<boolean>;
 }
 
@@ -13285,20 +16371,37 @@ export interface ISerial {
      * @api-version 1
      * @user
      */
-     readonly serialDataUpdated: Monitorable<{uniqueId:number, data:Uint8Array}>;
-
-     /**
-      * {@link Monitorable}
-      * Serial Connection Status Updated
-      *
-      * @api-version 1
-      * @user
-      */
-     readonly serialConnectionStatusUpdated: Monitorable<{serialPort:string, status:number}>;
-
+    readonly serialDataUpdated: Monitorable<{uniqueId:number, data:Uint8Array}>;
 
     /**
-     * Opens the Flange Serial communication port at the robot controller.
+     * {@link Monitorable}
+     * Serial Connection Status Updated
+     *
+     * @api-version 1
+     * @user
+     */
+    readonly serialConnectionStatusUpdated: Monitorable<{serialPort:string, status:number}>;
+
+    /**
+     * Flange's Serial X1 Type
+     *
+     * @api-version 2
+     * @user
+     */
+    readonly flangeSerialX1Type: Monitorable<FlangeSerialCommunicationConfig>;
+
+    /**
+     * Flange's Serial X2 Type
+     *
+     * @api-version 2
+     * @user
+     */
+    readonly flangeSerialX2Type: Monitorable<FlangeSerialCommunicationConfig>;
+
+    /**
+     * Flange Version 1
+     * Opens the Flange Serial communication port.
+     *
      * @param  baudrate Communication speed (Baudrate 2400, 4800, 9600, 19200, 38400, 57600, 115200 etc)
      * - `default` 115200
      * @param  baudrate Communication speed (Baudrate)
@@ -13310,43 +16413,81 @@ export interface ISerial {
      *
      * @api-version 1
      * @user
+     * @deprecated Use {@link flangeSerialOpenOn} instead.
      */
     flangeSerialOpen(baudrate: number, byteSize: ByteSize, parityBit: ParityCheck, stopBit: StopBit) : Promise<boolean>;
 
     /**
+     * Flange Version 2
+     * Opens the Flange Serial communication port.
+     *
+     * @param  portIndex Flange Analog Port {@link GpioFlangePortIndex}
+     * @param  baudrate Communication speed
+     * - `default` 115200
+     * @param  byteSize Size of byte {@link FlangeByteSize}
+     * @param  parityBit Parity bit {@link ParityCheck}
+     * @param  stopBit Stop bit {@link StopBit}
+     *
+     * @return Return <Promise> Fulfills with true if the request has been operated successfully, otherwise false.
+     *
+     * @api-version 2
+     * @user
+     */
+    flangeSerialOpenOn(portIndex: GpioFlangePortIndex, baudrate: number, byteSize: FlangeByteSize, parityBit: ParityCheck, stopBit: StopBit) : Promise<boolean>;
+
+    /**
+     * Flange Version 1
      * Close the Flange Serial communication port.
      *
      * @return Return <Promise> Fulfills with true if the request has been operated successfully, otherwise false.
      *
      * @api-version 1
      * @user
+     * @deprecated Use {@link flangeSerialCloseOn} instead.
      */
     flangeSerialClose() : Promise<boolean>;
 
     /**
+     * Flange Version 2
+     * Close the Flange Serial communication port for flange version 2
+     *
+     * @param  portIndex Flange Analog Port {@link GpioFlangePortIndex}
+     *
+     * @return Return <Promise> Fulfills with true if the request has been operated successfully, otherwise false.
+     *
+     * @api-version 2
+     * @user
+     */
+    flangeSerialCloseOn(portIndex: GpioFlangePortIndex) : Promise<boolean>;
+
+    /**
+     * Flange Version 2
      * data transfer through flange serial communication port.
      * Sends data via Flange Serial communication port at the robot controller.
      *
+     * @param  portIndex Flange Analog Port {@link GpioFlangePortIndex}
      * @param  data Data
      *
      * @return Return <Promise> Fulfills with true if the request has been operated successfully, otherwise false.
      *
-     * @api-version 1
+     * @api-version 2
      * @user
      */
-    flangeSerialWrite(data: string) : Promise<boolean>;
+    flangeSerialWriteOn(portIndex: GpioFlangePortIndex, data: string) : Promise<boolean>;
 
     /**
+     * Flange Version 2
      * Receive data via flange serial communication port. Waits for a response for the timeout time.
-     * @param  timeout Time out time(millisecond). If -1, wait indefinitely.
-     * - `default` -1
+     *
+     * @param  portIndex Flange Analog Port {@link GpioFlangePortIndex}
+     * @param  timeout Time out time(millisecond). If -1, wait indefinitely. `default` -1
      *
      * @return Return <Promise> Fulfills with true if the request has been operated successfully, otherwise false.
      *
-     * @api-version 1
+     * @api-version 2
      * @user
      */
-    flangeSerialRead(timeout: number) : Promise<string>;
+    flangeSerialReadOn(portIndex: GpioFlangePortIndex, timeout: number) : Promise<string>;
 
     /**
      * Open the Serial communication port.
@@ -13363,7 +16504,7 @@ export interface ISerial {
      * @api-version 1
      * @user
      */
-     open(uniqueId: number, serialPort: string, baudrate: number, byteSize: ByteSize, parityBit: ParityCheck, stopBit: StopBit, timeout:number) : Promise<SerialCommunicationResult>;
+    open(uniqueId: number, serialPort: string, baudrate: number, byteSize: ByteSize, parityBit: ParityCheck, stopBit: StopBit, timeout:number) : Promise<SerialCommunicationResult>;
 
     /**
      * Close the Serial communication port.
@@ -13374,7 +16515,7 @@ export interface ISerial {
      * @api-version 1
      * @user
      */
-     close(uniqueId: number) : Promise<SerialCommunicationResult>;
+    close(uniqueId: number) : Promise<SerialCommunicationResult>;
 
     /**
      * Query serial Comm information
@@ -13385,7 +16526,7 @@ export interface ISerial {
      * @api-version 1
      * @user
      */
-     queryCommInfo(uniqueId: number) : Promise<SerialCommunicationConfig>;
+    queryCommInfo(uniqueId: number) : Promise<SerialCommunicationConfig>;
 
     /**
      * Query all serial Comm information
@@ -13395,7 +16536,7 @@ export interface ISerial {
      * @api-version 1
      * @user
      */
-     queryAllCommInfo(): Promise<{result:number, count:number, serialConfig:SerialCommunicationConfig}>;
+    queryAllCommInfo(): Promise<{result:number, count:number, serialConfig:SerialCommunicationConfig}>;
 
     /**
      * Send data
@@ -13406,7 +16547,7 @@ export interface ISerial {
      * @api-version 1
      * @user
      */
-     write(uniqueId: number, serialData: Uint8Array|string) : Promise<SerialCommunicationResult>;
+    write(uniqueId: number, serialData: Uint8Array|string) : Promise<SerialCommunicationResult>;
 }
 
 /**
@@ -13418,7 +16559,7 @@ export interface ISerial {
  * @api-version 1
  * @user
  */
- export type FocasConnect = {
+export type FocasConnect = {
     /**
      * Error Code
      *
@@ -13559,7 +16700,7 @@ export type FocasPmcData = {
  * @api-version 1
  * @user
  */
- export type FocasPmc = {
+export type FocasPmc = {
     /**
      * Error Code
      *
@@ -13794,12 +16935,65 @@ export type FocasIsAlive = {
 };
 
 /**
+ * result of focas query information
+ *
+ * @api-version 2
+ * @user
+ */
+export type FocasQueryInfo = {
+    /**
+     * The number of data in the list.
+     *
+     * @api-version 2
+     * @user
+     */
+    connectionCount: number;
+    /**
+     * list of focas informations
+     *
+     * @api-version 2
+     * @user
+     */
+    connectionInfo: FocasConnection[];
+};
+
+/**
+ * focas information
+ *
+ * @api-version 2
+ * @user
+ */
+export type FocasConnection = {
+    /**
+     * ip adress
+     *
+     * @api-version 2
+     * @user
+     */
+    ipAddress: string;
+    /**
+     * port number
+     *
+     * @api-version 2
+     * @user
+     */
+    port: number;
+    /**
+     * Handle number
+     *
+     * @api-version 2
+     * @user
+     */
+    handle: number;
+};
+
+/**
  * IFocas have api and monitoring data variable. These elements are related to Focas communication function.
  *
  * @api-version 1
  * @user
  */
- export interface IFocas {
+export interface IFocas {
     /**
      * Connect to FOCAS. Makes a communication connection with Machine tool by using FOCAS Library.
      *
@@ -13832,17 +17026,6 @@ export type FocasIsAlive = {
      * @user
      */
     readPmcData(params: FocasPmc): Promise<FocasPmc>;
-
-    /**
-     * Write pmc data of FOCAS. Delivers the PMC data writing request of Machine tool by using FOCAS Library.
-     *
-     * @param params {@link FocasPmc}
-     * @return Return <Promise> Fulfills with the {@link FocasPmc}.
-     *
-     * @api-version 1
-     * @user
-     */
-    writePmcData(params: FocasPmc): Promise<FocasPmc>;
 
     /**
      * Read cnc parameter of FOCAS
@@ -13887,6 +17070,16 @@ export type FocasIsAlive = {
      * @user
      */
     isAlive(handle: number): Promise<FocasIsAlive>;
+
+    /**
+     * Get query info
+     *
+     * @return Return <Promise> Fulfills with the {@link FocasQueryInfo}.
+     *
+     * @api-version 2
+     * @user
+     */
+    queryInfo(): Promise<FocasQueryInfo>;
 }
 
 /**
@@ -13894,6 +17087,7 @@ export type FocasIsAlive = {
  *
  * @api-version 1
  * @user
+ * @deprecated
  */
 export interface IEthernetIP {
     /**
@@ -13902,6 +17096,7 @@ export interface IEthernetIP {
      *
      * @api-version 1
      * @user
+     * @deprecated
      */
     readonly ieSlave: Monitorable<EthernetIpMonitoring>;
 
@@ -13912,6 +17107,7 @@ export interface IEthernetIP {
      *
      * @api-version 1
      * @system
+     * @deprecated
      */
     setMonitoring(start: boolean): Promise<boolean>;
 
@@ -13925,6 +17121,7 @@ export interface IEthernetIP {
      *
      * @api-version 1
      * @user
+     * @deprecated
      */
     getInputRegisterBit(gprType: EthernetIpGprDataType, gprAddress: number, portType: number) : Promise<EthernetIpData>;
 
@@ -13939,8 +17136,63 @@ export interface IEthernetIP {
      *
      * @api-version 1
      * @user
+     * @deprecated
      */
     setOutputRegisterBit(gprType: EthernetIpGprDataType, gprAddress: number, data: string) : Promise<boolean>;
+}
+
+/**
+ * IIndustrialEthernet have api and monitoring data variable. These elements are related to Industrial Ethernet communication function.
+ *
+ * @api-version 2
+ * @user
+ */
+export interface IIndustrialEthernet {
+    /**
+     * {@link Monitorable}
+     * {@link IEMonitoring}
+     *
+     * @api-version 2
+     * @user
+     */
+    readonly ieSlave: Monitorable<IEMonitoring>;
+
+    /**
+     * Setting whether to monitor industrial Ethernet status
+     * @param start monitoring 0: stop 1: start
+     * @return Promise<boolean> returns true if successful, false if unsuccessful.
+     *
+     * @api-version 2
+     * @system
+     */
+    setMonitoring(start: boolean): Promise<boolean>;
+
+    /**
+     * Get an industrial ethernet protocol general purpose register value
+     *
+     * @param gprType data type. 0:bit, 1:int, 2:float
+     * @param gprAddress address
+     * @param portType 0:in, 1:out
+     * @return Return <Promise> Fulfills with the {@link EthernetIpData}.
+     *
+     * @api-version 2
+     * @user
+     */
+    getInputRegister(gprType: IEGprDataType, gprAddress: number, portType: number) : Promise<IEData>;
+
+    /**
+     * Set an industrial ethernet protocol general purpose register value.
+     * <br>Controls and alters the Industrial Ethernet GPR output.
+     *
+     * @param gprType data type. 0:bit, 1:int, 2:float
+     * @param gprAddress Variable address
+     * @param data Variable output data- 128 byte string
+     * @return Return <Promise> Fulfills with true if the request has been operated successfully, otherwise false.
+     *
+     * @api-version 2
+     * @user
+     */
+    setOutputRegister(gprType: IEGprDataType, gprAddress: number, data: string) : Promise<boolean>;
 }
 
 /**
@@ -14000,7 +17252,7 @@ export interface IModbusGeneral {
      * Controls and changes multi way printout of the user-defined-input/output signal in order to use ModbusRTU communication because of the characteristic of the I/O extension and synchronization target.
      *
      * @summary Modbus I/O 신호의 다중 출력을 제어 및 변경
-     * @param symbol I/O id of 32 byte
+     * @param symbol I/O id of 26 byte
      * @param registerCount Number of I/O output (maximum 100)
      * @param registerValue Array of I/O output values
      * @return Return <Promise> Fulfills with true if the request has been operated successfully, otherwise false.
@@ -14025,11 +17277,11 @@ export interface IModbusGeneral {
     /**
      * This is a function to check the signal of the Modbus I/O signal contact in the robot controller.
      *
-     * @param symbol I/O name- Modbus I/O signal name (32 bytes)
+     * @param symbol I/O name- Modbus I/O signal name (31 bytes)
      * @return Return <Promise> Fulfills with Modbus I/O signal.
      *
      * **Remarks**
-     * - I/O name item is the signal name of user-defined 32 byte Modbus I/O. In order to define Modbus I/O signal, minimum three information is needed including IP address of Modbus equipment, Register type, and register number etc., but because for programming and monitoring, it is impossible to use and identify the signal by using all of these, user-defined name is made and used.
+     * - I/O name item is the signal name of user-defined 31 byte Modbus I/O. In order to define Modbus I/O signal, minimum three information is needed including IP address of Modbus equipment, Register type, and register number etc., but because for programming and monitoring, it is impossible to use and identify the signal by using all of these, user-defined name is made and used.
      *
      * @api-version 1
      * @user
@@ -14062,7 +17314,7 @@ export interface IModbusGeneral {
      * Deletes the user-defined-input/output signal of target equipment in order to use ModbusRTU (FC15 (multiple coils)/16 (multiple holding registers)).
      *
      * @summary 사용자가 정의한 Modbus I/O 신호를 삭제
-     * @param  symbol I/O name- I/O id of 32 byte
+     * @param  symbol I/O name- I/O id of 26 byte
      * @return Return <Promise> Fulfills with true if the request has been operated successfully, otherwise false.
      *
      * **Remarks**
@@ -14085,7 +17337,7 @@ export interface IModbusRTU extends IModbusGeneral {
      * Adds and defines Modbus RTU Signal
      *
      * @summary 모드버스 RTU I/O 정의(추가)
-     * @param  symbol I/O id name of 32 byte
+     * @param  symbol I/O id name of 26 byte
      * @param  serialPort Serialport of 16 byte
      * @param  slaveId Slave ID
      * @param  baudrate Communication speed (Baudrate)
@@ -14107,7 +17359,7 @@ export interface IModbusRTU extends IModbusGeneral {
      * Distinguishes and monitors the Input/Output signal of targeted equipment in case Modbus(FC15/16) communication should be used.
      *
      * @summary ModbusRTU (FC15/16)통신을 사용하여야 하는 경우, 대상 장비의 I/O 신호를 식별 및 모니터링
-     * @param symbol I/O id name of 32 byte
+     * @param symbol I/O id name of 26 byte
      * @param serialPort Serialport of 16 byte
      * @param slaveId Slave ID
      * @param baudrate Communication speed (Baudrate)
@@ -14164,7 +17416,7 @@ export interface IModbusTCP extends IModbusGeneral {
     /**
      * Add Modbus Multi Signal
      *
-     * @param symbol I/O Name-32 byte of I/O identification name
+     * @param symbol I/O Name-26 byte of I/O identification name
      * @param ipAddress Equipment address-IP address of target equipment
      * @param portIndex Port number-Port number of target equipment
      * @param slaveId Slave ID-Slave ID (0~255)
@@ -14221,7 +17473,7 @@ export interface IDigitalIO {
      * @api-version 1
      * @user
      */
-    readonly safetyInput: Monitorable<TwoNumArray>;
+    readonly safetyInput: Monitorable<ThreeNumArray>;
 
     /**
      * Flange's Input data
@@ -14253,23 +17505,39 @@ export interface IDigitalIO {
      * @api-version 1
      * @user
      */
-     readonly flangeOutputVoltage: Monitorable<GpioDigitalVoltage>;
+    readonly flangeOutputVoltage: Monitorable<GpioDigitalVoltage>;
 
-     /**
-      * Flange's Output X1 BJT Type
-      *
-      * @api-version 1
-      * @user
-      */
-     readonly flangeOutputX1Type: Monitorable<GpioDigitalType>;
+    /**
+     * Flange's Output X1 BJT Type
+     *
+     * @api-version 1
+     * @user
+     */
+    readonly flangeOutputX1Type: Monitorable<GpioDigitalType>;
 
-     /**
-      * Flange's Output X2 BJT Type
-      *
-      * @api-version 1
-      * @user
-      */
-     readonly flangeOutputX2Type: Monitorable<GpioDigitalType>;
+    /**
+     * Flange's Output X2 BJT Type
+     *
+     * @api-version 1
+     * @user
+     */
+    readonly flangeOutputX2Type: Monitorable<GpioDigitalType>;
+
+    /**
+     * Flange's Safety data(servo off)
+     *
+     * @api-version 2
+     * @user
+     */
+    readonly flangeServoSafetyMode: Monitorable<FlangeInterlockServoOff>;
+
+    /**
+     * Flange's Safety data(Interrupt)
+     *
+     * @api-version 2
+     * @user
+     */
+    readonly flangeInterruptSafetyMode: Monitorable<FlangeInterlockInterrupted>;
 
     /**
      * get digital input signal On/Off info. (Flange)(0~5) / (Controller)(0~15)
@@ -14296,7 +17564,7 @@ export interface IDigitalIO {
     setDigitalInput(type: GpioTypeIndex, gpioIndex: GpioControlBoxDigitalIndex | GpioFlangeDigitalIndex, signalOn: boolean): Promise<boolean>;
 
     /**
-     * get digital output signal On/Off info. (Flange)(0~5) / (Controller)(0~15)
+     * get digital output signal On/Off info. (Flange)(0~5) / (Controller)(0~19)
      *
      * @param type
      * @return SixNumArray
@@ -14328,8 +17596,20 @@ export interface IDigitalIO {
      *
      * @api-version 1
      * @user
+     * @deprecated Use {@link setFlangeOutputVoltage} instead. this function is not working.
      */
     setDigitalOutputVoltage(type: GpioTypeIndex, voltage: GpioDigitalVoltage): Promise<boolean>;
+
+    /**
+     * set digital flange output voltage
+     *
+     * @param voltage voltage level 0: 0v, 1: 12v, 2: 24v
+     * @return Promise<boolean> return true if create a table successfully, otherwise return false.
+     *
+     * @api-version 2
+     * @system
+     */
+    setFlangeOutputVoltage(voltage: GpioDigitalVoltage): Promise<boolean>;
 
     /**
      * set digital output type
@@ -14341,21 +17621,46 @@ export interface IDigitalIO {
      *
      * @api-version 1
      * @user
+     * @deprecated Use {@link setFlangeDigitalOutputType}. this function is not working.
      */
     setDigitalOutputType(type: GpioTypeIndex, portIndex: GpioFlangePortIndex, digitalType: GpioDigitalType): Promise<boolean>;
 
     /**
+     * set Flange digital output type
+     *
+     * @param portIndex {@link GpioFlangePortIndex}
+     * @param digitalType {@link GpioDigitalType}
+     * @return Promise<boolean> return true if create a table successfully, otherwise return false.
+     *
+     * @api-version 2
+     * @system
+     */
+    setFlangeDigitalOutputType(portIndex: GpioFlangePortIndex, digitalType: GpioDigitalType): Promise<boolean>;
+
+    /**
      * set digital outputs (multi set Digital Outputs)
      *
-     * @param type
-     * @param count 1: X1, 2: X2
-     * @param ioInfo 0: PNP, 1: NPN
+     * @param type {@link GpioTypeIndex}
+     * @param count ioInfo count
+     * @param ioInfo digital output setting value.
      * @return Promise<boolean> return true if create a table successfully, otherwise return false.
      *
      * @api-version 1
      * @user
      */
     setDigitalOutputs(type: GpioTypeIndex, count: number, ioInfo: GpioPort[]): Promise<boolean>;
+
+    /**
+     * set flange digital output safety
+     *
+     * @param servo {@link FlangeInterlockServoOff}
+     * @param interrupt {@link FlangeInterlockInterrupted}
+     * @return Promise<boolean> return true if create a table successfully, otherwise return false.
+     *
+     * @api-version 2
+     * @system
+     */
+    setFlangeDigitalOutputPowerOptionBySafety(servo: FlangeInterlockServoOff, interrupt: FlangeInterlockInterrupted): Promise<boolean>;
 }
 
 /**
@@ -14419,7 +17724,7 @@ export interface IAnalogIO {
      * @api-version 1
      * @user
      */
-     readonly flangeInputX1PinMode: Monitorable<FlangeAnalogPinMode>;
+    readonly flangeInputX1PinMode: Monitorable<FlangeAnalogPinMode>;
 
     /**
      * X2 Analog Input Pin Mode(Flange).
@@ -14427,7 +17732,7 @@ export interface IAnalogIO {
      * @api-version 1
      * @user
      */
-     readonly flangeInputX2PinMode: Monitorable<FlangeAnalogPinMode>;
+    readonly flangeInputX2PinMode: Monitorable<FlangeAnalogPinMode>;
 
     /**
      * get analog input value.
@@ -14537,19 +17842,19 @@ export interface IAnalogIO {
      * @api-version 1
      * @user
      */
-     getFlangeAnalogInputPinMode(pinIndex: GpioFlangePortIndex) : FlangeAnalogPinMode
+    getFlangeAnalogInputPinMode(pinIndex: GpioFlangePortIndex) : FlangeAnalogPinMode
 
     /**
-      * Set flange analog pin mode.
-      *
-      * @param pinIndex The port index to set the mode. {@link GpioFlangePortIndex}
-      * @param pinMode Mode type to set {@link FlangeAnalogPinMode}
-      * @return Return <Promise> Fulfills with an {@link FlangeAnalogPinMode}
-      *
-      * @api-version 1
-      * @system
-      */
-     setFlangeAnalogInputPinMode(pinIndex: GpioFlangePortIndex, pinMode: FlangeAnalogPinMode): Promise<boolean>
+     * Set flange analog pin mode.
+     *
+     * @param pinIndex The port index to set the mode. {@link GpioFlangePortIndex}
+     * @param pinMode Mode type to set {@link FlangeAnalogPinMode}
+     * @return Return <Promise> Fulfills with an {@link FlangeAnalogPinMode}
+     *
+     * @api-version 1
+     * @system
+     */
+    setFlangeAnalogInputPinMode(pinIndex: GpioFlangePortIndex, pinMode: FlangeAnalogPinMode): Promise<boolean>
 }
 
 /**
@@ -14573,7 +17878,7 @@ export type MonitoringVariable = {
      * @api-version 1
      * @user
      */
-    type: 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7;
+    type: SystemVariableType;
 
     /**
      * Variable name
@@ -14669,6 +17974,13 @@ export type RunningProgramInfo = {
      */
     packageName: string,
     /**
+     * A screen's id who is requester of the running program.
+     *
+     * @api-version 1
+     * @user
+     */
+    screenId: string,
+    /**
      * A timer to retrieve total and cycle time.
      *
      * @api-version 1
@@ -14732,7 +18044,7 @@ export interface IProgramManager extends ISystemManager {
     readonly runningProgramInfo: Monitorable<RunningProgramInfo>;
 
     /**
-     * {@link Monitorable} DRL(tp_log) message. (string data type)
+     * {@link Monitorable} for 'tp_log' DRL.
      *
      * @api-version 1
      * @user
@@ -14740,7 +18052,7 @@ export interface IProgramManager extends ISystemManager {
     readonly userLog: Monitorable<string>;
 
     /**
-     * {@link Monitorable} for User input.
+     * {@link Monitorable} for 'tp_get_user_input' DRL.
      *
      * @api-version 1
      * @user
@@ -14748,7 +18060,7 @@ export interface IProgramManager extends ISystemManager {
     readonly userInputPopup: Monitorable<{ type: UserInputType, text: string }>;
 
     /**
-     * {@link Monitorable} for User Popup message
+     * {@link Monitorable} for 'tp_popup' DRL.
      *
      * @api-version 1
      * @user
@@ -14756,7 +18068,15 @@ export interface IProgramManager extends ISystemManager {
     readonly userPopup: Monitorable<{ text: string, level: UserPopupLevel, buttonType: UserPopupButtonType }>;
 
     /**
-     * {@link Monitorable} for drl-waitNudge state
+     * {@link Monitorable} for 'message_to_dp' DRL.
+     *
+     * @api-version 2
+     * @user
+     */
+    readonly userEvent: Monitorable<{ eventName: string, data: string }>;
+
+    /**
+     * {@link Monitorable} for 'wait_nudge' DRL.
      *
      * @api-version 1
      * @user
@@ -14764,7 +18084,7 @@ export interface IProgramManager extends ISystemManager {
     readonly waitNudge: Monitorable<boolean>;
 
     /**
-     * {@link Monitorable} for drl-waitHandGuide state
+     * {@link Monitorable} for 'wait_manual_guide' DRL.
      *
      * @api-version 1
      * @user
@@ -14778,6 +18098,14 @@ export interface IProgramManager extends ISystemManager {
      * @user
      */
     readonly monitoringVariables: Monitorable<MonitoringVariable[]>;
+
+     /**
+      * {@link Monitorable} for error hanlding state monitoring information
+      *
+      * @api-version 2
+      * @user
+      */
+    readonly errorHandlingStatus: Monitorable<{state:ErrorHandlingState, mode:ErrorHandlingMode}>;
 
     /**
      * Get current program state.
@@ -14917,7 +18245,7 @@ export interface IProgramManager extends ISystemManager {
     unregisterSubProgramInterceptor(interceptor: (program: string) => void): void;
 
     /**
-     * After Tp_popup drl-command during DRL program operation, it ends and resumes the next paused program.
+     * After 'tp_popup' ({@link userPopup}) drl-command during DRL program operation, it ends and resumes the next paused program.
      *
      * @param resume true: resume, false: stop
      *
@@ -14929,7 +18257,7 @@ export interface IProgramManager extends ISystemManager {
     sendUserPopupResponse(resume: boolean): Promise<boolean>
 
     /**
-     * After tp_Get_UserInput drl-command during DRL program operation, it ends and resumes the next paused program.
+     * After 'tp_get_user_input' ({@link userInputPopup}) drl-command during DRL program operation, it ends and resumes the next paused program.
      *
      * @param userInput user input value
      *
@@ -14941,7 +18269,20 @@ export interface IProgramManager extends ISystemManager {
     sendUserInputPopupResponse(userInput: string): Promise<boolean>
 
     /**
-     * After entering the direct teaching mode during DRL program operation, it ends and resumes the next paused program.
+     * After 'message_to_dp' ({@link userEvent}) drl-command during DRL program operation, it ends and resumes the next paused program.
+     *
+     * @param eventName Event name to send to DRL program.
+     * @param data Data to transfer to DRL program.
+     *
+     * @return Return true if the request has been operated successfully, otherwise false.
+     *
+     * @api-version 2
+     * @user
+     */
+    sendUserEventResponse(eventName: string, data: string): Promise<boolean>
+
+    /**
+     * After entering the direct teaching mode by the 'wait_manual_guide' drl-command during DRL program operation, it ends and resumes the next paused program.
      *
      * @return Return true if the request has been operated successfully, otherwise false.
      *
@@ -14951,7 +18292,7 @@ export interface IProgramManager extends ISystemManager {
     sendWaitHandGuideResponse(): Promise<boolean>
 
     /**
-     * After entering the nudge mode during DRL program operation, it ends and resumes the next paused program.
+     * After entering the nudge mode by the 'wait_nudge' drl-command during DRL program operation, it ends and resumes the next paused program.
      *
      * @return Return true if the request has been operated successfully, otherwise false.
      *
@@ -14959,63 +18300,6 @@ export interface IProgramManager extends ISystemManager {
      * @user
      */
     sendWaitNudgeResponse(): Promise<boolean>
-}
-
-/**
- * Level Mode
- *
- * @enum
- * @api-version 1
- * @user
- */
-export const LevelMode = {
-    /**
-     * manual level
-     *
-     * @api-version 1
-     * @user
-     */
-    MANUAL_LEVEL: "manual",
-
-    /**
-     * auto level
-     *
-     * @api-version 1
-     * @user
-     */
-    AUTO_LEVEL: "auto",
-} as const;
-/**
- * @ignore
- */
-export type LevelMode = typeof LevelMode[keyof typeof LevelMode];
-
-/**
- * ILevelModeManager have APIs for managing authority.
- *
- * @api-version 1
- * @user
- */
-export interface ILevelModeManager extends ISystemManager {
-
-    /**
-     * Level mode state Monitorable.
-     *
-     * @api-version 1
-     * @user
-     */
-    readonly levelMode: Monitorable<LevelMode>;
-
-    /**
-     * Check if the module has access rights.
-     *
-     * @param executableOperationLevel module accessibility level.
-     * @return Returns true if the module can access the current level.
-     *
-     * @api-version 1
-     * @user
-     */
-    checkAccessAuthority(executableOperationLevel: string[]): boolean
 }
 
 /**
@@ -15032,28 +18316,6 @@ export interface IAuthorityManager extends ISystemManager {
      * @user
      */
     readonly authorityState: Monitorable<AuthorityState>;
-
-    /**
-     * Request to get authority.
-     *
-     * @param force Whether get an authority by force.
-     * @return Return true if system was requested successfully, otherwise false.
-     *
-     * @api-version 1
-     * @system
-     */
-    requestAuthority(force: boolean): boolean
-
-    /**
-     * Response about requesting to transfer authority.
-     *
-     * @param transfer Whether allow to transfer my authority.
-     * @return Return true if system was sent response successfully, otherwise false.
-     *
-     * @api-version 1
-     * @system
-     */
-    responseToTransferAuthority(transfer: boolean): boolean
 }
 
 /**
@@ -15062,7 +18324,7 @@ export interface IAuthorityManager extends ISystemManager {
  * @api-version 1
  * @user
  */
- export interface IMeasureManager extends ISystemManager {
+export interface IMeasureManager extends ISystemManager {
     /**
      * Get robot install pose.
      * <br> This is integration version of auto measure command of robot installation pose information and Safety mode setting command. Measures and calculates the pose information that the robot is installed.
@@ -15111,7 +18373,21 @@ export interface IAuthorityManager extends ISystemManager {
      * @api-version 1
      * @user
      */
-    measureFrictionValue(type: number, select:SixNumArray, start:SixNumArray, range:SixNumArray): Promise<SixNumArray>
+    measureFrictionValue(type: number, select:SixNumArray, start:SixNumArray, range:SixNumArray): Promise<FrictionValueResult>
+
+    /**
+     * Save the friction coefficient of each axis of the robot and return the result value. (Safe Command)
+     *
+     * @param targetFriction The axis selected to measure. 0: unselect, 1: select
+     * @param positiveSpeedFactor Measured Positive Speed Factor of each joint.
+     * @param negativeSpeedFactor Measured Negative Speed Factor of each joint.
+     * @param temperature Measured temperature of each joint.
+     * @return Return true if the request has been operated successfully, otherwise false.
+     *
+     * @api-version 1
+     * @user
+     */
+    setFrictionCompensation(targetFriction : SixNumArray, positiveSpeedFactor : FourSixNumArray, negativeSpeedFactor : FourSixNumArray, temperature : SixNumArray): Promise<boolean>
 
     /**
      * Measure the tcp coordinate
@@ -15128,6 +18404,23 @@ export interface IAuthorityManager extends ISystemManager {
      * @user
      */
     measureTCP(targetReference: 0 | 1, targetPose1: SixNumArray, targetPose2: SixNumArray, targetPose3: SixNumArray, targetPose4: SixNumArray): Promise<TcpCoordinateCalculationResult>
+
+    /**
+     * Measure the tcp coordinate
+     * <br> Unlike the other APIs, this API has a separate timeout time. (3 minutes)
+     *
+     * @param targetReference Reference Coordinate. 0: Base, 1: Tool
+     * @param targetPose1 Reference Position
+     * @param targetPose2 Reference Position
+     * @param targetPose3 Reference Position
+     * @param targetPose4 Reference Position
+     * @param orientationType The OrientatioType of result. If not set, it is {@link OrientationType.EULER_ZYX}
+     * @return Return Calibration Result. {@link TcpCoordinateCalculationResult}
+     *
+     * @api-version 2
+     * @user
+     */
+    measureTCP(targetReference: 0 | 1, targetPose1: ManipulatorPose, targetPose2: ManipulatorPose, targetPose3: ManipulatorPose, targetPose4: ManipulatorPose, orientationType?:OrientationType): Promise<TcpCoordinateCalculationResult>
 
     /**
      * Measure the tool weight
@@ -15147,337 +18440,67 @@ export interface IAuthorityManager extends ISystemManager {
 }
 
 /**
- * Welding data type.
+ * IArcweldingManager have APIs for arc welding application
  *
- * @api-version 1
+ * @api-version 2
  * @user
  */
-export type WeldingData = {
+ export interface IArcweldingManager extends ISystemManager {
     /**
-     * 용접 조건 조정 구간 정보
+     * Set the A contact (NO: Normally Open), B contact (NC: Normally Close) and input channel of the welder output signal.
      *
-     * @api-version 1
-     * @user
-     */
-    adjustAvailableStatus: WeldingAdjustAvailableStatus,
-    /**
-     * 목표 전압
-     *
-     * @api-version 1
-     * @user
-     */
-    targetVoltage: number,
-    /**
-     * 목표 전류
-     *
-     * @api-version 1
-     * @user
-     */
-    targetCurrent: number,
-    /**
-     * 목표 속도
-     *
-     * @api-version 1
-     * @user
-     */
-    targetVelocity: number,
-    /**
-     * 측정 전압
-     *
-     * @api-version 1
-     * @user
-     */
-    actualVoltage: number,
-    /**
-     * 측정 전류
-     *
-     * @api-version 1
-     * @user
-     */
-    actualCurrent: number,
-    /**
-     * 위빙 Y 오프셋
-     *
-     * @api-version 1
-     * @user
-     */
-    offsetY: number,
-    /**
-     * 위빙 Z 오프셋
-     *
-     * @api-version 1
-     * @user
-     */
-    offsetZ: number,
-    /**
-     * 아크온 채널 신호 (0 or 1)
-     *
-     * @api-version 1
-     * @user
-     */
-    arcOnDO: number,
-    /**
-     * 가스온 채널 신호 (0 or 1)
-     *
-     * @api-version 1
-     * @user
-     */
-    gasOnDO: number,
-    /**
-     * 역방향인칭 채널 신호 (0 or 1)
-     *
-     * @api-version 1
-     * @user
-     */
-    inchingPositiveDO: number,
-    /**
-     * 정방향인칭온 채널 신호 (0 or 1)
-     *
-     * @api-version 1
-     * @user
-     */
-    inchingNegativeDO: number,
-    /**
-     * 용접 상태
-     *
-     * @api-version 1
-     * @user
-     */
-    status: WeldingStatus
-}
-
-/**
- * Analog Welding data type.
- *
- * @api-version 1
- * @user
- */
-export type AnalogWeldingData = WeldingData & {
-    /**
-     * Blow out Value
-     *
-     * @api-version 1
-     * @user
-     */
-    blowOut: number,
-    /**
-     * 목표 피딩 속도
-     *
-     * @api-version 1
-     * @user
-     */
-    feedingVelocity: number
-}
-
-/**
- * Digital Welding data type.
- *
- * @api-version 1
- * @user
- */
-export type DigitalWeldingData = WeldingData & {
-    /**
-     * Blow out Value
-     *
-     * @api-version 1
-     * @user
-     */
-    blowOut: number,
-    /**
-     * 목표 피딩 속도
-     *
-     * @api-version 1
-     * @user
-     */
-    feedingVelocity: number,
-    /**
-     * 측정 피딩 속도
-     *
-     * @api-version 1
-     * @user
-     */
-    actualFeedingVelocity: number,
-    /**
-     * Error number
-     *
-     * @api-version 1
-     * @user
-     */
-    errorNumber: number,
-    /**
-     * Wire stick
-     *
-     * @api-version 1
-     * @user
-     */
-    wireStick: number,
-    /**
-     * Error
-     *
-     * @api-version 1
-     * @user
-     */
-    error: number,
-    /**
-     * Option 1
-     *
-     * @api-version 1
-     * @user
-     */
-    option1: number,
-    /**
-     * Option 2
-     *
-     * @api-version 1
-     * @user
-     */
-    option2: number,
-    /**
-     * Option 3
-     *
-     * @api-version 1
-     * @user
-     */
-     option3: number,
-    /**
-     * Option 4
-     *
-     * @api-version 1
-     * @user
-     */
-    option4: number,
-    /**
-     * Option 5
-     *
-     * @api-version 1
-     * @user
-     */
-    option5: number,/**
-     * Option 6
-     *
-     * @api-version 1
-     * @user
-     */
-    option6: number,
-    /**
-     * Option 7
-     *
-     * @api-version 1
-     * @user
-     */
-    option7: number,
-    /**
-     * Option 8
-     *
-     * @api-version 1
-     * @user
-     */
-     option8: number,
-    /**
-     * Option 9
-     *
-     * @api-version 1
-     * @user
-     */
-    option9: number,
-    /**
-     * Option 10
-     *
-     * @api-version 1
-     * @user
-     */
-    option10: number,
-    /**
-     * Current flow (0 or 1)
-     *
-     * @api-version 1
-     * @user
-     */
-    currentFlow: number,
-    /**
-     * Process active (0 or 1)
-     *
-     * @api-version 1
-     * @user
-     */
-    processActive: number,
-    /**
-     * Machine ready (0 or 1)
-     *
-     * @api-version 1
-     * @user
-     */
-    machineryReady: number,
-    /**
-     * Voltage Correction
-     *
-     * @api-version 1
-     * @user
-     */
-    voltageCorrection: number,
-    /**
-     * Dynamic Correction
-     *
-     * @api-version 1
-     * @user
-     */
-    dynamicCorrection: number
-}
-
-/**
- * IApplicationManager have APIs for application like welding, palletizing, etc.
- *
- * @api-version 1
- * @user
- */
-export interface IApplicationManager extends ISystemManager {
-    /**
-     * {@link Monitorable} for analog welding data.
-     *
-     * @api-version 1
-     * @user
-     */
-    readonly analogWelding: Monitorable<AnalogWeldingData>;
-
-    /**
-     * {@link Monitorable} for digital welding data.
-     *
-     * @api-version 1
-     * @user
-     */
-    readonly digitalWelding: Monitorable<DigitalWeldingData>;
-
-    /**
-     * {@link Monitorable} for digital welding communication state.
-     *
-     * @api-version 1
-     * @user
-     */
-    readonly digitalWeldingCommState: Monitorable<{ weldingMachineOnline: WeldingCommunicationState, weldingEipSlaveState: WeldingSlaveCommunicationState }>;
-
-    /**
-     * {@link Monitorable} for welding data.
-     *
-     * @api-version 1
-     * @user
-     */
-    readonly welding: Monitorable<WeldingData>;
-
-    /**
-     * Set the singularity response direction in palletizing application motion.
-     *
-     * @param mode 0:mode setting, 1:mode non-setting
+     * @param arcOnChannel Arc channel. If it is -1, it is not used.
+     * @param arcOnContact switch relay contact
+     * @param gasOnChannel Gas channel. If it is -1, it is not used.
+     * @param gasOnContact switch relay contact
+     * @param wireOnChnnel Wire channel. If it is -1, it is not used.
+     * @param wireOnContact switch relay contact
      * @return Return true if the request has been operated successfully, otherwise false.
      *
-     * @api-version 1
+     * @api-version 2
      * @user
      */
-    setPalletizingOperation(mode: number): Promise<boolean>;
+    setWeldSignalContactStatus(arcOnChannel:-1|GpioControlBoxDigitalIndex, arcOnContact:SwitchRelayContact, gasOnChannel:-1|GpioControlBoxDigitalIndex, gasOnContact:SwitchRelayContact, wireOnChnnel:-1|GpioControlBoxDigitalIndex, wireOnContact:SwitchRelayContact): Promise<boolean>;
 }
 // [END] Robot Control System API
 
 
 // [START] Hardware Control System API /////////////////////////
+/**
+ * INetworkManager checks the state of being able to connect to an external network.
+ *
+ * @api-version 1
+ * @user
+ */
+export interface INetworkManager extends ISystemManager {
+    /**
+     * {@link Monitorable} Whether network is online or not.
+     *
+     * @api-version 2
+     * @user
+     */
+    readonly online: Monitorable<boolean>;
+
+    /**
+     * Check Network Connection
+     *
+     * @return  Result: If the network is available, return true, or false.
+     *
+     * @api-version 1
+     * @user
+     */
+    isNetworkAvailable(): Promise<boolean>;
+
+    /**
+     * Check URL Reachable
+     *
+     * @return  Result: If the URL is reachable, return true, or false.
+     *
+     * @api-version 1
+     * @user
+     */
+    isReachableURL(url:string): Promise<boolean>;
+}
 // [END] Hardware Control System API /////////////////////////
 
 
@@ -15488,7 +18511,7 @@ export interface IApplicationManager extends ISystemManager {
  * @api-version 1
  * @user
  */
-export const DeviceSettingsTableContracts = {
+ export const DeviceSettingsTableContracts = {
     /**
      * Table name.
      *
@@ -15519,7 +18542,7 @@ export const DeviceSettingsTableContracts = {
     COLUMN_ALIAS_NAME: "aliasName",
     /**
      * Column name for setting type.
-     * Please refer to 'https://788855dad029521bcbba6e5eb5fb79221b741577.drdart.io/' for available types.
+     * Please refer to {@link DeviceSettingDataType} for available types.
      *
      * @api-version 1
      * @user
@@ -15529,7 +18552,7 @@ export const DeviceSettingsTableContracts = {
      * Column name for data.
      * The string data is converted from an object composed of key and value pairs via {@link JSON.stringify}.
      * The object structure is different for each {@link COLUMN_TYPE}.
-     * Please refer to 'https://788855dad029521bcbba6e5eb5fb79221b741577.drdart.io/' for available data structure.
+     * Please refer to {@link DeviceSettingData} for available data structure.
      *
      * @api-version 1
      * @user
@@ -15540,6 +18563,994 @@ export const DeviceSettingsTableContracts = {
  * @ignore
  */
 export type DeviceSettingsTableContracts = typeof DeviceSettingsTableContracts[keyof typeof DeviceSettingsTableContracts];
+
+/**
+ * Types that can be used in {@link DeviceSettingsTableContracts.COLUMN_TYPE}
+ *
+ * @api-version 2
+ * @user
+ */
+export const DeviceSettingDataType = {
+    /**
+     * Digital input.
+     * {@link DeviceSettingsTableContracts.COLUMN_DATA} must use {@link DeviceSettingData.dio.input} data structures.
+     *
+     * @api-version 2
+     * @user
+     */
+    DIGITAL_INPUT:1001,
+    /**
+     * Digital output.
+     * {@link DeviceSettingsTableContracts.COLUMN_DATA} must use {@link DeviceSettingData.dio.output} data structures.
+     *
+     * @api-version 2
+     * @user
+     */
+    DIGITAL_OUTPUT:1002,
+    /**
+     * Analog input.
+     * {@link DeviceSettingsTableContracts.COLUMN_DATA} must use {@link DeviceSettingData.aio.input} data structures.
+     *
+     * @api-version 2
+     * @user
+     */
+    ANOALOG_INPUT:1003,
+    /**
+     * Analog output
+     * {@link DeviceSettingsTableContracts.COLUMN_DATA} must use {@link DeviceSettingData.aio.output} data structures.
+     *
+     * @api-version 2
+     * @user
+     */
+    ANOALOG_OUTPUT:1004,
+    /**
+     * Modbus TCP Set.
+     * {@link DeviceSettingsTableContracts.COLUMN_DATA} must use {@link DeviceSettingData.modbusTCP.set} data structures.
+     *
+     * @api-version 2
+     * @user
+     */
+    MODBUS_TCP_SET:2001,
+    /**
+     * Modbus TCP Get.
+     * {@link DeviceSettingsTableContracts.COLUMN_DATA} must use {@link DeviceSettingData.modbusTCP.get} data structures.
+     *
+     * @api-version 2
+     * @user
+     */
+    MODBUS_TCP_GET:2002,
+    /**
+     * Modbus RTU Set.
+     * {@link DeviceSettingsTableContracts.COLUMN_DATA} must use {@link DeviceSettingData.modbusRTU.set} data structures.
+     *
+     * @api-version 2
+     * @user
+     */
+    MODBUS_RTU_SET:2003,
+    /**
+     * Modbus RTU Get.
+     * {@link DeviceSettingsTableContracts.COLUMN_DATA} must use {@link DeviceSettingData.modbusRTU.get} data structures.
+     *
+     * @api-version 2
+     * @user
+     */
+    MODBUS_RTU_GET:2004,
+    /**
+     * TCP Client Wrtie
+     * {@link DeviceSettingsTableContracts.COLUMN_DATA} must use {@link DeviceSettingData.tcpClient.write} data structures.
+     *
+     * @api-version 2
+     * @user
+     */
+    TCP_CLIENT_WRITE:3001,
+    /**
+     * TCP Client Read
+     * {@link DeviceSettingsTableContracts.COLUMN_DATA} must use {@link DeviceSettingData.tcpClient.read} data structures.
+     *
+     * @api-version 2
+     * @user
+     */
+    TCP_CLIENT_READ:3002,
+    /**
+     * TCP Server Wrtie
+     * {@link DeviceSettingsTableContracts.COLUMN_DATA} must use {@link DeviceSettingData.tcpServer.write} data structures.
+     *
+     * @api-version 2
+     * @user
+     */
+    TCP_SERVER_WRITE:3003,
+    /**
+     * TCP Server Read
+     * {@link DeviceSettingsTableContracts.COLUMN_DATA} must use {@link DeviceSettingData.tcpServer.read} data structures.
+     *
+     * @api-version 2
+     * @user
+     */
+    TCP_SERVER_READ:3004,
+    /**
+     * Serial Write
+     * {@link DeviceSettingsTableContracts.COLUMN_DATA} must use {@link DeviceSettingData.serial.write} data structures.
+     *
+     * @api-version 2
+     * @user
+     */
+    SERIAL_WRITE:4001,
+    /**
+     * Serial Read
+     * {@link DeviceSettingsTableContracts.COLUMN_DATA} must use {@link DeviceSettingData.serial.read} data structures.
+     *
+     * @api-version 2
+     * @user
+     */
+    SERIAL_READ:4002,
+    /**
+     * Industrial Ethernet Set
+     * {@link DeviceSettingsTableContracts.COLUMN_DATA} must use {@link DeviceSettingData.industrialEthernet.set} data structures.
+     *
+     * @api-version 2
+     * @user
+     */
+    IE_SET:5001,
+    /**
+     * Industrial Ethernet Get
+     * {@link DeviceSettingsTableContracts.COLUMN_DATA} must use {@link DeviceSettingData.industrialEthernet.get} data structures.
+     *
+     * @api-version 2
+     * @user
+     */
+    IE_GET:5002,
+    /**
+     * Focas write
+     * {@link DeviceSettingsTableContracts.COLUMN_DATA} must use {@link DeviceSettingData.focas.write} data structures.
+     *
+     * @api-version 2
+     * @user
+     */
+    FOCAS_WRITE:6001,
+    /**
+     * Focas read
+     * {@link DeviceSettingsTableContracts.COLUMN_DATA} must use {@link DeviceSettingData.focas.read} data structures.
+     *
+     * @api-version 2
+     * @user
+     */
+    FOCAS_READ:6002,
+} as const;
+
+/**
+ * @ignore
+ */
+ export type DeviceSettingDataType = typeof DeviceSettingDataType[keyof typeof DeviceSettingDataType];
+
+/**
+ * The type of data to put in {@link DeviceSettingsTableContracts.COLUMN_DATA}
+ *
+ * @api-version 2
+ * @user
+ */
+export namespace DeviceSettingData {
+    /**
+     * Digital IO
+     *
+     * @api-version 2
+     * @user
+     */
+    export namespace dio {
+        export type input = {
+            /**
+             * The number of signals
+             *
+             * @api-version 2
+             * @user
+             */
+            count:number,
+            /**
+             * Signal Informations
+             *
+             * @api-version 2
+             * @user
+             */
+            signals: {
+                /**
+                 * {@link GpioTypeIndex}
+                 *
+                 * @api-version 2
+                 * @user
+                 */
+                type: number,
+                /**
+                 * {@link GpioControlBoxDigitalIndex} or {@link GpioFlangeDigitalIndex}
+                 *
+                 * @api-version 2
+                 * @user
+                 */
+                gpioIndex: number,
+            }[],
+        }
+        export type output = {
+            /**
+             * The number of signals
+             *
+             * @api-version 2
+             * @user
+             */
+             count:number,
+
+            /**
+             * Signal Informations
+             *
+             * @api-version 2
+             * @user
+             */
+            signals: {
+                /**
+                 * {@link GpioTypeIndex}
+                 *
+                 * @api-version 2
+                 * @user
+                 */
+                type: number,
+                /**
+                 * {@link GpioControlBoxDigitalIndex} or {@link GpioFlangeDigitalIndex}
+                 *
+                 * @api-version 2
+                 * @user
+                 */
+                gpioIndex: number,
+                /**
+                 * signal on/off
+                 *
+                 * @api-version 2
+                 * @user
+                 */
+                signalOn: boolean
+            }[],
+        }
+    }
+    /**
+     * Analog IO
+     *
+     * @api-version 2
+     * @user
+     */
+    export namespace aio  {
+        export type input = {
+            /**
+             * The number of signals
+             *
+             * @api-version 2
+             * @user
+             */
+             count:number,
+             /**
+              * Signal Informations
+              *
+              * @api-version 2
+              * @user
+              */
+             signals: {
+                 /**
+                  * {@link GpioTypeIndex}
+                  *
+                  * @api-version 2
+                  * @user
+                  */
+                 type: number,
+                 /**
+                  * {@link GpioControlBoxAnalogIndex} or {@link GpioFlangeAnalogIndex}
+                  *
+                  * @api-version 2
+                  * @user
+                  */
+                 gpioIndex: number,
+                 /**
+                  * {@link GpioAnalogType}
+                  *
+                  * @api-version 2
+                  * @user
+                  */
+                 analogType: number,
+             }[],
+
+        }
+        export type output = {
+            /**
+             * The number of signals
+             *
+             * @api-version 2
+             * @user
+             */
+            count:number,
+             /**
+              * Signal Informations
+              *
+              * @api-version 2
+              * @user
+              */
+            signals: {
+                /**
+                 * {@link GpioTypeIndex}
+                 *
+                 * @api-version 2
+                 * @user
+                 */
+                type: number,
+                /**
+                 * {@link GpioControlBoxAnalogIndex} or {@link GpioFlangeAnalogIndex}
+                 *
+                 * @api-version 2
+                 * @user
+                 */
+                gpioIndex: number,
+                /**
+                 * {@link GpioAnalogType}
+                 *
+                 * @api-version 2
+                 * @user
+                 */
+                analogType: number,
+                /**
+                 * greater than 0 and and less than 10
+                 *
+                 * @api-version 2
+                 * @user
+                 */
+                value: number
+            }[],
+        }
+    }
+    /**
+     * Modbus TCP Comm
+     *
+     * @api-version 2
+     * @user
+     */
+    export namespace modbusTCP {
+        export type set = {
+            /**
+             * ip address
+             *
+             * @api-version 2
+             * @user
+             */
+            ipAddress: string,
+            /**
+             * port index
+             *
+             * @api-version 2
+             * @user
+             */
+            portIndex: number,
+            /**
+             * slave id
+             *
+             * @api-version 2
+             * @user
+             */
+            slaveId: number,
+            /**
+             * {@link ExtendModbusRegisterType}
+             *
+             * @api-version 2
+             * @user
+             */
+            registerType: number,
+            /**
+             * register index
+             *
+             * @api-version 2
+             * @user
+             */
+            registerIndex: number,
+            /**
+             * register count. default is 1
+             * If this value is greater than 1, it is a multiple signal.
+             *
+             * @api-version 2
+             * @user
+             */
+            registerCount: number,
+            /**
+             * initial register value.
+             * It has at least one value and has data as many as {@link DeviceSettingData.modbusTCP.set.registerCount}.
+             *
+             * @api-version 2
+             * @user
+             */
+            initialRegisterValue: number[],
+            /**
+             * register value.
+             * It has at least one value and has data as many as {@link DeviceSettingData.modbusTCP.set.registerCount}.
+             *
+             * @api-version 2
+             * @user
+             */
+            registerValue: number[],
+        }
+        export type get = {
+            /**
+             * ip address
+             *
+             * @api-version 2
+             * @user
+             */
+            ipAddress: string,
+            /**
+             * port index
+             *
+             * @api-version 2
+             * @user
+             */
+            portIndex: number,
+            /**
+             * slave id
+             *
+             * @api-version 2
+             * @user
+             */
+            slaveId: number,
+            /**
+             * {@link ExtendModbusRegisterType}
+             *
+             * @api-version 2
+             * @user
+             */
+            registerType: number,
+            /**
+             * register index
+             *
+             * @api-version 2
+             * @user
+             */
+            registerIndex: number,
+            /**
+             * register count. default is 1
+             * If this value is greater than 1, it is a multiple signal.
+             *
+             * @api-version 2
+             * @user
+             */
+            registerCount: number,
+        }
+    }
+    /**
+     * Modbus RTU Comm
+     *
+     * @api-version 2
+     * @user
+     */
+    export namespace modbusRTU {
+        export type set = {
+            /**
+             * serial port name
+             *
+             * @api-version 2
+             * @user
+             */
+            serialPort: string,
+            /**
+             * slave id
+             *
+             * @api-version 2
+             * @user
+             */
+            slaveId: number,
+            /**
+             * baudrate
+             *
+             * @api-version 2
+             * @user
+             */
+            baudrate: number,
+            /**
+             * byteSize {@link ByteSize}
+             *
+             * @api-version 2
+             * @user
+             */
+            byteSize: number,
+            /**
+             * parity bit. "N":none, "O":odd, "E":even
+             *
+             * @api-version 2
+             * @user
+             */
+            parityBit: string,
+            /**
+             * stop bit. {@link StopBit}
+             *
+             * @api-version 2
+             * @user
+             */
+            stopBit: number,
+            /**
+             * {@link ExtendModbusRegisterType}
+             *
+             * @api-version 2
+             * @user
+             */
+            registerType: number,
+            /**
+             * register index
+             *
+             * @api-version 2
+             * @user
+             */
+            registerIndex: number,
+            /**
+             * register count. default is 1
+             * If this value is greater than 1, it is a multiple signal.
+             *
+             * @api-version 2
+             * @user
+             */
+            registerCount: number,
+            /**
+             * initial register value.
+             * It has at least one value and has data as many as {@link DeviceSettingData.modbusTCP.set.registerCount}.
+             *
+             * @api-version 2
+             * @user
+             */
+            initialRegisterValue: number[],
+            /**
+             * register value.
+             * It has at least one value and has data as many as {@link DeviceSettingData.modbusTCP.set.registerCount}.
+             *
+             * @api-version 2
+             * @user
+             */
+            registerValue: number[],
+        }
+        export type get = {
+            /**
+             * ip address
+             *
+             * @api-version 2
+             * @user
+             */
+            serialPort: string,
+            /**
+             * slave id
+             *
+             * @api-version 2
+             * @user
+             */
+            slaveId: number,
+            /**
+             * baudrate
+             *
+             * @api-version 2
+             * @user
+             */
+            baudrate: number,
+            /**
+             * byteSize {@link ByteSize}
+             *
+             * @api-version 2
+             * @user
+             */
+            byteSize: number,
+            /**
+             * parity bit. {@link ParityCheck}
+             *
+             * @api-version 2
+             * @user
+             */
+            parityBit: number,
+            /**
+             * stop bit. {@link StopBit}
+             *
+             * @api-version 2
+             * @user
+             */
+            stopBit: number,
+            /**
+             * {@link ExtendModbusRegisterType}
+             *
+             * @api-version 2
+             * @user
+             */
+            registerType: number,
+            /**
+             * register index
+             *
+             * @api-version 2
+             * @user
+             */
+            registerIndex: number,
+            /**
+             * register count. default is 1
+             * If this value is greater than 1, it is a multiple signal.
+             *
+             * @api-version 2
+             * @user
+             */
+            registerCount: number,
+        }
+    }
+    /**
+     * TCP Client Comm
+     *
+     * @api-version 2
+     * @user
+     */
+    export namespace tcpClient {
+        export type write = {
+            /**
+             * ip address
+             *
+             * @api-version 2
+             * @user
+             */
+            ipAddress: string,
+            /**
+             * port No
+             *
+             * @api-version 2
+             * @user
+             */
+            portIndex: number,
+            /**
+             * data
+             *
+             * @api-version 2
+             * @user
+             */
+            data: number[],
+        }
+        export type read = {
+            /**
+             * ip address
+             *
+             * @api-version 2
+             * @user
+             */
+            ipAddress: string,
+             /**
+              * port No
+              *
+              * @api-version 2
+              * @user
+              */
+            portIndex: number,
+        }
+    }
+    /**
+     * TCP Server Comm
+     *
+     * @api-version 2
+     * @user
+     */
+    export namespace tcpServer {
+        export type write = {
+            /**
+             * port No
+             *
+             * @api-version 2
+             * @user
+             */
+            portIndex: number,
+            /**
+             * port No
+             *
+             * @api-version 2
+             * @user
+             */
+            data: number[],
+        }
+        export type read = {
+            /**
+             * port No
+             *
+             * @api-version 2
+             * @user
+             */
+            portIndex: number,
+        }
+    }
+    /**
+     * Serial Comm
+     *
+     * @api-version 2
+     * @user
+     */
+    export namespace serial {
+        export type write = {
+            /**
+             * serial port name
+             *
+             * @api-version 2
+             * @user
+             */
+            serialPort: string,
+            /**
+             * baudrate
+             *
+             * @api-version 2
+             * @user
+             */
+            baudrate: number,
+            /**
+             * byteSize. {@link ByteSize)
+             *
+             * @api-version 2
+             * @user
+             */
+            byteSize: string,
+            /**
+             * parity bit. "N":none, "O":odd, "E":even, "M":mark, "S":space
+             *
+             * @api-version 2
+             * @user
+             */
+            parityBit: number,
+            /**
+             * stop bit. (1, 1.5, 2)
+             *
+             * @api-version 2
+             * @user
+             */
+            stopBit: number,
+            /**
+             * data
+             *
+             * @api-version 2
+             * @user
+             */
+            data: number[],
+        }
+        export type read = {
+            /**
+             * serial port name
+             *
+             * @api-version 2
+             * @user
+             */
+            serialPort: string,
+            /**
+             * baudrate
+             *
+             * @api-version 2
+             * @user
+             */
+            baudrate: number,
+            /**
+             * byteSize. {@link ByteSize)
+             *
+             * @api-version 2
+             * @user
+             */
+            byteSize: string,
+            /**
+             * parity bit. "N":none, "O":odd, "E":even, "M":mark, "S":space
+             *
+             * @api-version 2
+             * @user
+             */
+            parityBit: number,
+            /**
+             * stop bit. (1, 1.5, 2)
+             *
+             * @api-version 2
+             * @user
+             */
+            stopBit: number,
+        }
+    }
+    /**
+     * Industrial Ethernet Comm
+     *
+     * @api-version 2
+     * @user
+     */
+    export namespace industrialEthernet {
+        export type set = {
+            /**
+             * The number of signals
+             *
+             * @api-version 2
+             * @user
+             */
+            count: number,
+             /**
+              * Signal Informations
+              *
+              * @api-version 2
+              * @user
+              */
+            signals: {
+                /**
+                 * type. 0:bit, 1:int, 2:float
+                 *
+                 * @api-version 2
+                 * @user
+                 */
+                dataType: number,
+                /**
+                 * Output Bit GPR area address value of Industrial Ethernet Slave (bit:0-63, others:0-23)
+                 *
+                 * @api-version 2
+                 * @user
+                 */
+                address: number,
+                /**
+                 * output value
+                 *
+                 * @api-version 2
+                 * @user
+                 */
+                value: number
+            }[],
+        }
+        export type get = {
+            /**
+             * The number of signals
+             *
+             * @api-version 2
+             * @user
+             */
+            count: number,
+             /**
+              * Signal Informations
+              *
+              * @api-version 2
+              * @user
+              */
+            signals: {
+                /**
+                 * type. 0:bit, 1:int, 2:float
+                 *
+                 * @api-version 2
+                 * @user
+                 */
+                dataType: number,
+
+                /**
+                 * 0:Input port, 1:Output port
+                 *
+                 * @api-version 2
+                 * @user
+                 */
+                portType: number,
+
+                /**
+                 * address
+                 *
+                 * @api-version 2
+                 * @user
+                 */
+                address: number,
+            }[],
+        }
+    }
+    /**
+     * Focas Comm
+     *
+     * @api-version 2
+     * @user
+     */
+    export namespace focas {
+        export type write = {
+            /**
+             * ip address
+             *
+             * @api-version 2
+             * @user
+             */
+            ipAddress: string,
+            /**
+             * port No
+             *
+             * @api-version 2
+             * @user
+             */
+            portIndex: number,
+            /**
+             * timeout. 0(wait indefinitely) or greater than 0
+             *
+             * @api-version 2
+             * @user
+             */
+            timeout: number
+            /**
+             * address Type
+             * G (Output signal from PMC to CNC), F (Input signal to PMC from CNC), Y (Output signal to PMC from machine), X (Input signal from PMC to machine), A (Message display), R (Internal relay), T (Timer), K (Keep relay), C (Counter), D (Data table), M (Input signal from other PMC path), N (Output signal to other PMC path), E (Extra relay), Z (System relay)
+             *
+             * @api-version 2
+             * @user
+             */
+            addressType:string;
+            /**
+             * start address number (0 ~ 9999)
+             *
+             * @api-version 2
+             * @user
+             */
+            startAddressNumber:number
+            /**
+             * bit offset (0 ~ 7(
+             *
+             * @api-version 2
+             * @user
+             */
+            bitOffset:number
+            /**
+             * type. 0:bit(1bit), 1:char(1byte), 2:word(2byte), 3:long(4byte), 4:float(4byte), 5:double(8byte)
+             *
+             * @api-version 2
+             * @user
+             */
+            dataType:number,
+            /**
+             * The data to be write. The bit type has only one data value.(length is 1) Other types send data as an array(less than 5).
+             *
+             * @api-version 2
+             * @user
+             */
+            value:number[],
+        }
+        export type read = {
+            /**
+             * ip address
+             *
+             * @api-version 2
+             * @user
+             */
+            ipAddress: string,
+            /**
+             * port No
+             *
+             * @api-version 2
+             * @user
+             */
+            portIndex: number,
+            /**
+             * connection timeout. 0(wait indefinitely) or greater than 0
+             *
+             * @api-version 2
+             * @user
+             */
+            timeout: number
+            /**
+             * address Type
+             * G (Output signal from PMC to CNC), F (Input signal to PMC from CNC), Y (Output signal to PMC from machine), X (Input signal from PMC to machine), A (Message display), R (Internal relay), T (Timer), K (Keep relay), C (Counter), D (Data table), M (Input signal from other PMC path), N (Output signal to other PMC path), E (Extra relay), Z (System relay)
+             *
+             * @api-version 2
+             * @user
+             */
+            addressType:string;
+            /**
+             * start address number (0 ~ 9999)
+             *
+             * @api-version 2
+             * @user
+             */
+            startAddressNumber:number
+            /**
+             * bit offset (0 ~ 7(
+             *
+             * @api-version 2
+             * @user
+             */
+            bitOffset:number
+            /**
+             * type. 0:bit(1bit), 1:char(1byte), 2:word(2byte), 3:long(4byte), 4:float(4byte), 5:double(8byte)
+             *
+             * @api-version 2
+             * @user
+             */
+            dataType:number,
+            /**
+             * Length of data to read(less than 5). In case of bit type, this value is ignored.
+             *
+             * @api-version 2
+             * @user
+             */
+            dataCount:number,
+        }
+    }
+}
 
 /**
  * A parent interface for DartDatabase. DartDatabase's interface should be inherited this interface.
@@ -15809,20 +19820,12 @@ export interface IConfigurationManager {
     readonly languageCode: Monitorable<string>;
 
     /**
-     * {@link Monitorable} Idle servo off Enable value which has been set currently.
+     * {@link Monitorable} time format which has been set currently.
      *
-     * @api-version 1
-     * @system
+     * @api-version 2
+     * @user
      */
-    readonly idleServoOffEnabled: Monitorable<boolean>;
-
-    /**
-     * {@link Monitorable} Idle servo off Time(min) value code which has been set currently.
-     *
-     * @api-version 1
-     * @system
-     */
-    readonly idleServoOffTime: Monitorable<number>;
+    readonly timeFormat: Monitorable<string>;
 
     /**
      * Change language.
@@ -15836,6 +19839,17 @@ export interface IConfigurationManager {
     changeLanguage(languageCode: string): Promise<boolean>;
 
     /**
+     * Change Time Format.
+     *
+     * @param timeformat Format of the time to Change
+     * @return Return <Promise> Fulfills with true if the time format has been changed successfully, otherwise false.
+     *
+     * @api-version 2
+     * @system
+     */
+    changeTimeFormat(timeformat: string): Promise<boolean>
+
+    /**
      * Get all language codes which are supported from system.
      *
      * @return Return an array of language codes which are supported from system.
@@ -15846,14 +19860,46 @@ export interface IConfigurationManager {
     getSupportedLanguageCodes(): string[];
 
     /**
-     * Change the idle servo off function.
+     * Change controller system time
      *
+     * @param date data of current date
+     * @param time data of current time
      * @return Returns whether the change was successful.
      *
      * @api-version 1
      * @system
      */
-    changeIdleServoOff(data: IdleServoOff): Promise<boolean>;
+    setControllerSystemTime(date: string, time: string): Promise<boolean>;
+
+    /**
+     * Get controller system time
+     *
+     * @return Return <Promise> Fulfills controller system time
+     *
+     * @api-version 1
+     * @system
+     */
+    getControllerSystemTime(): Promise<{ date: string, time: string }>;
+
+    /**
+     * Get EULA Contents
+     *
+     * @return Return <string> EULA Contents
+     *
+     * @api-version 1
+     * @system
+     */
+    getEulaContents(): string;
+
+    /**
+     * Get EULA Version
+     *
+     * @return Return <string> EULA Version
+     *
+     * @api-version 1
+     * @system
+     */
+    getEulaVersion(): string;
 }
 
 /**
@@ -15864,17 +19910,40 @@ export interface IConfigurationManager {
  */
 export interface ISafetyPasswordManager {
     /**
+     * {@link Monitorable} safety password lock state.
+     *
+     * @api-version 1
+     * @user
+     */
+    readonly safetyPasswordLocked: Monitorable<boolean>;
+
+    /**
      * Confirm Safety password
      *
+     * @param context A caller's context
+     * @param force If the authentication procedure is required even if the password lock is unlocked, set force to true
      * @return Return password confirmation
      *
      * @api-version 1
      * @user
      */
-    safetyPasswordAuthentication(context: Context):Promise<boolean>;
+    safetyPasswordAuthentication(context: Context, force?: boolean):Promise<boolean>;
 
     /**
-     * Chagne Safety password
+     * Confirm Safety password.
+     *
+     * @param customTitle A custom title. If it is not set, then default title will be displayed.
+     * @param customMessage A custom message. If it is not set, then default message will be displayed.
+     * @param force If the authentication procedure is required even if the password lock is unlocked, set force to true
+     * @return Return <Promise> Fulfills with true if user authenticated safety password successfully, otherwise false.
+     *
+     * @api-version 1
+     * @user
+     */
+    authenticateSafetyPassword(customTitle: string | null, customMessage: string | null, force?: boolean): Promise<boolean>;
+
+    /**
+     * Change Safety password
      *
      * @return Return settings table update result
      *
@@ -15882,6 +19951,537 @@ export interface ISafetyPasswordManager {
      * @system
      */
     changeSafetyPassword(newPwd:string):Promise<boolean>;
+
+    /**
+     * Change Safety password lock state
+     *
+     * @api-version 1
+     * @system
+     */
+    setSafetyPasswordLock():Promise<void>;
+}
+
+/**
+ * This is an enumeration type constant that refers to state of system update and restore, and is defined as follows.
+ *
+ * @enum
+ * @api-version 1
+ * @system
+ */
+export const UpdateAndRestoreState = {
+    /**
+     * Idle.
+     *
+     * @api-version 1
+     * @system
+     */
+    IDLE: 0,
+    /**
+     * Check precondition to update.
+     *
+     * @api-version 1
+     * @system
+     */
+    CHECK_UPDATE_PRECONDITION: 0x0001_0001,
+    /**
+     * Verifying campaign to update.
+     *
+     * @api-version 1
+     * @system
+     */
+    VERIFYING_UPDATE_CAMPAIGN: 0x0001_0002,
+    /**
+     * Failed to verify.
+     *
+     * @api-version 1
+     * @system
+     */
+    FAILED_TO_VERIFY: 0x0001_0003,
+    /**
+     * Confirm to update.
+     *
+     * @api-version 1
+     * @system
+     */
+    CONFIRM_TO_UPDATE: 0x0001_0004,
+    /**
+     * Updating.
+     *
+     * @api-version 1
+     * @system
+     */
+    UPDATING: 0x0001_0005,
+    /**
+     * Success to update.
+     *
+     * @api-version 1
+     * @system
+     */
+    SUCCESS_TO_UPDATE: 0x0001_0006,
+    /**
+     * Failed to update.
+     *
+     * @api-version 1
+     * @system
+     */
+    FAILED_TO_UPDATE: 0x0001_0007,
+    /**
+     * Doing rollback on update.
+     *
+     * @api-version 1
+     * @system
+     */
+    DOING_ROLLBACK_ON_UPDATE: 0x0001_0008,
+    /**
+     * Completed to rollback on update.
+     *
+     * @api-version 1
+     * @system
+     */
+    DONE_ROLLBACK_ON_UPDATE: 0x0001_0009,
+    /**
+     * Failed to rollback on update.
+     *
+     * @api-version 2
+     * @system
+     */
+    FAILED_TO_ROLLBACK_ON_UPDATE: 0x0001_0010,
+    /**
+     * Check precondition to restore.
+     *
+     * @api-version 1
+     * @system
+     */
+    CHECK_RESTORE_PRECONDITION: 0x0002_0001,
+    /**
+     * Confirm to restore.
+     *
+     * @api-version 1
+     * @system
+     */
+    CONFIRM_TO_RESTORE: 0x0002_0002,
+    /**
+     * Restoring.
+     *
+     * @api-version 1
+     * @system
+     */
+    RESTORING: 0x0002_0003,
+    /**
+     * Success to restore.
+     *
+     * @api-version 1
+     * @system
+     */
+    SUCCESS_TO_RESTORE: 0x0002_0004,
+    /**
+     * Failed to restore.
+     *
+     * @api-version 1
+     * @system
+     */
+    FAILED_TO_RESTORE: 0x0002_0005,
+    /**
+     * Doing rollback on restore.
+     *
+     * @api-version 1
+     * @system
+     */
+    DOING_ROLLBACK_ON_RESTORE: 0x0002_0006,
+    /**
+     * Completed to rollback on restore.
+     *
+     * @api-version 1
+     * @system
+     */
+    DONE_ROLLBACK_ON_RESTORE: 0x0002_0007,
+    /**
+     * Failed to rollback on restore.
+     *
+     * @api-version 2
+     * @system
+     */
+    FAILED_TO_ROLLBACK_ON_RESTORE: 0x0002_0008
+} as const;
+/**
+ * @ignore
+ */
+export type UpdateAndRestoreState = typeof UpdateAndRestoreState[keyof typeof UpdateAndRestoreState];
+
+/**
+ * This is an enumeration type constant that refers to types of update package, and is defined as follows.
+ *
+ * @enum
+ * @api-version 1
+ * @system
+ */
+export const OtaPackageType = {
+    /**
+     * Application package.
+     *
+     * @api-version 1
+     * @system
+     */
+    APPLICATION: 0,
+    /**
+     * System package.
+     *
+     * @api-version 1
+     * @system
+     */
+    SYSTEM: 1,
+    /**
+     * OS package.
+     *
+     * @api-version 1
+     * @system
+     */
+    OS: 2
+} as const;
+/**
+ * @ignore
+ */
+export type OtaPackageType = typeof OtaPackageType[keyof typeof OtaPackageType];
+
+/**
+ * This is an enumeration type constant that refers to types of campaign download, and is defined as follows.
+ *
+ * @enum
+ * @api-version 1
+ * @system
+ */
+export const CampaignDownloadType = {
+    /**
+     * Download via TFTP.
+     *
+     * @api-version 1
+     * @system
+     */
+    TFTP: 0,
+    /**
+     * Located in controller.
+     *
+     * @api-version 1
+     * @system
+     */
+    LOCAL: 1,
+    /**
+     * Located in USB.
+     *
+     * @api-version 1
+     * @system
+     */
+    USB: 2,
+    /**
+     * Downloaded from OTA Server.
+     *
+     * @api-version 1
+     * @system
+     */
+    OTA_SERVER: 3
+} as const;
+/**
+ * @ignore
+ */
+export type CampaignDownloadType = typeof CampaignDownloadType[keyof typeof CampaignDownloadType];
+
+/**
+ * This is an enumeration type constant that refers to state of system update, and is defined as follows.
+ *
+ * @enum
+ * @api-version 1
+ * @system
+ */
+export const CampaignState = {
+    /**
+     * No available campaign.
+     *
+     * @api-version 1
+     * @system
+     */
+    IDLE: 0,
+    /**
+     * Has a downloadable campaign.
+     *
+     * @api-version 1
+     * @system
+     */
+    DOWNLOADABLE: 1,
+    /**
+     * Downloading a campaign.
+     *
+     * @api-version 1
+     * @system
+     */
+    DOWNLOADING: 2,
+    /**
+     * Downloaded a campaign.
+     *
+     * @api-version 1
+     * @system
+     */
+    DOWNLOADED: 3,
+    /**
+     * Verifying a campaign.
+     *
+     * @api-version 2
+     * @system
+     */
+    VERIFYING: 4,
+    /**
+     * Has an updatable campaign.
+     *
+     * @api-version 2
+     * @system
+     */
+    UPDATABLE: 5,
+    /**
+     * Updating a campaign.
+     *
+     * @api-version 2
+     * @system
+     */
+    UPDATING: 6,
+    /**
+     * Updated a campaign successfully.
+     *
+     * @api-version 1
+     * @system
+     */
+    UPDATE_SUCCESS: 7,
+    /**
+     * Failed to update a campaign.
+     *
+     * @api-version 1
+     * @system
+     */
+    UPDATE_FAILED: 8
+} as const;
+/**
+ * @ignore
+ */
+export type CampaignState = typeof CampaignState[keyof typeof CampaignState];
+
+/**
+ * This is an enumeration type constant that refers to network state, and is defined as follows.
+ *
+ * @enum
+ * @api-version 2
+ * @system
+ */
+export const OtaNetworkState = {
+    /**
+     * Offline.
+     *
+     * @api-version 2
+     * @system
+     */
+    OFFLINE: 0,
+    /**
+     * Online.
+     *
+     * @api-version 2
+     * @system
+     */
+    ONLINE: 1
+} as const;
+/**
+ * @ignore
+ */
+export type OtaNetworkState = typeof OtaNetworkState[keyof typeof OtaNetworkState];
+
+/**
+ * OTA Campaign Information (packet = 283, 348)
+ *
+ * @api-version 1
+ * @system
+ */
+export type CampaignInfo = {
+    /**
+     * Campaign state.
+     *
+     * @api-version 1
+     * @system
+     */
+    state: CampaignState,
+    /**
+     * Campaign name.
+     *
+     * @api-version 1
+     * @system
+     */
+    campaignName: string,
+    /**
+     * Type of target package of the campaign.
+     *
+     * @api-version 1
+     * @system
+     */
+    targetPackages: OtaPackageType[],
+    /**
+     * Start Time. (ex. YYYY-MM-DD_hh:mm)
+     *
+     * @api-version 1
+     * @system
+     */
+    startTime: string,
+    /**
+     * End Time. (ex. YYYY-MM-DD_hh:mm)
+     *
+     * @api-version 1
+     * @system
+     */
+    endTime: string,
+    /**
+     * Application package version.
+     *
+     * @api-version 1
+     * @system
+     */
+    applicationPackageVersion: string,
+    /**
+     * System package version.
+     *
+     * @api-version 1
+     * @system
+     */
+    systemPackageVersion: string,
+    /**
+     * OS package version.
+     *
+     * @api-version 1
+     * @system
+     */
+    osPackageVersion: string,
+    /**
+     * Network state for communication with OTA server.
+     *
+     * @api-version 1
+     * @system
+     */
+    otaServerState: OtaNetworkState,
+}
+
+/**
+ * Campaign change note.
+ *
+ * @api-version 1
+ * @system
+ */
+export type CampaignChangeNote = {
+    /**
+     * SDK version of new Dart-Platform.
+     *
+     * @api-version 1
+     * @system
+     */
+    dpSdkVersion?: string[],
+    /**
+     * List of compatible SDK version on new Dart-Platform.
+     *
+     * @api-version 1
+     * @system
+     */
+    dpCompatibleSdks?: string[],
+    /**
+     * List of compatible SDK version on new DRAS.
+     *
+     * @api-version 1
+     * @system
+     */
+    drasCompatibleSdks?: string[],
+    /**
+     * Changes of the package.
+     *
+     * @api-version 1
+     * @system
+     */
+    note: string[]
+}
+
+/**
+ * Local Campaign (System package) Information
+ *
+ * @api-version 1
+ * @system
+ */
+export const LocalCampaignState = {
+    /**
+     * No available a local campaign file.
+     *
+     * @api-version 1
+     * @system
+     */
+    IDLE: 0,
+    /**
+     * Uploading a local campaign file.
+     *
+     * @api-version 1
+     * @system
+     */
+    UPLOADING: 1,
+    /**
+     * Uploaded a local campaign file.
+     *
+     * @api-version 1
+     * @system
+     */
+    UPLOADED: 2,
+    /**
+     * Updating a local campaign file.
+     *
+     * @api-version 1
+     * @system
+     */
+    UPDATING: 3
+} as const;
+/**
+ * @ignore
+ */
+export type LocalCampaignState = typeof LocalCampaignState[keyof typeof LocalCampaignState];
+
+/**
+ * Local Campaign Information
+ *
+ * @api-version 1
+ * @system
+ */
+export type LocalCampaignInfo = {
+    /**
+     * Campaign state.
+     *
+     * @api-version 1
+     * @system
+     */
+    state: LocalCampaignState,
+    /**
+     * Campaign file name.
+     *
+     * @api-version 1
+     * @system
+     */
+    fileName: string,
+    /**
+     * Campaign file path.
+     *
+     * @api-version 1
+     * @system
+     */
+    filePath: string,
+    /**
+     * Change note.
+     *
+     * @api-version 1
+     * @system
+     */
+    changeNote: null | CampaignChangeNote;
+    /**
+     * Progress of uploading a local campaign.
+     *
+     * @api-version 1
+     * @system
+     */
+    progress: number;
 }
 
 /**
@@ -15890,18 +20490,239 @@ export interface ISafetyPasswordManager {
  * @api-version 1
  * @system
  */
-export interface IUpdateManager extends ISystemManager {
+export interface IUpdateAndRestoreManager extends ISystemManager {
     /**
-     * Update software.
-     *
-     * @param file The update file's data or path.
-     * @param fileName The update file's name.
+     * {@link Monitorable} update and restore state.
      *
      * @api-version 1
      * @system
      */
-    updateSoftware(file: string | Uint8Array, fileName: string): Promise<boolean>;
+    readonly updateAndRestoreState: Monitorable<UpdateAndRestoreState>;
+
+    /**
+     * {@link Monitorable} OTA campaign information.
+     *
+     * @api-version 1
+     * @system
+     */
+    readonly campaignInfo: Monitorable<CampaignInfo>;
+
+    /**
+     * {@link Monitorable} Local campaign information.
+     *
+     * @api-version 1
+     * @system
+     */
+    readonly localCampaignInfo: Monitorable<LocalCampaignInfo>;
+
+    /**
+     * {@link Monitorable} Whether to automatically download campaigns.
+     *
+     * @api-version 1
+     * @system
+     */
+    readonly autoDownloadCampaign: Monitorable<boolean>;
+
+    /**
+     * Set whether to automatically download campaigns.
+     *
+     * @param enabled True to auto-download campaigns.
+     * @return Return <Promise> Fulfills with true if the request has been operated successfully, otherwise false.
+     *
+     * @api-version 1
+     * @system
+     */
+    setAutoDownloadCampaignEnabled(enabled: boolean): Promise<boolean>;
+
+    /**
+     * Get change note of the desired package type on current version.
+     * The data is formatted as below:
+     * - application: { dpSdkVersion: string, dpCompatibleSdks: string[], drasCompatibleSdks: string[], note: string[] }
+     * - system: { note: string[] }
+     * - os: { note: string[] }
+     *
+     * @param type A desired type to retrieve a change note.
+     * @return Return <Promise> Fulfills with change note if the request has been operated successfully, otherwise empty string.
+     *
+     * @api-version 1
+     * @system
+     */
+    getChangeNote(type: OtaPackageType): Promise<null | CampaignChangeNote>;
+
+    /**
+     * Update OTA campaign information {@link CampaignInfo}.
+     *
+     * @return Return OTA Campaign Information
+     *
+     * @api-version 1
+     * @system
+     */
+    updateCampaignInformation(): Promise<boolean>;
+
+    /**
+     * Get a change note of the desired OTA package from a campaign.
+     * The data is formatted as below:
+     * - application: { dpSdkVersion: string, dpCompatibleSdks: string[], drasCompatibleSdks: string[], note: string[] }
+     * - system: { note: string[] }
+     * - os: { note: string[] }
+     *
+     * @param type A desired type to retrieve a change note.
+     * @return Return OTA Campaign Information
+     *
+     * @api-version 1
+     * @system
+     */
+    getCampaignChangeNote(type: OtaPackageType): Promise<null | CampaignChangeNote>;
+
+    /**
+     * Download a campaign.
+     *
+     * @param requestedFromSetting Whether it is requested from the Settings module.
+     * @return Return <Promise> Fulfills with true if the request has been operated successfully, otherwise false.
+     *
+     * @api-version 1
+     * @system
+     */
+    downloadCampaign(requestedFromSetting: boolean): Promise<boolean>;
+
+    /**
+     * Start an update process.
+     *
+     * @param campaignDownloadType A download type of the target campaign.
+     * @param requestedFromSetting Whether it is requested from the Settings module.
+     * @return Return <Promise> Fulfills with true if the request has been operated successfully, otherwise false.
+     *
+     * @api-version 1
+     * @system
+     */
+    startUpdateCampaign(campaignDownloadType: CampaignDownloadType, requestedFromSetting: boolean): Promise<boolean>;
+
+    /**
+     * Upload a local campaign file to controller.
+     *
+     * @param fileHandler {@link fileHandler} to handle local campaign file.
+     * @return Return <Promise> Fulfills with true if the request has been operated successfully, otherwise false.
+     *
+     * @api-version 2
+     * @system
+     */
+    uploadLocalCampaignFile(fileHandler: FileHandler): Promise<boolean>;
+
+    /**
+     * Cancel the local campaign file upload operation.
+     *
+     * @return Return <Promise> Fulfills with true if the request has been operated successfully, otherwise false.
+     *
+     * @api-version 1
+     * @system
+     */
+    cancelUploadLocalCampaignFile(): Promise<void>;
+
+    /**
+     * Delete the local campaign file from controller.
+     *
+     * @param fileName The file name to delete.
+     * @return Return <Promise> Fulfills with true if the request has been operated successfully, otherwise false.
+     *
+     * @api-version 1
+     * @system
+     */
+    deleteLocalCampaignFile(fileName: string): Promise<boolean>;
+
+    /**
+     * Get list of versions which can be restore.
+     *
+     * @return Return <Promise> Fulfills with RestoreList if the request has been operated successfully, otherwise null.
+     *
+     * @api-version 2
+     * @system
+     */
+    getRestoreVersions(): Promise<RestoreVersion[] | null>;
+
+    /**
+     * Start restore confirmation.
+     *
+     * @param restoringVersion version that you choose to restore.
+     * @param restoringVersionDate saved date that you choose to restore.
+     * @return Return <Promise> Fulfills with true if the request has been operated successfully, otherwise false.
+     *
+     * @api-version 2
+     * @system
+     */
+    startRestoreConfirmation(restoringVersionName: string, restoringVersionDate: string): Promise<boolean>;
 }
+
+/**
+ * Restore Version Data (packet = 267)
+ *
+ * @api-version 2
+ * @system
+ */
+export type RestoreVersion = {
+    /**
+     * Saved date
+     *
+     * @api-version 2
+     * @system
+     */
+    date: string,
+    /**
+     * Saved name
+     *
+     * @api-version 2
+     * @system
+     */
+    name: string,
+    /**
+     * Availability of data
+     *
+     * @api-version 2
+     * @system
+     */
+    isAvailable: boolean,
+}
+
+/**
+ * System log type
+ *
+ * @enum
+ * @api-version 2
+ * @system
+ */
+export const LogType = {
+    /**
+     * Contain messages of the Dr.Dart-Platform.
+     *
+     * @api-version 2
+     * @system
+     */
+    DART_PLATFORM: 0b0000_0001,
+    /**
+     * Contain messages of the Controller board.
+     *
+     * @api-version 2
+     * @system
+     */
+    CONTROLLER: 0b0000_0010,
+    /**
+     * Contain messages of the OTA agent.
+     *
+     * @api-version 2
+     * @system
+     */
+    OTA: 0b0000_0100,
+    /**
+     * Contain messages of the operating system.
+     *
+     * @api-version 2
+     * @system
+     */
+    OS: 0b0000_1000
+} as const;
+/**
+ * @ignore
+ */
+export type LogType = typeof LogType[keyof typeof LogType];
 
 /**
  * ResetAndRestoreManager for backup&restore data on the system and provides factory reset and log reset.
@@ -15919,6 +20740,7 @@ export interface IResetAndRestoreManager {
      * @system
      */
     resetAll(): Promise<boolean>;
+
     /**
      * Performing a log reset
      *
@@ -15928,6 +20750,1193 @@ export interface IResetAndRestoreManager {
      * @system
      */
     resetLog(): Promise<boolean>;
+
+    /**
+     * Request to export the {@link targets}.
+     *
+     * @param targets Targets to export.
+     * @return Return <Promise> Fulfills with true if the request has been operated successfully, otherwise false.
+     *
+     * @api-version 2
+     * @system
+     */
+    exportData(targets: { system: boolean, modules: string[] }): Promise<boolean>;
+
+    /**
+     * Request to import data.
+     *
+     * @param retry Whether to retry importing data
+     * @return Return <Promise> Fulfills with true if the request has been operated successfully, otherwise false.
+     *
+     * @api-version 2
+     * @system
+     */
+    importData(retry?: boolean): Promise<boolean>;
+
+    /**
+     * Request to export the {@link targets}.
+     *
+     * @param targets Targets to export.
+     * @return Return <Promise> Fulfills with true if the request has been operated successfully, otherwise false.
+     *
+     * @api-version 2
+     * @system
+     */
+    exportLog(targets: { logFlags: number, startDate?: number, endDate?: number }): Promise<boolean>;
+}
+
+/**
+ * Types of user.
+ *
+ * @enum
+ * @api-version 1
+ * @user
+ */
+export const User = {
+    /**
+     * 'supervisor' user.
+     *
+     * @api-version 1
+     * @user
+     */
+    SUPERVISOR: "supervisor",
+
+    /**
+     * 'operator' user.
+     *
+     * @api-version 1
+     * @user
+     */
+    OPERATOR: "operator",
+} as const;
+/**
+ * @ignore
+ */
+export type User = typeof User[keyof typeof User];
+
+/**
+ * IUserManager have APIs for managing users.
+ *
+ * @api-version 1
+ * @user
+ */
+export interface IUserManager extends ISystemManager {
+    /**
+     * {@link Monitorable} {@link User}.
+     *
+     * @api-version 1
+     * @user
+     */
+    readonly user: Monitorable<User>;
+
+    /**
+     * Change user {@link User}.
+     *
+     * @param user An user to change.
+     * @param customTitle A custom title. If it is not set, then default title will be displayed.
+     * @param customMessage A custom message. If it is not set, then default message will be displayed.
+     * @return Return <Promise> Fulfills with true if the user has been changed successfully, otherwise false.
+     *
+     * @api-version 1
+     * @system
+     */
+    changeUser(user: User, customTitle?: string, customMessage?: string): Promise<boolean>;
+}
+
+/**
+ * System manager for the clipboard
+ *
+ * @api-version 2
+ * @user
+ */
+export interface IClipboardManager extends ISystemManager {
+
+    /**
+     * Copy to clipboard
+     *
+     * @param text String to be saved to clipboard
+     *
+     * @api-version 2
+     * @user
+     */
+    write(text:string): void;
+    /**
+     * Paste from clipboard
+     *
+     * @return Return <string> Return String from clipboard
+     *
+     * @api-version 2
+     * @user
+     */
+    read(): Promise<string>;
+}
+
+/**
+ * This is an enumeration type constant that refers to the reason of disconnection, and is defined as follows.
+ *
+ * @enum
+ * @api-version 2
+ * @user
+ */
+export const AiProcessMessengerError = {
+    /**
+     * Unknown Error.
+     *
+     * @api-version 2
+     * @user
+     */
+    UNKNOWN: 0x0000_0000,
+
+    /**
+     * The messenger has been destroyed.
+     *
+     * @api-version 2
+     * @user
+     */
+    DESTROYED: 0x0001_0000,
+    /**
+     * Failed to bind with API lib.
+     *
+     * @api-version 2
+     * @user
+     */
+    FAILED_TO_BIND_WITH_SERVER_API_LIB: 0x0001_0001,
+    /**
+     * Error on server API.
+     *
+     * @api-version 2
+     * @user
+     */
+    SERVER_API_ERROR: 0x0001_0002,
+
+    /**
+     * Network error.
+     *
+     * @api-version 2
+     * @user
+     */
+    NETWORK_ERROR: 0x0002_0000,
+    /**
+     * The messenger is not connected with the AI process server.
+     *
+     * @api-version 2
+     * @user
+     */
+    NOT_CONNECTED: 0x0002_0001,
+    /**
+     * The messenger has been already connected with the AI process server.
+     *
+     * @api-version 2
+     * @user
+     */
+    ALREADY_CONNECTED: 0x0002_0002,
+
+    /**
+     * The messenger is not logged in to the AI process server.
+     *
+     * @api-version 2
+     * @user
+     */
+    NOT_LOGGED_IN: 0x0003_0000,
+    /**
+     * The messenger has been already logged in to the AI process server.
+     *
+     * @api-version 2
+     * @user
+     */
+    ALREADY_LOGGED_IN: 0x0003_0001,
+    /**
+     * Invalid account.
+     *
+     * @api-version 2
+     * @user
+     */
+    INVALID_ACCOUNT: 0x0003_0002,
+    /**
+     * Invalid password.
+     *
+     * @api-version 2
+     * @user
+     */
+    INVALID_PASSWORD: 0x0003_0003,
+    /**
+     * Failed to get time token.
+     *
+     * @api-version 2
+     * @user
+     */
+    FAILED_TO_GET_TIME_TOKEN: 0x0003_0004,
+    /**
+     * The messenger did not log in or expired the token.
+     *
+     * @api-version 2
+     * @user
+     */
+    INVALID_AI_TOKEN: 0x0003_0005,
+
+    /**
+     * The requested model's id is not valid.
+     *
+     * @api-version 2
+     * @user
+     */
+    INVALID_MODEL_ID: 0x0004_0000,
+    /**
+     * The requested model has already been installed.
+     *
+     * @api-version 2
+     * @user
+     */
+    ALREADY_INSTALLED: 0x0004_0001
+} as const
+/**
+ * @ignore
+ */
+export type AiProcessMessengerError = typeof AiProcessMessengerError[keyof typeof AiProcessMessengerError];
+
+/**
+ * Interface to send callbacks to the module when model state has been changed.
+ *
+ * @api-version 2
+ * @user
+ */
+export interface AiProcessListener {
+    /**
+     * Invoked when login with {@link token}.
+     *
+     * @param token A token about logged in account.
+     *
+     * @api-version 2
+     * @user
+     */
+    onLoggedIn(token: string): void;
+
+    /**
+     * Invoked when logged out with {@link token}.
+     *
+     * @param token A token about logged out account.
+     *
+     * @api-version 2
+     * @user
+     */
+    onLoggedOut(token: string): void;
+
+    /**
+     * Invoked when the model has been downloaded to AI process.
+     *
+     * @param model Download target model.
+     *
+     * @api-version 2
+     * @user
+     */
+    onTrainedModelInstalled(model: AiProcessModelInfo): void;
+
+    /**
+     * Invoked when the model has been deleted from AI process.
+     *
+     * @param model Delete target model.
+     *
+     * @api-version 2
+     * @user
+     */
+    onTrainedModelDeleted(model: AiProcessModelInfo): void;
+
+    /**
+     * Invoked when the model has been loaded.
+     *
+     * @param model Target model.
+     *
+     * @api-version 2
+     * @user
+     */
+    onTrainedModelLoaded(model: AiProcessModelInfo): void;
+
+    /**
+     * Invoked when the model has been unloaded.
+     *
+     * @param model Target model.
+     *
+     * @api-version 2
+     * @user
+     */
+    onTrainedModelUnloaded(model: AiProcessModelInfo): void;
+
+    /**
+     * Invoked when new data for training is collected in external AI engine software.
+     *
+     * @param id An id of the collected data.
+     *
+     * @api-version 2
+     * @user
+     */
+    onNewDataForTrainingCollected(id: string): void;
+}
+
+/**
+ * Overall information about the external AI process.
+ * This corresponds to all the information collected through {@link IAiExternalProcessMessenger.search}.
+ *
+ * @api-version 2
+ * @user
+ */
+export type ExternalAiProcessInfo = {
+    /**
+     * The name of AI process.
+     *
+     * @api-version 2
+     * @user
+     */
+    name: string;
+    /**
+     * The version of the AI process.
+     *
+     * @api-version 2
+     * @user
+     */
+    version: string;
+    /**
+     * The IP address of AI process's Websocket server.
+     *
+     * @api-version 2
+     * @user
+     */
+    ipAddress: FourNumArray;
+    /**
+     * The port number of AI process's Websocket server.
+     *
+     * @api-version 2
+     * @user
+     */
+    port: number;
+}
+
+/**
+ * Interface to send callbacks to the module when connection state has been changed.
+ *
+ * @api-version 2
+ * @user
+ */
+export interface AiProcessConnectionListener {
+    /**
+     * Invoked upon a successful connection.
+     *
+     * @api-version 2
+     * @user
+     */
+    onConnected(): void
+
+    /**
+     * Invoked upon a connection error.
+     *
+     * @param error An error occurred during connection.
+     *
+     * @api-version 2
+     * @user
+     */
+    onConnectionError(error: Error): void
+
+    /**
+     * Invoked upon a successful disconnection.
+     *
+     * @param reason A reason of disconnection.
+     *
+     * @api-version 2
+     * @user
+     */
+    onDisconnected(reason: AiProcessDisconnectionReason): void
+
+    /**
+     * Invoked upon an attempt to reconnect.
+     *
+     * @param attempt A reason of disconnection.
+     *
+     * @api-version 2
+     * @user
+     */
+    onReconnectAttempt(attempt: number): void
+
+    /**
+     * Invoked upon a successful reconnection
+     *
+     * @api-version 2
+     * @user
+     */
+    onReconnected(): void
+
+    /**
+     * Invoked upon a reconnection attempt error.
+     *
+     * @param error An error occurred during reconnection.
+     *
+     * @api-version 2
+     * @user
+     */
+    onReconnectError(error: Error): void
+
+    /**
+     * Invoked when couldn't reconnect within {@link AiProcessConnectionOptions.reconnectionAttempts}.
+     *
+     * @api-version 2
+     * @user
+     */
+    onReconnectFailed(): void
+}
+
+/**
+ * Structure for options to use when connecting.
+ *
+ * @api-version 2
+ * @user
+ */
+export type AiProcessConnectionOptions = {
+    /**
+     * Whether reconnection is enabled or not.
+     * Default value: true
+     *
+     * @api-version 2
+     * @user
+     */
+    reconnection: boolean;
+    /**
+     * The number of reconnection attempts before giving up.
+     * Default value: Infinity
+     *
+     * @api-version 2
+     * @user
+     */
+    reconnectionAttempts: number;
+    /**
+     * The maximum delay between two reconnection attempts.
+     * Default value: 1000
+     *
+     * @api-version 2
+     * @user
+     */
+    reconnectionDelay: number;
+    /**
+     * The timeout in milliseconds for each connection attempt.
+     * Default value: 20000
+     *
+     * @api-version 2
+     * @user
+     */
+    timeout: number;
+}
+
+/**
+ * This is an enumeration type constant that refers to the reason of disconnection, and is defined as follows.
+ *
+ * @enum
+ * @api-version 2
+ * @user
+ */
+export const AiProcessDisconnectionReason = {
+    /**
+     * Unknown.
+     *
+     * @api-version 2
+     * @user
+     */
+    UNKNOWN: 0,
+    /**
+     * The server has forcefully disconnected.
+     *
+     * @api-version 2
+     * @user
+     */
+    SERVER_DISCONNECT: 1,
+    /**
+     * The client was manually disconnected by {@link IAiManager.disconnect}.
+     *
+     * @api-version 2
+     * @user
+     */
+    CLIENT_DISCONNECT: 2,
+    /**
+     * The server did not send a PING.
+     *
+     * @api-version 2
+     * @user
+     */
+    PING_TIMEOUT: 3,
+    /**
+     * The connection was closed.
+     *
+     * @api-version 2
+     * @user
+     */
+    TRANSPORT_CLOSE: 4,
+    /**
+     * The connection has encountered an error
+     *
+     * @api-version 2
+     * @user
+     */
+    INSTALLED_IN_INFERENCE_ENGINE: 5
+} as const;
+/**
+ * @ignore
+ */
+export type AiProcessDisconnectionReason = typeof AiProcessDisconnectionReason[keyof typeof AiProcessDisconnectionReason];
+
+/**
+ * Structure for account token which is created through {@link IAiProcessMessenger.login}.
+ *
+ * @api-version 2
+ * @user
+ */
+export type AiProcessAccountToken = {
+    /**
+     * Token to identify the log in.
+     *
+     * @api-version 2
+     * @user
+     */
+    token: string;
+    /**
+     * The account information which is logged in.
+     *
+     * @api-version 2
+     * @user
+     */
+    account: string
+}
+
+/**
+ * Overall information about the AI model.
+ * This corresponds to all the information collected through {@link IAiProcessMessenger.getProjects}.
+ *
+ * @api-version 2
+ * @user
+ */
+export type AiProcessModelProjectInfo = {
+    /**
+     * Model id.
+     *
+     * @api-version 2
+     * @user
+     */
+    id: string;
+    /**
+     * Model name.
+     *
+     * @api-version 2
+     * @user
+     */
+    name: string;
+}
+
+/**
+ * Overall information about the AI model.
+ * This corresponds to all the information collected through {@link IAiProcessMessenger.getTrainedModelsFromServer}.
+ *
+ * @api-version 2
+ * @user
+ */
+export type AiProcessModelInfo = {
+    /**
+     * Model id.
+     *
+     * @api-version 2
+     * @user
+     */
+    id: string;
+    /**
+     * Project id.
+     *
+     * @api-version 2
+     * @user
+     */
+    projectId: string;
+    /**
+     * Model name.
+     *
+     * @api-version 2
+     * @user
+     */
+    name: string;
+    /**
+     * The model's owner account.
+     *
+     * @api-version 2
+     * @user
+     */
+    account: string;
+    /**
+     * Status of model.
+     *
+     * @api-version 2
+     * @user
+     */
+    status: AiProcessModelStatus;
+    /**
+     * Metadata for the trained model.
+     *
+     * @api-version 2
+     * @user
+     */
+    metadata: AiProcessModelMetadata;
+    /**
+     * Optional data.
+     *
+     * @api-version 2
+     * @user
+     */
+    options: Record<string, string | number | boolean>;
+}
+
+/**
+ * Structure for metadata for a trained model.
+ *
+ * @api-version 2
+ * @user
+ */
+export type AiProcessModelMetadata = {
+    /**
+     * List of items that can be inferred from a trained model.
+     *
+     * @api-version 2
+     * @user
+     */
+    items: {
+        /**
+         * An item name that can be inferred.
+         *
+         * @api-version 2
+         * @user
+         */
+        name: string,
+        /**
+         * A result value returned if the item was inferred.
+         *
+         * @api-version 2
+         * @user
+         */
+        inferenceResult: any
+    }[],
+    /**
+     * Additional information for a trained model (e.g. gripper pos, gripper force and so on).
+     *
+     * @api-version 2
+     * @user
+     */
+    options: Record<string, any>
+}
+
+/**
+ * This is an enumeration type constant that refers to the status of AI Process Model, and is defined as follows.
+ *
+ * @enum
+ * @api-version 2
+ * @user
+ */
+export const AiProcessModelStatus = {
+    /**
+     * The model is training on the server now.
+     *
+     * @api-version 2
+     * @user
+     */
+    TRAINING: 0x0000_0000,
+    /**
+     * The model has completed training.
+     *
+     * @api-version 2
+     * @user
+     */
+    AVAILABLE: 0x0000_0001,
+    /**
+     * The model training failed.
+     *
+     * @api-version 2
+     * @user
+     */
+    FAILED_TO_TRAINING: 0x0000_0002,
+    /**
+     * The model training cancelled.
+     *
+     * @api-version 2
+     * @user
+     */
+    CANCELED_TO_TRAINING: 0x0000_0003,
+    /**
+     * The model has been installed in inference engine.
+     *
+     * @api-version 2
+     * @user
+     */
+    INSTALLED_IN_INFERENCE_ENGINE: 0x0001_0000,
+    /**
+     * The model has been loaded in inference engine. It can be used to inference.
+     *
+     * @api-version 2
+     * @user
+     */
+    LOADED_IN_INFERENCE_ENGINE: 0x0001_0001
+} as const;
+/**
+ * @ignore
+ */
+export type AiProcessModelStatus = typeof AiProcessModelStatus[keyof typeof AiProcessModelStatus];
+
+/**
+ * Interface to send callbacks to the module when the model download and install started.
+ *
+ * @api-version 2
+ * @user
+ */
+export interface AiProcessModelInstallListener {
+    /**
+     * Invoked when the model download started.
+     *
+     * @param modelId Target model id.
+     *
+     * @api-version 2
+     * @user
+     */
+    onStarted(modelId: string): void;
+
+    /**
+     * Invoked when the model download progress has been changed.
+     *
+     * @param modelId Target model id.
+     * @param progress Download progress (0 ~ 100).
+     *
+     * @api-version 2
+     * @user
+     */
+    onProgress(modelId: string, progress: number): void;
+
+    /**
+     * Invoked when the model download completed successfully.
+     *
+     * @param modelId Target model id.
+     *
+     * @api-version 2
+     * @user
+     */
+    onSuccess(modelId: string): void;
+
+    /**
+     * Invoked upon a download error.
+     *
+     * @param modelId Target model id.
+     * @param error An error occurred during connection.
+     *
+     * @api-version 2
+     * @user
+     */
+    onError(modelId: string, error: AiProcessMessengerError): void;
+}
+
+/**
+ * A listener to send callbacks to the module when new event has been arrived from AI process.
+ *
+ * @param args Arguments consists of key value pair for the event.
+ *
+ * @api-version 2
+ * @user
+ */
+export type AiProcessEventListener = (args: Record<string, string | number | boolean>) => void;
+
+/**
+ * Overall information about file transmitted through the AI process.
+ * This corresponds to all the information collected through {@link AiProcessFileTransferListener.onFileTransferred}.
+ *
+ * @api-version 2
+ * @user
+ */
+export type AiProcessFileInfo = {
+    /**
+     * Name of the file.
+     *
+     * @api-version 2
+     * @user
+     */
+    name: string;
+    /**
+     * MIME type of the file data.
+     *
+     * @api-version 2
+     * @user
+     */
+    mimeType: string;
+}
+
+/**
+ * Interface to send callbacks to the module when a file has been transferred from AI process.
+ *
+ * @api-version 2
+ * @user
+ */
+export interface AiProcessFileTransferListener {
+    /**
+     * Invoked when a file has been transferred from AI process.
+     *
+     * @param fileInfo A file info.
+     * @param file A file.
+     *
+     * @api-version 2
+     * @user
+     */
+    onFileTransferred(fileInfo: AiProcessFileInfo, file: Blob): void;
+}
+
+/**
+ * System manager to manage {@link IAiInternalProcessMessenger} and {@link IAiExternalProcessMessenger}.
+ *
+ * @api-version 2
+ * @user
+ */
+export interface IAiManager extends ISystemManager {
+    /**
+     * Create a messenger to communicate with AI backend server and AI internal inference engine (module).
+     *
+     * @param inferenceEngineModulePackageName A package name of inference engine (framework) module
+     * @param aiServerApiPackageName A package name of the API delivery module for communicating with the AI server.
+     * @return Return {@link IAiInternalProcessMessenger} if the request has been operated successfully, otherwise null.
+     *
+     * @api-version 2
+     * @user
+     */
+    createAiInternalProcessMessenger(inferenceEngineModulePackageName: string, aiServerApiPackageName: string): IAiInternalProcessMessenger | null;
+
+    /**
+     * Create a messenger to communicate with AI external inference engine (software).
+     *
+     * @return Return {@link IAiExternalProcessMessenger} if the request has been operated successfully, otherwise null.
+     *
+     * @api-version 2
+     * @user
+     */
+    createAiExternalProcessMessenger(): IAiExternalProcessMessenger | null;
+}
+
+/**
+ * A common interface for {@link IAiInternalProcessMessenger} and {@link IAiExternalProcessMessenger}.
+ *
+ * @api-version 2
+ * @user
+ */
+export interface IAiProcessMessenger {
+    /**
+     * {@link Monitorable} A list of trained models which are registered in AI server.
+     * If the login is successful, it will be initialized to the data accessible to the logged-in account.
+     *
+     * @api-version 2
+     * @user
+     */
+    readonly trainedModelsRegisteredInServer: Monitorable<AiProcessModelInfo[]>;
+
+    /**
+     * Destroy and release the AI process handler.
+     * You cannot reuse it after destroying it.
+     *
+     * @return Return <Promise> Fulfills with void if the request has been done.
+     *
+     * @api-version 2
+     * @user
+     */
+    destroy(): Promise<void>;
+
+    /**
+     * Register a listener to receive callback when Ai process's state has been changed.
+     *
+     * @param listener A listener to be registered.
+     *
+     * @api-version 2
+     * @user
+     */
+    registerAiProcessListener(listener: Partial<AiProcessListener>): void;
+
+    /**
+     * Unregister a listener or all listeners which are registered by {@link IAiProcessMessenger.registerAiProcessListener}.
+     *
+     * @param listener A listener to be unregistered. If it is not set, all listeners will be unregistered.
+     *
+     * @api-version 2
+     * @user
+     */
+    unregisterAiProcessListener(listener?: Partial<AiProcessListener>): void;
+
+    /**
+     * Request to log in to AI process with a Dart-Store account.
+     *
+     * @param account An account to use when logging in.
+     * @param password An password to use when logging in.
+     * @param options Additional options. It will be passed to API lib module or external AI inference engine.
+     * @return Return <Promise> Fulfills with true if the request has been operated successfully, otherwise false with {@link AiProcessMessengerError}.
+     *
+     * @api-version 2
+     * @user
+     */
+    login(account: string, password: string, options?: Record<string, string | number | boolean>): Promise<{ result: boolean, error?: AiProcessMessengerError }>;
+
+    /**
+     * Request to log out.
+     *
+     * @param options Additional options. It will be passed to API lib module or external AI inference engine.
+     * @return Return <Promise> Fulfills with true if the request has been operated successfully, otherwise false with {@link AiProcessMessengerError}.
+     *
+     * @api-version 2
+     * @user
+     */
+    logout(options?: Record<string, string | number | boolean>): Promise<{ result: boolean, error?: AiProcessMessengerError }>;
+
+    /**
+     * Whether the handler has been logged in as {@link account} or not.
+     *
+     * @param account An account to check.
+     * @return Return <Promise> Fulfills with true if the handler has been log in, otherwise false.
+     *
+     * @api-version 2
+     * @user
+     */
+    isLoggedInAs(account: string): Promise<{ result: boolean; error?: AiProcessMessengerError }>;
+
+    /**
+     * Request a list of projects created on the logged in account to AI server.
+     *
+     * @param options Additional options. It will be passed to API lib module or external AI inference engine.
+     * @return Return <Promise> Fulfills with list of {@link AiProcessModelProjectInfo} if the request has been operated successfully, otherwise false with {@link AiProcessMessengerError}.
+     *
+     * @api-version 2
+     * @user
+     */
+    getProjects(options?: Record<string, string | number | boolean>): Promise<{ result: AiProcessModelProjectInfo[], error?: AiProcessMessengerError }>;
+
+    /**
+     * Request AI Server to create a new project.
+     *
+     * @param projectName A name of the project to create.
+     * @param options Additional options. It will be passed to API lib module or external AI inference engine.
+     * @return Return <Promise> Fulfills with {@link AiProcessModelProjectInfo} if the request has been operated successfully, otherwise false with {@link AiProcessMessengerError}.
+     *
+     * @api-version 2
+     * @user
+     */
+    createNewProject(projectName: string, options?: Record<string, string | number | boolean>): Promise<{ result: AiProcessModelProjectInfo | null, error?: AiProcessMessengerError }>;
+
+    /**
+     * Request a list of model data that exists in the project to AI server.
+     *
+     * @param projectId A target project id.
+     * @param options Additional options. It will be passed to API lib module or external AI inference engine.
+     * @return Return <Promise> Fulfills with list of {@link AiProcessModelInfo} if the request has been operated successfully, otherwise false with {@link AiProcessMessengerError}.
+     *
+     * @api-version 2
+     * @user
+     */
+    getTrainedModelsFromServer(projectId: string, options?: Record<string, string | number | boolean>): Promise<{ result: AiProcessModelInfo[], error?: AiProcessMessengerError }>;
+
+    /**
+     * Gets the list of all installed models for the logged in account from internal AI inference module.
+     *
+     * @param options Additional options. It will be passed to API lib module or external AI inference engine.
+     * @return Return <Promise> Fulfills with list of {@link AiProcessModelInfo} if the request has been operated successfully, otherwise false with {@link AiProcessMessengerError}.
+     *
+     * @api-version 2
+     * @user
+     */
+    getInstalledTrainedModels(options?: Record<string, string | number | boolean>): Promise<{ result: AiProcessModelInfo[], error?: AiProcessMessengerError }>;
+
+    /**
+     * Request to download and update training model to AI inference module.
+     *
+     * @param modelId Target model id.
+     * @param options Additional options. It will be passed to API lib module or external AI inference engine.
+     * @return Return <Promise> Fulfills with true if the request has been operated successfully, otherwise false with {@link AiProcessMessengerError}.
+     *
+     * @api-version 2
+     * @user
+     */
+    deleteTrainedModel(modelId: string, options?: Record<string, string | number | boolean>): Promise<{ result: boolean, error?: AiProcessMessengerError }>;
+
+    /**
+     * Request to load a model to AI inference module.
+     *
+     * @param modelId Target model id.
+     * @param options Additional options. It will be passed to API lib module or external AI inference engine.
+     * @return Return <Promise> Fulfills with true if the request has been operated successfully, otherwise false with {@link AiProcessMessengerError}.
+     *
+     * @api-version 2
+     * @user
+     */
+    loadTrainedModel(modelId: string, options?: Record<string, string | number | boolean>): Promise<{ result: boolean, error?: AiProcessMessengerError }>;
+}
+
+/**
+ * A messenger to provide APIs to communicate with AI backend server and internal AI inference engine (module).
+ *
+ * @api-version 2
+ * @user
+ */
+export interface IAiInternalProcessMessenger extends IAiProcessMessenger {
+    /**
+     * Request to upload collection data for model training to AI server.
+     *
+     * @param projectId An id of the project where you want to upload the collection data.
+     * @param collectedData A collection data required for model training.
+     * @param options Additional options. It will be passed to API lib module or external AI inference engine.
+     * @return Return <Promise> Fulfills with true if the request has been operated successfully, otherwise false with {@link AiProcessMessengerError}.
+     *
+     * @api-version 2
+     * @user
+     */
+    uploadCollectionData(projectId: string, collectedData: string, options?: Record<string, string | number | boolean>): Promise<{ result: boolean, error?: AiProcessMessengerError }>;
+
+    /**
+     * Request to download and install training model to AI inference module.
+     *
+     * @param modelId Target model id.
+     * @param metadata A metadata for the trained model which is generated through {@link IAiProcessMessenger.getTrainedModelsFromServer}.
+     * @param listener A listener to be registered.
+     * @param options Additional options. It will be passed to API lib module or external AI inference engine.
+     * @return Return <Promise> Fulfills with true if the request has been operated successfully, otherwise false with {@link AiProcessMessengerError}.
+     *
+     * @api-version 2
+     * @user
+     */
+    installTrainedModel(modelId: string, metadata: AiProcessModelMetadata, listener: AiProcessModelInstallListener, options?: Record<string, string | number | boolean>): Promise<{ result: boolean, error?: AiProcessMessengerError }>;
+}
+
+/**
+ * A messenger to provide APIs to communicate with external AI inference engine (software).
+ *
+ * @api-version 2
+ * @user
+ */
+export interface IAiExternalProcessMessenger extends IAiProcessMessenger {
+    /**
+     * Search AI processes which are possible communicated with AI user module.
+     * The processes are collected through UDP protocol.
+     *
+     * @param aiProcessUdpPort UDP port of AI process to search.
+     * @return Return <Promise> Fulfills with {@link ExternalAiProcessInfo} which are collected through UDP protocol.
+     *
+     * @api-version 2
+     * @user
+     */
+    search(aiProcessUdpPort: number): Promise<{ result: ExternalAiProcessInfo[]; error?: AiProcessMessengerError }>;
+
+    /**
+     * Manually connect with server of AI processes.
+     *
+     * @param ip An IP of server to connect.
+     * @param port A port of server to connect.
+     * @param listener A listener to receive states of the connection.
+     * @param options (Optional)
+     * @return Return <Promise> Fulfills with true if the request has been operated successfully, otherwise false.
+     *
+     * @api-version 2
+     * @user
+     */
+    connect(ip: FourNumArray, port: number, listener: Partial<AiProcessConnectionListener>, options?: Partial<AiProcessConnectionOptions>): Promise<{ result: boolean; error?: AiProcessMessengerError }>;
+
+    /**
+     * Manually disconnect the connection. In that case, it will not try to reconnect.
+     *
+     * @return Return <Promise> Fulfills with true if the handler has been disconnected successfully, otherwise false.
+     *
+     * @api-version 2
+     * @user
+     */
+    disconnect(): Promise<{ result: boolean; error?: AiProcessMessengerError }>;
+
+    /**
+     * Whether the handler has been connected or not.
+     *
+     * @return Return <Promise> Fulfills with true if the handler has been connected, otherwise false.
+     *
+     * @api-version 2
+     * @user
+     */
+    isConnected(): Promise<{ result: boolean; error?: AiProcessMessengerError }>;
+
+    /**
+     * Request to upload collection data for model training to AI server.
+     *
+     * @param projectId An id of the project where you want to upload the collection data.
+     * @param collectedDataId An id of collected data to upload.
+     * @param options Additional options. It will be passed to API lib module or external AI inference engine.
+     * @return Return <Promise> Fulfills with true if the request has been operated successfully, otherwise false with {@link AiProcessMessengerError}.
+     *
+     * @api-version 2
+     * @user
+     */
+    uploadCollectionData(projectId: string, collectedDataId: string, options?: Record<string, string | number | boolean>): Promise<{ result: boolean, error?: AiProcessMessengerError }>;
+
+    /**
+     * Request to download and install training model to AI inference module.
+     *
+     * @param modelId Target model id.
+     * @param listener A listener to be registered.
+     * @param options Additional options. It will be passed to API lib module or external AI inference engine.
+     * @return Return <Promise> Fulfills with true if the request has been operated successfully, otherwise false with {@link AiProcessMessengerError}.
+     *
+     * @api-version 2
+     * @user
+     */
+    installTrainedModel(modelId: string, listener: AiProcessModelInstallListener, options?: Record<string, string | number | boolean>): Promise<{ result: boolean, error?: AiProcessMessengerError }>;
+
+    /**
+     * Register a listener to transfer file.
+     *
+     * @param listener A listener to receive callbacks when an event has been sent from AI process.
+     * @return Return <Promise> Fulfills with true if the request has been operated successfully, otherwise false with {@link AiProcessMessengerError}.
+     *
+     * @api-version 2
+     * @user
+     */
+    addFileTransferListener(listener: AiProcessFileTransferListener): Promise<{ result: boolean, error?: AiProcessMessengerError }>;
+
+    /**
+     * Unregister a listener or all listeners which are registered by {@link IAiExternalProcessMessenger.addFileTransferListener}.
+     *
+     * @param listener A listener to be unregistered. If it is not set, all listeners will be unregistered.
+     * @return Return <Promise> Fulfills with true if the request has been operated successfully, otherwise false with {@link AiProcessMessengerError}.
+     *
+     * @api-version 2
+     * @user
+     */
+    removeFileTransferListener(listener?: AiProcessFileTransferListener): Promise<{ result: boolean, error?: AiProcessMessengerError }>;
+
+    /**
+     * Send an event to the connected AI process.
+     *
+     * @param eventName Event name.
+     * @param args Arguments consists of key value pair for the event.
+     * @return Return <Promise> Fulfills with true if the request has been operated successfully, otherwise false with {@link AiProcessMessengerError}.
+     *
+     * @api-version 2
+     * @user
+     */
+    sendEvent(eventName: string, args: Record<string, string | number | boolean>): Promise<{ result: boolean, error?: AiProcessMessengerError }>;
+
+    /**
+     * Register an event listener for the {@link eventName}.
+     *
+     * @param eventName Event name.
+     * @param listener A listener to receive callbacks when an event has been sent from AI process.
+     * @param once If you set true, then the listener will be removed after receive an event. Default is false.
+     * @return Return <Promise> Fulfills with true if the request has been operated successfully, otherwise false with {@link AiProcessMessengerError}.
+     *
+     * @api-version 2
+     * @user
+     */
+    addEventListener(eventName: string, listener: AiProcessEventListener, once?: boolean): Promise<{ result: boolean, error?: AiProcessMessengerError }>;
+
+    /**
+     * Unregister a listener or all listeners which are registered by {@link IAiExternalProcessMessenger.addEventListener}.
+     *
+     * @param eventName Event name.
+     * @param listener A listener to be unregistered. If it is not set, all listeners will be unregistered.
+     * @return Return <Promise> Fulfills with true if the request has been operated successfully, otherwise false with {@link AiProcessMessengerError}.
+     *
+     * @api-version 2
+     * @user
+     */
+    removeListener(eventName: string, listener?: AiProcessEventListener): Promise<{ result: boolean, error?: AiProcessMessengerError }>;
 }
 // [END] Etc Control System API /////////////////////////
 
@@ -15989,6 +21998,64 @@ export interface IDartIdeManager extends ISystemManager {
      */
     getIdeIpList(): Promise<string[]>;
 }
+
+/**
+ * This is an enumeration type constant that refers to the log level, and is defined as follows.
+ *
+ * @enum
+ * @api-version 1
+ * @system
+ */
+export const LogLevel = {
+    /**
+     * Info level.
+     *
+     * @api-version 1
+     * @system
+     */
+    INFO: 0,
+    /**
+     * Debug level.
+     *
+     * @api-version 1
+     * @system
+     */
+    DEBUG: 1,
+    /**
+     * Warn level.
+     *
+     * @api-version 1
+     * @system
+     */
+    WARN: 2,
+    /**
+     * Error level.
+     *
+     * @api-version 1
+     * @system
+     */
+    ERROR: 3
+} as const;
+/**
+ * @ignore
+ */
+export type LogLevel = typeof LogLevel[keyof typeof LogLevel];
+
+/**
+ * System manager to support developer.
+ *
+ * @api-version 1
+ * @system
+ */
+export interface IDevManager extends ISystemManager {
+    /**
+     * {@link Monitorable} a latest Dart-Platform log.
+     *
+     * @api-version 1
+     * @system
+     */
+    readonly latestLog: Monitorable<{ logLevel: LogLevel, log: string }>;
+}
 // [END] Dev System API /////////////////////////
 
 
@@ -16021,7 +22088,7 @@ export interface IDartFileSystem {
      * @api-version 1
      * @user
      */
-    getModuleRootDirPath(context: ModuleContext): string
+    getModuleRootDirPath(context: ModuleContext): string;
 
     /**
      * Whether the given path exists by checking with the file system asynchronously.
@@ -16042,7 +22109,7 @@ export interface IDartFileSystem {
      * @api-version 1
      * @user
      */
-    exists(target: string): Promise<boolean>
+    exists(target: string): Promise<boolean>;
 
     /**
      * Asynchronously reads the entire contents of a file.
@@ -16063,60 +22130,371 @@ export interface IDartFileSystem {
      * @api-version 1
      * @user
      */
-    readFile(context: ModuleContext, target: string): Promise<string>
+    readFile(context: ModuleContext, target: string): Promise<string>;
+
+    /**
+     * Get disk's free size and total size information.
+     *
+     * @param path A directory path to check.
+     * @return Return <Promise> Fulfills with free size and total size in bytes.
+     *
+     * @api-version 1
+     * @user
+     */
+    getDiskSpace(path: string): Promise<{ free: number, total: number } | null>;
+}
+
+/**
+ * This is an enumeration type constant that refers to error code of file picker, and is defined as follows.
+ *
+ * @enum
+ * @api-version 2
+ * @user
+ */
+export const FilePickerErrorCode = {
+    /**
+     * Unknown error.
+     *
+     * @api-version 2
+     * @user
+     */
+    UNKNOWN_ERROR: 0,
+    /**
+     * Canceled by user.
+     *
+     * @api-version 2
+     * @user
+     */
+    CANCELED_BY_USER: 1,
+    /**
+     * Not enough memory available.
+     *
+     * @api-version 2
+     * @user
+     */
+    NOT_ENOUGH_MEMORY_AVAILABLE: 2,
+    /**
+     * Not support in the environment.
+     *
+     * @api-version 2
+     * @user
+     */
+    NOT_SUPPORT: 3
+} as const;
+/**
+ * @ignore
+ */
+export type FilePickerErrorCode = typeof FilePickerErrorCode[keyof typeof FilePickerErrorCode];
+
+/**
+ * An interface represents options for file picker.
+ *
+ * @api-version 2
+ * @user
+ */
+export interface FilePickerOptions {
+    /**
+     * When set to true multiple files may be selected. Default is false.
+     *
+     * @api-version 2
+     * @user
+     */
+    multiple?: boolean
+
+    /**
+     * Allowed file types.
+     *
+     * @api-version 2
+     * @user
+     */
+    types?: {
+        /**
+         * An optional description of the category of files types allowed.
+         * This option is operated in Linux, Windows and macOS.
+         *
+         * @api-version 2
+         * @user
+         */
+        description?: string,
+
+        /**
+         * A MIME type {@link https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types}.
+         *
+         * @api-version 2
+         * @user
+         */
+        mimeType: string,
+
+        /**
+         * File extensions.
+         * This option is operated in Linux, Windows and macOS.
+         *
+         * @api-version 2
+         * @user
+         */
+        extensions: string[]
+    }[];
+}
+
+/**
+ * An interface represents options for save file picker.
+ *
+ * @api-version 2
+ * @user
+ */
+export interface SaveFilePickerOptions {
+    /**
+     * A suggested file name.
+     *
+     * @api-version 2
+     * @user
+     */
+    suggestedName?: string,
+
+    /**
+     * Allowed file types.
+     *
+     * @api-version 2
+     * @user
+     */
+    types?: {
+        /**
+         * An optional description of the category of files types allowed.
+         * This option is operated in Linux, Windows and macOS.
+         *
+         * @api-version 2
+         * @user
+         */
+        description?: string,
+
+        /**
+         * A MIME type {@link https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types}.
+         *
+         * @api-version 2
+         * @user
+         */
+        mimeType: string,
+
+        /**
+         * File extensions.
+         * This option is operated in Linux, Windows and macOS.
+         *
+         * @api-version 2
+         * @user
+         */
+        extensions: string[]
+    }[];
+}
+
+/**
+ * An interface represents a handle to a file system entry.
+ *
+ * @api-version 2
+ * @user
+ */
+export interface FileHandler {
+    /**
+     * A file name.
+     *
+     * @api-version 2
+     * @user
+     */
+    name: string;
+
+    /**
+     * Read a file as Buffer.
+     *
+     * @return Return <Promise> Fulfills with data as Buffer if the request has been operated successfully, otherwise {@link FilePickerErrorCode}.
+     *
+     * @api-version 2
+     * @user
+     */
+    read: () => Promise<{ data?: Buffer, errorCode?: FilePickerErrorCode }>;
+}
+
+/**
+ * An interface represents a handle to a file system entry.
+ *
+ * @api-version 2
+ * @user
+ */
+export interface SaveFileHandler {
+    /**
+     * A file name.
+     *
+     * @api-version 2
+     * @user
+     */
+    name: string;
+
+    /**
+     * Write data to the file.
+     *
+     * @param data Data to write.
+     * @return Return <Promise> Fulfills with true if the request has been operated successfully, otherwise false.
+     *
+     * @api-version 2
+     * @user
+     */
+    write: (data: string | Blob) => Promise<boolean>;
+}
+
+/**
+ * Enumeration type constant that refers to types of entry, and is defined as follows.
+ *
+ * @enum
+ * @api-version 2
+ */
+export const EntryType = {
+    /**
+     * File.
+     *
+     * @api-version 2
+     * @user
+     */
+    FILE: 0,
+    /**
+     * Directory.
+     *
+     * @api-version 2
+     * @user
+     */
+    DIR: 1
+} as const;
+/**
+ * @ignore
+ */
+export type EntryType = typeof EntryType[keyof typeof EntryType];
+
+/**
+ * An interface represents a handle to a file system directory.
+ *
+ * @api-version 2
+ * @user
+ */
+export interface DirectoryHandler {
+    /**
+     * A directory name.
+     *
+     * @api-version 2
+     * @user
+     */
+    name: string;
+
+    /**
+     * Get entries in the directory.
+     *
+     * @return Return <Promise> Fulfills with an array of {@link EntryType} and name pair if the request has been operated successfully, otherwise {@link FilePickerErrorCode}.
+     *
+     * @api-version 2
+     * @user
+     */
+    getEntries: () => Promise<{ entries?: { kind: EntryType, name: string }[], errorCode?: FilePickerErrorCode }>;
+
+    /**
+     * Write data to the file in the picked directory.
+     *
+     * @param name A file name to create.
+     * @param data Data to write the {@link name} file.
+     * @return Return <Promise> Fulfills with true if the request has been operated successfully, otherwise false.
+     *
+     * @api-version 2
+     * @user
+     */
+    write: (name: string, data: string | Blob) => Promise<boolean>;
 }
 
 /**
  * An interface to show file picker.
  *
+ * @api-version 2
+ * @user
+ */
+export interface IFilePicker {
+    /**
+     * Show file picker dialog to read.
+     *
+     * @param options An {@link FilePickerOptions} for picker.
+     * @return Return <Promise> Fulfills with {@link FileHandler} if the request has been operated successfully, otherwise {@link FilePickerErrorCode}.
+     *
+     * @api-version 2
+     * @user
+     */
+    showFilePicker(options?: FilePickerOptions): Promise<{ handlers?: FileHandler[], errorCode?: FilePickerErrorCode }>;
+
+    /**
+     * Show file picker dialog to write.
+     *
+     * @param options An {@link SaveFilePickerOptions} for picker.
+     * @return Return <Promise> Fulfills with {@link SaveFileHandler} if the request has been operated successfully, otherwise {@link FilePickerErrorCode}.
+     *
+     * @api-version 2
+     * @user
+     */
+    showSaveFilePicker(options?: SaveFilePickerOptions): Promise<{ handler?: SaveFileHandler, errorCode?: FilePickerErrorCode }>;
+
+    /**
+     * Show directory picker dialog to handle files in the picked directory.
+     *
+     * @return Return <Promise> Fulfills with {@link DirectoryHandler} if the request has been operated successfully, otherwise {@link FilePickerErrorCode}.
+     *
+     * @api-version 2
+     * @user
+     */
+    showDirectoryPicker(): Promise<{ handler?: DirectoryHandler, errorCode?: FilePickerErrorCode }>;
+}
+
+/**
+ * An interface to control process.
+ *
  * @api-version 1
  * @system
  */
-export interface IDartFilePicker {
+export interface IDartProcess {
     /**
-     * Show file picker dialog to get a file information.
-     *
-     * @param accept A string that defines the file types the file input should accept.
+     * Exit the program.
      *
      * @api-version 1
      * @system
      */
-    getFile(accept?: string): Promise<void | { name: string, path?: string, data?: string | Uint8Array }>;
+    exitApp(): void;
 
     /**
-     * [Temporary][Only Desktop] https://developer.mozilla.org/en-US/docs/Web/API/Window/showOpenFilePicker
-     *
-     * @param options OpenFilePickerOptions
-     * @return FileSystemFileHandle[]
-     *
+     * Reload the program.
      *
      * @api-version 1
      * @system
      */
-    showOpenFilePicker(options?: any | undefined): Promise<any>;
+    reloadApp(): void;
 
     /**
-     * [Temporary][Only Desktop] https://developer.mozilla.org/en-US/docs/Web/API/window/showSaveFilePicker
-     *
-     * @param options SaveFilePickerOptions
-     * @return FileSystemFileHandle
+     * Restart the program
      *
      * @api-version 1
      * @system
      */
-    showSaveFilePicker(options?: any | undefined): Promise<any>;
+    restartApp(): void;
+}
 
+/**
+ * An interface to control external process.
+ *
+ * @api-version 2
+ * @user
+ */
+export interface IExternalProcess {
     /**
-     * [Temporary][Only Desktop] https://developer.mozilla.org/en-US/docs/Web/API/Window/showDirectoryPicker
+     * Open {@link url} with external browser.
+     * This function is not available on Linux.
      *
-     * @param options DirectoryPickerOptions
-     * @return FileSystemDirectoryHandle
+     * @param context A caller's context.
+     * @param url An URL to open browser
+     * @return Return false if it has been called on Linux, otherwise true.
      *
-     *
-     * @api-version 1
-     * @system
+     * @api-version 2
+     * @user
      */
-    showDirectoryPicker(options?: any | undefined): Promise<any>;
+    openUrlWithExternalBrowser(context: Context, url: string): boolean;
 }
 // [END] Libraries /////////////////////////
 
@@ -16128,5 +22506,5 @@ export interface IDartFilePicker {
  * @api-version 1
  * @user
  */
-export const SDK_VERSION = Manifest.SDK_VERSION_1;
+export const SDK_VERSION = Manifest.SDK_VERSION_2;
 // [END] ETC /////////////////////////

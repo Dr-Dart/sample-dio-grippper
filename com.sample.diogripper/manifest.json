@@ -15,7 +15,7 @@
             ]
         },
         {
-            "name": "GRASP",
+            "name": "Grasp",
             "id": "pip_grasp",
             "messageFilters": [
               {
@@ -25,7 +25,7 @@
             ]
           },
         {
-            "name": "RELEASE",
+            "name": "Release",
             "id": "pip_release",
             "messageFilters": [
               {
@@ -47,7 +47,7 @@
            ]
         },
         {
-            "name": "GRASP",
+            "name": "Grasp",
             "id": "pip_grasp",
             "messageFilters": [
               {
@@ -57,7 +57,7 @@
             ]
         },
         {
-            "name": "RELEASE",
+            "name": "Release",
             "id": "pip_release",
             "messageFilters": [
               {

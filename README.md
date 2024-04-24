@@ -2,28 +2,37 @@
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
 
-## *Precautions*
-#### Note
-> __This sample code is currently private  for developers participating in the Early Access Program and only works in the Dr.Dart Ecosystem.__ 
-
 ## *Overview*
-This sample is a modified Digital I/O module provided from the Device Module UI templates in Dr.Dart-IDE.
+This sample is a user command sample module that modified Digital I/O module provided from the Device Module UI templates in Dr.Dart-IDE.
 
 |File|Description|
 |---|---|
-|Manifest.json<br>(In sample-dio-grippper/<br>com.sample.diogripper)|To use 1 basic module screen and 2 User Commands, 3 screens and 3 services are declared.<br> (*Note. However, in the case of the service, it will be changed so that User Command can operate even if there is only the User Command Service service in the released version.)</br>|
-|Index.tsx |Main screen shows logo and title text, tool select box and DigitalIO component.|
-|DigitalIO.tsx |Show the TCP, Tool Weight, and Write/Read Signal components|
-|ShowTCP.tsx |Show the TCP screen and make the Add TCP button work<br>(Actual Dart-API Function is in the DigitalIO class)|
-|ShowToolWeight.tsx |Show the Tool Weight screen and make the Add Tool Weight button work<br>(The actual function is in the DigitalIO class)|
+|Manifest.json<br>(In user-module-sample-dio-gripper/com.sample.diogripper)|To use 3 screens(1 module's main screen, and 2 User Commands's property screens) and 3 user commands services are declared.|
+|index.tsx |Index of module. Show main, property screens and provide service.|
+|mainScreen/mainScreen.tsx |Main screen shows logo and title text, tool select box and DigitalIO component.|
+|mainScreen/selectTab.tsx |Show the tab and menu bar to select and save gripper setting.|
+|mainScreen/toolSettings.tsx |Show the TCP, Tool Weight screen and make the Add TCP, Tool Weight button work.|
+|mainScreen/WriteSignal.tsx |Show the components to write Digital IO Signal.|
+|mainScreen/Dialog.tsx |Show the dialog for change gripper setting's name, sequence, and number.|
+|mainScreen/loadig.tsx |Show the loading screen when loading database.|
+|userCommand/userCommandPIPScreen/PIPScreen.tsx |PIP Screen shows User Command Property screen and set user command data in Task Editor Module|
+|userCommand/userCommandPIPScreen/PIPScreenComponent.tsx |PIP Screen components to show User Command Property screen in Task Editor Module|
+|userCommand/userCommandService/UserCommandService.ts |	Includes interfaces that must be implemented in User Commands|
+|userCommand/userCommandService/mainDRL.drl|DRL file to run user command.<br>|
 |utils/DatabaseManager.ts |Includes functions to read and write data using DB functions in Dart-API|
-|userCommandPIPScreen/PIPScreen.tsx |PIP Screen shows User Command Property screen in Task Editor Module|
-|userCommandService/UserCommandService.ts |	Includes interfaces that must be implemented in User Commands|
-|userCommandService/constDRL.ts|DRL text file.<br>(*Note. Currently the 2nd version of EAP has a problem with not being able to find and read DRL files, so DRL must be saved in the form of a const string)|
+|utils/util.ts |Includes util function like round value.|
 
 
 ## *Changes*
+### 1.3.0
+#### 1. Change main screen's UI/UX.
+#### 2. Add `Gripper setting dialog` to change gripper setting's name, sequence, and number.
+#### 3. Add `Select template data` button in main screen to reset data to last saved data or default three templete.
+#### 4. Add `Wait time` setting after digital IO signal write.
+#### 5. Add `reload` button in property screen to reload gripper setting.
+#### 6. Fixed problem that allows writing non-numerical letter in tcp/tool weight.
 
+### 1.2.1
 #### 1. `TCP(Tool Center Point)` & `Tool Weight` Robot Parameters are added.
 #### 2. `User Command` is available in Task Editor Module.
 
@@ -34,7 +43,7 @@ This sample is a modified Digital I/O module provided from the Device Module UI 
 
 * Change and add `TCP(Tool Center Point)` and `Tool Weight` Robot Parameters. Also you can set these parameters in the robot with tool button of the topbar in Dr.Dart-Platform.
 
-* Change the Digital I/O signal types, ports and values of the `Grasp` and `Release`.
+* Change the Digital I/O signal types, ports, values and wait time of the `Grasp` and `Release`.
 
 #### In Task Editor Module(former Task Builder/Task Writer),
 * `Grasp` and `Release` User Command block will be displayed in the User Command block list. 
@@ -42,9 +51,3 @@ This sample is a modified Digital I/O module provided from the Device Module UI 
 * You can add this command block to your task list and select the preset gripper setting.
 
 * When the task is executed, the gripper's `Grasp` and `Release` motion will operate in robot.
-
-## *Limitations*
-#### The current sample of EAP version has the following limitations however We will update the Task Editor soon and redistribute it to the Dart-Store.
-1. **[DRL Generator in Dart-IDE]** You cannot use drl files created by DRL Generator. Currently, it should be used as a string like `userCommandService/constDRL.ts`. It will be improved in the release version.
-2. **[Task Editor in Dart-Platform]** When changing the value in the User Command Property window, the change is not reflected in the Task Editor. Actually, the User Command changes the value and sends a message to the Task Editor. However, this is due to a bug in Task Editor, and we will upload it to the Store as soon as we fix it. However, the first preset will properly reflect the port number you changed in module settings.
-3. **[Task Editor in Dart-Platform]** There is a problem that intermittently does not work properly when playing in Task Editor. We are aware of the problem and are fixing it.

@@ -1,9 +1,10 @@
 {
     "name": "DIOGripper",
     "packageName": "com.sample.diogripper",
-    "version": "1.2.1",
-    "sdkVersion": "1",
+    "version": "1.3.0",
+    "sdkVersion": "2",
     "icon": "assets/images/icon.png",
     "drscModulePackageFile": "drsc_com.sample.diogripper.dm",
-    "drcfModulePackageFile": ""
+    "drcfModulePackageFile": "",
+    "developer": "Doosan Robotics"
 }
